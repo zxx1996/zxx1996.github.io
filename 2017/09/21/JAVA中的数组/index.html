@@ -95,18 +95,22 @@
 
 
 
-<meta name="description" content="跳转语句  break语句：  在switch条件语句和循环语句中都可以使用break语句。当它出现在switch条件语句中时，作用是终止某个case并跳出switch结构。当它出现在循环语句中，作用是跳出循环语句，执行后面的代码当break出现在嵌套循环的内层循环中时，只能跳出内循环。想要跳出外循环需要对外循环做标记。 12345678int i , j;    //定义两个循环变量itcast">
+<meta name="description" content="数组  数组是一组数据的集合，数组中的每个数据被称作元素。同一个数组中的元素类型必须一致 定义：1234int[ ]  x;   //声明一个int[ ] 类型的变量x = new int [100];   //创建一个长度为100的数组int[ ] arr = new int[100];   //定义一个长度为100的数组    上述语句是在内存中定义了一个长度为100的数组变量，第一个元素的名">
 <meta name="keywords" content="Read">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JAVA中的break和continue">
-<meta property="og:url" content="http://yoursite.com/2017/09/20/JAVA中的break和continue/index.html">
+<meta property="og:title" content="JAVA中的数组">
+<meta property="og:url" content="http://yoursite.com/2017/09/21/JAVA中的数组/index.html">
 <meta property="og:site_name" content="嗯吖！">
-<meta property="og:description" content="跳转语句  break语句：  在switch条件语句和循环语句中都可以使用break语句。当它出现在switch条件语句中时，作用是终止某个case并跳出switch结构。当它出现在循环语句中，作用是跳出循环语句，执行后面的代码当break出现在嵌套循环的内层循环中时，只能跳出内循环。想要跳出外循环需要对外循环做标记。 12345678int i , j;    //定义两个循环变量itcast">
+<meta property="og:description" content="数组  数组是一组数据的集合，数组中的每个数据被称作元素。同一个数组中的元素类型必须一致 定义：1234int[ ]  x;   //声明一个int[ ] 类型的变量x = new int [100];   //创建一个长度为100的数组int[ ] arr = new int[100];   //定义一个长度为100的数组    上述语句是在内存中定义了一个长度为100的数组变量，第一个元素的名">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-20T13:41:26.346Z">
+<meta property="og:image" content="http://ovebsbclw.bkt.clouddn.com/33.png">
+<meta property="og:image" content="http://ovebsbclw.bkt.clouddn.com/34.png">
+<meta property="og:image" content="http://ovebsbclw.bkt.clouddn.com/35.png">
+<meta property="og:updated_time" content="2017-09-21T12:45:42.777Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JAVA中的break和continue">
-<meta name="twitter:description" content="跳转语句  break语句：  在switch条件语句和循环语句中都可以使用break语句。当它出现在switch条件语句中时，作用是终止某个case并跳出switch结构。当它出现在循环语句中，作用是跳出循环语句，执行后面的代码当break出现在嵌套循环的内层循环中时，只能跳出内循环。想要跳出外循环需要对外循环做标记。 12345678int i , j;    //定义两个循环变量itcast">
+<meta name="twitter:title" content="JAVA中的数组">
+<meta name="twitter:description" content="数组  数组是一组数据的集合，数组中的每个数据被称作元素。同一个数组中的元素类型必须一致 定义：1234int[ ]  x;   //声明一个int[ ] 类型的变量x = new int [100];   //创建一个长度为100的数组int[ ] arr = new int[100];   //定义一个长度为100的数组    上述语句是在内存中定义了一个长度为100的数组变量，第一个元素的名">
+<meta name="twitter:image" content="http://ovebsbclw.bkt.clouddn.com/33.png">
 
 
 
@@ -136,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/20/JAVA中的break和continue/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/21/JAVA中的数组/"/>
 
 
 
 
 
-  <title>JAVA中的break和continue | 嗯吖！</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>JAVA中的数组 | 嗯吖！</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -309,7 +313,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/20/JAVA中的break和continue/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/21/JAVA中的数组/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lyz">
@@ -326,7 +330,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JAVA中的break和continue</h1>
+          <h1 class="post-title" itemprop="name headline">JAVA中的数组</h1>
         
 
         <div class="post-meta">
@@ -338,8 +342,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-20T21:30:28+08:00">
-                2017-09-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-21T14:51:01+08:00">
+                2017-09-21
               </time>
             
 
@@ -398,20 +402,76 @@
       
 
       
-        <h3 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h3><hr>
+        <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><hr>
 <ul>
-<li><p>break语句：</p>
-<blockquote>
-<p>在switch条件语句和循环语句中都可以使用break语句。当它出现在switch条件语句中时，作用是终止某个case并跳出switch结构。当它出现在循环语句中，作用是跳出循环语句，执行后面的代码<br>当break出现在嵌套循环的内层循环中时，只能跳出内循环。想要跳出外循环需要对外循环做标记。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">int i , j;    //定义两个循环变量</div><div class="line">itcast: for (i=1;i&lt;=9;i++)&#123;    //外层循环</div><div class="line">  for (j=1;j&lt;=i;j++)&#123;    //内层循环</div><div class="line">      if(i&gt;4) &#123;</div><div class="line">          break itcase;    //跳出外层循环</div><div class="line">      &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</blockquote>
+<li>数组是一组数据的集合，数组中的每个数据被称作元素。同一个数组中的元素类型必须一致</li>
+<li>定义：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">int[ ]  x;   //声明一个int[ ] 类型的变量</div><div class="line">x = new int [100];   //创建一个长度为100的数组</div><div class="line"></div><div class="line">int[ ] arr = new int[100];   //定义一个长度为100的数组</div></pre></td></tr></table></figure>
 </li>
-<li><p>continue语句：</p>
+</ul>
 <blockquote>
-<p>continue语句用在循环语句中，它的作用是终止本次循环，执行下一次循环.<br>在嵌套循环语句中，continue语句后面也可以通过使用标记的方式结束本次外层循环，用法与break语句相似</p>
+<p>上述语句是在内存中定义了一个长度为100的数组变量，第一个元素的名称为x[0]，第二个元素的名称为x[1]，以此类推，第100个元素的名称为x[99]，这些元素的初始值都是0。</p>
+</blockquote>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><ul>
+<li><p>静态初始化：在定义数组同时为数组每个元素赋值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1、类型[ ] 数组名 =new 类型[ ]&#123; 元素1,元素2, ...&#125;</div><div class="line">2、类型[ ] 数组名 = &#123;元素1,元素2, ... &#125;</div><div class="line"> int [ ] arr = &#123;1,2,3,4&#125;;   //静态初始化</div></pre></td></tr></table></figure>
+</li>
+<li><p>元素赋值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">int [ ] arr = new int[4];</div><div class="line">arr[0]=1;   //为第一个元素赋值</div><div class="line">arr[1]=2;    //为第二个元素赋值</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>默认初始化值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte、short、int、long</td>
+<td>0</td>
+</tr>
+<tr>
+<td>float、double</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>char</td>
+<td>一个空字符，’\u0000’</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>引用数据类型</td>
+<td>null，表示变量不引用任何对象</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注：若使用变量引用数组时，变量的值为Null，则意味着没有指向任何数组，此时通过变量访问数组的元素会出现空指针异常</strong></p>
+<h3 id="数组遍历"><a href="#数组遍历" class="headerlink" title="数组遍历"></a>数组遍历</h3><ul>
+<li>操作数组时，经常需要依次访问数组中的每个元素，这种操作称为数组的遍历<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">int [] arr =&#123;1,2,3,4,5&#125;;  //定义数组</div><div class="line">// 使用for 循环遍历数组元素</div><div class="line">for(int i=0;i&lt;arr.length;i++)&#123;</div><div class="line">    System.out.println(arr[i]);  //通过索引访问元素</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>注：数组的索引范围：0~length-1</strong></p>
+<ul>
+<li>遍历求数组中的最大值：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public static int geMax(int[] arr)&#123;</div><div class="line"> //定义变量max用于记住最大数，首先假设第一个元素为最大值</div><div class="line">    int max =arr[0];</div><div class="line">    //通过for循环遍历数组中的元素</div><div class="line">    for(int x=1;i&lt;arr.length;i++)&#123;</div><div class="line">        if(arr[i]&gt;max)&#123;   //比较arr[i]的值是否大于max</div><div class="line">            max =arr[i];  //条件成立，将arr[i]的值赋给max</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return max;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h3><ul>
+<li>冒泡排序<blockquote>
+<p>在排序过程中，不断比较数组中相邻的两个元素，较大的向上浮，较小的往下沉</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">public static void bubbleSort(int [ ] arr)&#123;</div><div class="line">    for(int i=0;i&lt;arr.length-1;i++)&#123;</div><div class="line">        //内层循环</div><div class="line">        for(int j=0;j&lt;arr.length-i-1;j++)&#123;</div><div class="line">            if(arr[j]&gt;arr[j+1])&#123;  //比较相邻元素  数大的放在下面</div><div class="line">                //下列代码用于交换两个元素</div><div class="line">                int temp=arr[j];</div><div class="line">                arr[j]=arr[j+1];</div><div class="line">                arr[j+1] =temp;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </blockquote>
 </li>
 </ul>
+<h3 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">int [] [] arr new int [3] [4];</div></pre></td></tr></table></figure>
+<p><img src="http://ovebsbclw.bkt.clouddn.com/33.png" alt="GitHub set up"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">int[] [] arr =new int [3] [];</div></pre></td></tr></table></figure>
+<p><img src="http://ovebsbclw.bkt.clouddn.com/34.png" alt="GitHub set up"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">int[] [] arr = &#123;&#123;1,2&#125;,&#123;3,4,5,6&#125;,&#123;7,8,9&#125;&#125;;</div></pre></td></tr></table></figure>
+<p><img src="http://ovebsbclw.bkt.clouddn.com/35.png" alt="GitHub set up"></p>
 
       
     </div>
@@ -442,8 +502,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/15/课堂小笔记/" rel="next" title="课堂小笔记">
-                <i class="fa fa-chevron-left"></i> 课堂小笔记
+              <a href="/2017/09/20/JAVA中的break和continue/" rel="next" title="JAVA中的break和continue">
+                <i class="fa fa-chevron-left"></i> JAVA中的break和continue
               </a>
             
           </div>
@@ -452,8 +512,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/21/JAVA中的数组/" rel="prev" title="JAVA中的数组">
-                JAVA中的数组 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/09/21/hexo遇到的异常/" rel="prev" title="hexo遇到的异常">
+                hexo遇到的异常 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -624,7 +684,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#跳转语句"><span class="nav-number">1.</span> <span class="nav-text">跳转语句</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组"><span class="nav-number">1.</span> <span class="nav-text">数组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">1.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组遍历"><span class="nav-number">1.2.</span> <span class="nav-text">数组遍历</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组排序"><span class="nav-number">1.3.</span> <span class="nav-text">数组排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二维数组"><span class="nav-number">1.4.</span> <span class="nav-text">二维数组</span></a></li></ol></li></ol></div>
             
 
           </div>
