@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+  <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -137,7 +137,7 @@
 
 
 
-  <title>嗯吖！</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>嗯吖！</title>
   
 
 
@@ -156,7 +156,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
+  <div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
 
@@ -398,137 +398,40 @@
       
         
           
-            <h2 id="HTML表格"><a href="#HTML表格" class="headerlink" title="HTML表格"></a>HTML表格</h2><hr>
-<ul>
-<li>标签：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>表格标签</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;table&gt;&lt;/table&gt;</code></td>
-<td>定义表格</td>
-</tr>
-<tr>
-<td><code>&lt;caption&gt;&lt;/caption&gt;</code></td>
-<td>定义表格标题</td>
-</tr>
-<tr>
-<td><code>&lt;th&gt;&lt;/th&gt;</code></td>
-<td>定义表格表头</td>
-</tr>
-<tr>
-<td><code>&lt;tr&gt;&lt;/tr&gt;</code></td>
-<td>定义表格的行</td>
-</tr>
-<tr>
-<td><code>&lt;td&gt;&lt;/td&gt;</code></td>
-<td>定义表格的单元</td>
-</tr>
-<tr>
-<td><code>&lt;thead&gt;&lt;/thead&gt;</code></td>
-<td>定义表格的页眉</td>
-</tr>
-<tr>
-<td><code>&lt;tbody&gt;&lt;/tbody&gt;</code></td>
-<td>定义表格的主体</td>
-</tr>
-<tr>
-<td><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code></td>
-<td>定义表格的页脚</td>
-</tr>
-<tr>
-<td><code>&lt;col span=&quot;&quot;&gt;</code></td>
-<td>定义表格的列属性</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>页面效果：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;table border=&quot;1&quot; cellpadding=&quot;10&quot;&gt;      //border:表格边框</div><div class="line">    &lt;caption&gt;表格标题&lt;/caption&gt;           //cellpadding：单元格边距</div><div class="line">     &lt;tr&gt;                              //`&lt;caption&gt;`  表格的标题</div><div class="line">         &lt;th&gt;单元&lt;/th&gt;</div><div class="line">         &lt;th&gt;单元&lt;/th&gt;                  //`&lt;th&gt;`  表头，加粗效果</div><div class="line">         &lt;th&gt;单元&lt;/th&gt;</div><div class="line">    &lt;/tr&gt;</div><div class="line">    &lt;tr&gt;</div><div class="line">        &lt;td&gt;单元格1&lt;/td&gt;</div><div class="line">        &lt;td&gt;单元格2&lt;/td&gt;</div><div class="line">        &lt;td&gt;单元格3&lt;/td&gt;</div><div class="line">    &lt;/tr&gt;</div><div class="line">    &lt;tr&gt;</div><div class="line">        &lt;td&gt;单元格1&lt;/td&gt;</div><div class="line">        &lt;td&gt;单元格2&lt;/td&gt;</div><div class="line">        &lt;td&gt;单元格3&lt;/td&gt;</div><div class="line">    &lt;/tr&gt;</div><div class="line"></div><div class="line">&lt;/table&gt;</div></pre></td></tr></table></figure>
-<p><img src="http://ovebsbclw.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170831200326.png" alt="GitHub set up"><br><strong>表格内列表：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;table border=&quot;1&quot; cellspacing=&quot;10&quot;&gt;           // cellspacing: 单元格间距</div><div class="line">    &lt;caption&gt;表格标题&lt;/caption&gt;</div><div class="line">    &lt;tr&gt;</div><div class="line">        &lt;td&gt;单元格1&lt;/td&gt;</div><div class="line">        &lt;td&gt;单元格2&lt;/td&gt;</div><div class="line">        &lt;td&gt;单元格3&lt;/td&gt;</div><div class="line">    &lt;/tr&gt;</div><div class="line">    &lt;tr&gt;</div><div class="line">        &lt;td&gt;</div><div class="line">            &lt;ul&gt;</div><div class="line">                &lt;li&gt;L1&lt;/li&gt;</div><div class="line">                &lt;li&gt;L2&lt;/li&gt;              //&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;列表标签</div><div class="line">                &lt;li&gt;L3&lt;/li&gt;</div><div class="line">            &lt;/ul&gt;</div><div class="line">        &lt;/td&gt;</div><div class="line">        &lt;td&gt;单元格2&lt;/td&gt;</div><div class="line">        &lt;td&gt;单元格3&lt;/td&gt;</div><div class="line">    &lt;/tr&gt;</div><div class="line">&lt;/table&gt;</div></pre></td></tr></table></figure>
-<p><img src="http://ovebsbclw.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170831200450.png" alt="GitHub set up"></p>
-<h2 id="HTML列表"><a href="#HTML列表" class="headerlink" title="HTML列表"></a>HTML列表</h2><hr>
-<p><strong>标签：</strong></p>
-<table>
-<thead>
-<tr>
-<th><code>&lt;ol&gt;</code>有序列表</th>
-<th><code>&lt;ul&gt;</code>无序列表</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;li&gt;</code>列表项</td>
-<td><code>&lt;dl&gt;</code>列表</td>
-</tr>
-<tr>
-<td><code>&lt;dt&gt;</code>列表项</td>
-<td><code>&lt;dd&gt;</code>描述</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p>无序列表：</p>
-<blockquote>
-<p>使用标签：<code>&lt;ul&gt;</code>,<code>&lt;li&gt;</code><br>属性：<code>type</code>=”<code>disc</code>–实心圆;<code>circle</code>– 空心圆 ;<code>square</code>–实心方块”<br>列表也可横向排列 ，用CSS样式</p>
-</blockquote>
-</li>
-<li><p>有序列表：</p>
-<blockquote>
-<p>使用标签：<code>&lt;ol&gt;</code>,<code>&lt;li&gt;</code><br>属性<code>type</code>=”<code>A</code>–&gt;A,B,C,D ;<code>a</code>–&gt;a,b,c,d ; <code>I</code> –&gt;I,II,III,IV ;<code>i</code>–&gt; i,ii,iii,iv<br>默认为数字<code>start</code> 属性可以设置从几开始</p>
-</blockquote>
-</li>
-<li><p>嵌套列表：</p>
-<blockquote>
-<p>使用标签：<code>&lt;ul&gt;</code>,<code>&lt;ol&gt;</code>,<code>&lt;li&gt;</code><br><img src="http://ovebsbclw.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170902182616.png" alt="GitHub set up"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">    &lt;li&gt;宠物&lt;/li&gt;</div><div class="line">        &lt;ul&gt;</div><div class="line">            &lt;li&gt;猫&lt;/li&gt;             // &lt;ul&gt;无序列表嵌套</div><div class="line">            &lt;li&gt;狗&lt;/li&gt;</div><div class="line">        &lt;/ul&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>自定义列表：</p>
-<blockquote>
-<p>使用标签：<code>&lt;dl&gt;</code>,<code>&lt;dt&gt;</code>,<code>&lt;dd&gt;</code><br><img src="http://ovebsbclw.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170902183652.png" alt="GitHub set up"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;dl&gt;</div><div class="line">    &lt;dt&gt;helloworld&lt;/dt&gt;</div><div class="line">        &lt;dd&gt;描述helloworld&lt;/dd&gt;</div><div class="line">    &lt;dt&gt;helloworld&lt;/dt&gt;</div><div class="line">        &lt;dd&gt;描述helloworld&lt;/dd&gt;</div><div class="line">&lt;/dl&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-</li>
-</ul>
-<h2 id="HTML块"><a href="#HTML块" class="headerlink" title="HTML块"></a>HTML块</h2><hr>
-<ul>
-<li><p>块元素：</p>
-<blockquote>
-<p>块元素在显示时，通常以新行开始<br>例：<code>&lt;h1&gt;</code>,<code>&lt;p&gt;</code>,<code>&lt;ul&gt;</code>,<code>&lt;div&gt;</code><br><strong><code>&lt;div&gt;元素：</code></strong>布局，配合css使用,给div标签设置一个id属性，然后在css文件中设置div样式,在头文件中<code>&lt;link&gt;</code>引入css文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">.css中：</div><div class="line">#divid p&#123;</div><div class="line">    color:red;                 //设置id为divid的标签中的 p元素的颜色</div><div class="line">&#125;</div><div class="line"></div><div class="line">.html中：</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mycss.css&quot;&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">    &lt;div id=&quot;divid&quot;&gt;</div><div class="line">        &lt;p&gt;helloworld!&lt;/p&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>内联元素：</p>
-<blockquote>
-<p>内联元素通常不会以新行开始<br>例：<code>&lt;b&gt;</code>,<code>&lt;a&gt;</code>,<code>&lt;img&gt;</code>,<code>&lt;span&gt;</code><br><strong><code>&lt;span&gt;元素：</code></strong>是内联元素，可作为文本的容器,可在其中定义文字样式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">    span&#123;</div><div class="line">        color:red;</div><div class="line">    &#125;</div><div class="line">&lt;/stye&gt;</div><div class="line"></div><div class="line">&lt;div id=&quot;divspan&quot;&gt;</div><div class="line">      &lt;p&gt;&lt;span&gt;span效果&lt;/span&gt;这里没有span效果&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-</li>
-</ul>
-<h2 id="HTLM布局"><a href="#HTLM布局" class="headerlink" title="HTLM布局"></a>HTLM布局</h2><hr>
-<ul>
-<li><p>使用div布局</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">    &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;</div><div class="line">        /* margin 边距宽度 */</div><div class="line">        body&#123;</div><div class="line">            margin: 0px;</div><div class="line">        &#125;</div><div class="line">        /* width的值可以为百分比，但是height的值不能为百分比*/</div><div class="line">        div#container&#123;</div><div class="line">            width:100%;</div><div class="line">            height: 950px;</div><div class="line">            background-color: red;</div><div class="line">        &#125;</div><div class="line">        /* 此处的height能够定义成百分比是因为总div已经定义了高度 */</div><div class="line">        div#heading&#123;</div><div class="line">            width: 100%;</div><div class="line">            height: 10%;</div><div class="line">            background-color: aqua;</div><div class="line">        &#125;</div><div class="line">        /* 页面左半部分 float 设置浮动*/</div><div class="line">        div#content_menu&#123;</div><div class="line">            width: 30%;</div><div class="line">            height: 50%;</div><div class="line">            background-color: aquamarine;</div><div class="line">            float: left;</div><div class="line">        &#125;</div><div class="line">        /* 页面右半部分*/</div><div class="line">        div#content_body&#123;</div><div class="line">            width: 70%;</div><div class="line">            height: 50%;</div><div class="line">            background-color: blueviolet;</div><div class="line">            float: right;</div><div class="line">        &#125;</div><div class="line">        /* 页面底部，需要清除浮动 */</div><div class="line">        div#footing&#123;</div><div class="line">            width: 100%;</div><div class="line">            height: 40%;</div><div class="line">            background-color: black;</div><div class="line">            clear: both;</div><div class="line">        &#125;</div><div class="line">    &lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">    &lt;div id=&quot;container&quot;&gt;</div><div class="line">        &lt;div id=&quot;heading&quot;&gt;头部 &lt;/div&gt;</div><div class="line">        &lt;div id=&quot;content_menu&quot;&gt;内容左侧&lt;/div&gt;</div><div class="line">        &lt;div id=&quot;content_body&quot;&gt;内容右侧 &lt;/div&gt;</div><div class="line">        &lt;div id=&quot;footing&quot;&gt;底部 &lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>页面效果：<br><img src="http://ovebsbclw.bkt.clouddn.com/DIV%E5%B8%83%E5%B1%80.png" alt="GitHub set up"></p>
-</li>
-<li><p>使用table布局</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;body marginheight=&quot;0px&quot; marginwidth=&quot;0px&quot;&gt;</div><div class="line">    &lt;table width=&quot;100%&quot; height=&quot;950px&quot; style=&quot;background-color:blue&quot;&gt;</div><div class="line">        &lt;!-- colspan 两个单元格合并为一个--&gt;</div><div class="line">        &lt;tr&gt;</div><div class="line">            &lt;td colspan=&quot;2&quot; width=&quot;100%&quot; height=&quot;10%&quot; style=&quot;background-color:aqua&quot;&gt;头部&lt;/td&gt;</div><div class="line">        &lt;/tr&gt;</div><div class="line">        &lt;tr&gt;</div><div class="line">            &lt;td  width=&quot;30%&quot; height=&quot;50%&quot; style=&quot;background-color:blue&quot;&gt;左菜单&lt;/td&gt;</div><div class="line">            &lt;td  width=&quot;70%&quot; height=&quot;50%&quot; style=&quot;background-color:blueviolet&quot;&gt;右菜单&lt;/td&gt;</div><div class="line">        &lt;/tr&gt;</div><div class="line">        &lt;tr&gt;</div><div class="line">            &lt;td colspan=&quot;2&quot; width=&quot;100%&quot; height=&quot;40%&quot; style=&quot;background-color:darkcyan&quot;&gt;底部&lt;/td&gt;</div><div class="line">        &lt;/tr&gt;</div><div class="line">    &lt;/table&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>页面效果：<br><img src="http://ovebsbclw.bkt.clouddn.com/table.png" alt="GitHub set up"></p>
-</li>
-</ul>
+          HTML表格
 
-          
+标签：
+
+
+
+
+表格标签
+含义
+
+
+
+
+&lt;table&gt;&lt;/table&gt;
+定义表格
+
+
+&lt;caption&gt;&lt;/caption&gt;
+定义表格标题
+
+
+&lt;th&gt;&lt;/th&gt;
+定义表格表头
+
+
+&lt;tr&gt;&lt;/
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/31/HTML表格布局/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -668,158 +571,23 @@
       
         
           
-            <h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><hr>
-<ul>
-<li>在各个设备上适配</li>
-<li>搜索技术</li>
-<li>网站性能优化</li>
-<li>要学习内容 <code>HTML5</code> , <code>XHTML</code> ,  <code>CSS3</code> ,  <code>JavaScript</code> ,   <code>jQuery-UI</code> ,   <code>jQuery-Mobile</code></li>
-<li>HTML :描述网页语言;超文本标记语言; 不是编程语言，是一种标记语言，与C++不相通</li>
-</ul>
-<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><hr>
-<p><strong>HTML5的优点:</strong></p>
-<ol>
-<li>跨平台       PC 手机  Linux</li>
-<li>硬件要求低</li>
-<li>flash之外的选择     尤其是手机端</li>
-<li>HTML5  ：用于绘画canvas 标签；媒体 video  audio元素；本地离线储存；</li>
-</ol>
-<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><hr>
-<ul>
-<li><p>新建项目：Create New Project—&gt;Static web—&gt;HelloWord</p>
-<pre><code>新建页面：New--&gt;HTML File--&gt;index
-</code></pre></li>
-<li><p>设置快捷键： Preferences(Setting)–Keymap  快捷键列表</p>
-<pre><code>(代码补全 ：Alt+/)   (代码上移或下移：Alt+上下)
-(代码快速复制：Alt+Ctrl+上下)   (删除一行：Ctrl+D)
-</code></pre></li>
-<li><p>js文件  引用:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"   "</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>声明：&lt;!DOCTYPE&gt;</p>
-<pre><code>HTML5:  &lt;!DOCTYPE html&gt;     声明代表是HTML5版本
-</code></pre></li>
-<li>元素：从开始标签到结束标签的所有代码</li>
-</ul>
-<h3 id="标签："><a href="#标签：" class="headerlink" title="标签："></a>标签：</h3><hr>
-<ul>
-<li><p>头标记：</p>
-<blockquote>
-<pre><code> &lt;head&gt;&lt;/head&gt;
-编码格式： &lt;meta charset=&quot;UTF-8&quot;&gt;
-标题：&lt;title&gt;网页标题&lt;/title&gt;
-引用CSS样式：&lt;style type=&quot;text/css &quot;&gt;&lt;/style&gt; (样式定义)
-`&lt;link&gt;`:资源引用
-</code></pre></blockquote>
-</li>
-<li><p>body：</p>
-<blockquote>
-<pre><code>&lt;body&gt;&lt;/body&gt;
-HTML标题: `&lt;h1&gt;`...`&lt;h6&gt;`
-段落标记(另起)：&lt;p&gt;&lt;/p&gt;
-超链接：&lt;a href=&quot;http://www.baidu.com&quot;&gt;百度&lt;/a&gt;
-图像标记：&lt;img src=&quot;images/html.png&quot;&gt;&lt;/img&gt;
-空标签：&lt;br/&gt;  换行
-文字从左向右输出：`&lt;bdo dir=&quot;rtl&quot;&gt;`内容`&lt;/bdo&gt;`
-空格：&amp;nbsp
-</code></pre></blockquote>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;b&gt;&lt;/b&gt;</code>   定义粗体文字</td>
-<td><code>&lt;big&gt;&lt;/big&gt;</code>   定义大号字</td>
-</tr>
-<tr>
-<td><code>&lt;em&gt;&lt;/em&gt;</code>   定义着重文字</td>
-<td><code>&lt;i&gt;&lt;/i&gt;</code>   定义斜体字</td>
-</tr>
-<tr>
-<td><code>&lt;small&gt;&lt;/small&gt;</code>   定义小号字</td>
-<td><code>&lt;strong&gt;&lt;/strong&gt;</code>   定义加重语气</td>
-</tr>
-<tr>
-<td><code>&lt;sub&gt;&lt;/sub&gt;</code>   定义下标字</td>
-<td><code>&lt;sup&gt;&lt;/sup&gt;</code>   定义上标字</td>
-</tr>
-<tr>
-<td><code>&lt;ins&gt;&lt;/ins&gt;</code>   定义插入字</td>
-<td><code>&lt;del&gt;&lt;/del&gt;</code>   定义删除字</td>
-</tr>
-</tbody>
-</table>
-<h3 id="属性："><a href="#属性：" class="headerlink" title="属性："></a>属性：</h3><hr>
-<ul>
-<li>常用属性(以键值对形式出现)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><code>&lt;body&gt;</code>bgcolor:背景颜色</th>
-<th><code>&lt;body&gt;</code>background:背景图片</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;h1&gt;</code>align:对齐方式(默认居左)</td>
-<td><code>&lt;a&gt;</code>target :在何处打开链接(是否覆盖原页面)</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>通用标签属性：<pre><code>id :规定元素唯一ID  (后期引用要使用)    class:规定元素类名
-style:规定元素样式(引用外部文件)         title:规定元素额外信息
-rel=&quot;stylesheet&quot;:外部样式表          margin-left:边距
-</code></pre></li>
-</ul>
-<h3 id="HTML样式"><a href="#HTML样式" class="headerlink" title="HTML样式"></a>HTML样式</h3><hr>
-<p><strong>三种样式表插入方法：</strong></p>
-<ul>
-<li><p>外部样式：<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;</code></p>
-<blockquote>
-<p>需要一个外部文件.css，用rel 属性引入外部表，type 文件类型，href文件地址<br>.css文件中写想要改变的样式,例：     然后再.html文件中引入<link></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">h1&#123;</div><div class="line">color : red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>内部样式表：</p>
-<blockquote>
-<p>直接在头标记中写入样式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">   body &#123; background-color:red&#125;</div><div class="line">   p &#123; margin-left:20px&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>内敛样式表：<code>&lt;p style=&quot;color:red&quot;&gt;</code></p>
-<blockquote>
-<p>直接在标签内部改变样式</p>
-</blockquote>
-</li>
-</ul>
-<p><strong>注：</strong> 建议将样式引用放在头文件中</p>
-<h3 id="HTML链接"><a href="#HTML链接" class="headerlink" title="HTML链接"></a>HTML链接</h3><hr>
-<ul>
-<li><p>链接分为<code>文字链接</code>和<code>图片链接</code></p>
-<blockquote>
-<p>href：指向另一个文档链接<br>图片链接：点击图片跳转到另一个页面   <code>alt=&quot;html5logo&quot;</code>给图片内容，当图片无法显示时会显示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;http://www.baidu.com&quot;&gt;</div><div class="line">        &lt;img src=&quot;html.png&quot;</div><div class="line">        width=&quot;100px&quot;</div><div class="line">        height=&quot;100px&quot; alt=&quot;html5logo&quot;&gt;</div><div class="line">&lt;/a&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>文档内跳转链接   例如：<code>回到顶部</code></p>
-<blockquote>
-<hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;a name=&quot;tips&quot;&gt;</div><div class="line">hello&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#tips&quot;&gt;</div><div class="line">跳转到hello&lt;/a&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-</li>
-</ul>
-<h3 id="HTML-中有用的字符实体"><a href="#HTML-中有用的字符实体" class="headerlink" title="HTML 中有用的字符实体"></a>HTML 中有用的字符实体</h3><hr>
-<p><img src="http://ovebsbclw.bkt.clouddn.com/6.png" alt="GitHub set up"></p>
+          前端
 
-          
+在各个设备上适配
+搜索技术
+网站性能优化
+要学习内容 HTML5 , XHTML ,  CSS3 ,  JavaScript ,   jQuery-UI ,   jQuery-Mobile
+HTML :描述网页语言;超文本标记语言; 不是编程语言，是一种标记语言，与C++不相通
+
+HTML5
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/31/关于前端的笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -959,134 +727,18 @@ rel=&quot;stylesheet&quot;:外部样式表          margin-left:边距
       
         
           
-            <blockquote>
-<p>读《金字塔原理》</p>
-</blockquote>
-<p><strong>作者简介：</strong>芭芭拉•明托，麦肯锡公司第一位女性咨询顾问。明托是哈佛商学院录取的第二批女学员之一，毕业时被国际知名管理咨询公司——麦肯锡聘请为该公司有史以来的第一位女性咨询顾问。她在写作方面的优势很快得到麦肯锡高层的赏识，负责提高麦肯锡公司员工的写作能力，致力于探索条理清晰的文章所必需的思维结构。本书在1973年首次出版，当即引起轰动，畅销欧美市场30年不衰，书中传授的方式与技巧，被公认为即便对于最有经验的管理者来说也是十分关键的</p>
-<h2 id="表达的逻辑"><a href="#表达的逻辑" class="headerlink" title="表达的逻辑"></a>表达的逻辑</h2><h3 id="为什么要用金字塔结构"><a href="#为什么要用金字塔结构" class="headerlink" title="为什么要用金字塔结构"></a>为什么要用金字塔结构</h3><p>文章中的思想必须符合以下规则：</p>
-<ul>
-<li>纵向：文章中任一层次上的思想必须是其下一层次思想的概括</li>
-<li>横向：每组中的思想必须属于同一逻辑范畴</li>
-<li>横向：每组中的思想必须按逻辑顺序组织</li>
-</ul>
-<p>组织思想基本上只可能有4种逻辑顺序：</p>
-<ul>
-<li>演绎顺序：大前提、小前提、结论</li>
-<li>时间顺序：第一、第二、第三</li>
-<li>结构顺序：波士顿、纽约、华盛顿</li>
-<li>程度顺序：最重要、次重要、等等</li>
-</ul>
-<h3 id="金字塔内部的结构"><a href="#金字塔内部的结构" class="headerlink" title="金字塔内部的结构"></a>金字塔内部的结构</h3><p>利用金字塔中的子结构，能够加快你梳理思想的过程：</p>
-<ul>
-<li>主题与子主题之间的纵向关系</li>
-<li>各子主题之间的横向关系</li>
-<li>序言的叙述方式</li>
-<li>如何构建金字塔</li>
-</ul>
-<p>自上而下法构建金字塔的步骤：</p>
-<ul>
-<li>提出主题思想</li>
-<li>设想受众的主要疑问</li>
-<li>写序言：背景-冲突-疑问-回答</li>
-<li>与受众进行疑问/回答式对话</li>
-<li>对受众的新疑问，重复进行疑问/回答式对话</li>
-</ul>
-<p>自下而上思考：</p>
-<blockquote>
-<ul>
-<li>列出你想表达的所有思想要点</li>
-<li>找出各要点之间的逻辑关系</li>
-<li>得出结论</li>
-</ul>
-</blockquote>
-<h3 id="序言的具体写法"><a href="#序言的具体写法" class="headerlink" title="序言的具体写法"></a>序言的具体写法</h3><p>文章的序言（前言、引言、导言）概括读者已知的信息，并将这些信息与文章将要回答的疑问建立联系，然后作者就可以将全部精力放在提供回答疑问的答案上。如果是写文章，就是“序言”；如果是演讲，就是“开场白”。</p>
-<p>文章的序言必须用讲故事的形式，也就是说，序言必须先介绍读者熟悉的某些“背景”，说明发生的“冲突”，并由此引发读者的“疑问”，然后针对该“疑问”给出“答案”。这种讲故事的形式对于组织读者已知的信息非常有用。你一旦掌握了这种方法，就能够迅速构思出较短文章的结构。</p>
-<p>之所以序言要用讲故事形式，是为了让读者抛开复杂的思想，专注于你的话题。激发读者兴趣，吸引注意力：新奇、悬念、与读者本人相关。</p>
-<p>序言应当介绍4要素：</p>
-<ul>
-<li>介绍背景</li>
-<li>指出冲突</li>
-<li>引发疑问</li>
-<li>给出答案</li>
-</ul>
-<h3 id="演绎推理与归纳推理"><a href="#演绎推理与归纳推理" class="headerlink" title="演绎推理与归纳推理"></a>演绎推理与归纳推理</h3><p>演绎是一种线性的推理方式，最终是为了得出一个由逻辑词“因此”引出的结论。归纳推理是将一组具有共同点的事实、思想或观点归类分组，并概括其共同性或论点。在演绎过程中，每个思想均由前一个思想导出；而在归纳过程中则不存在这种关系。</p>
-<p>演绎推理非常繁琐，主要是因为演绎推理必须从简单明了的思想推导出复杂的思想，所以在写作过程中不要过多的使用演绎推理。而归纳与此相反，归纳法先说明如何做到，然后再详细阐述为什么，在实际情况中，归纳法往往效果更好，这是因为先说明行动，后说明原因，而读者往往最关心的就是那些行动。</p>
-<p>如果把文章想象成金字塔的多层级结构，那么在较低的层次上使用演绎推理是可以的，但是在较高的层次上，归纳法总是比演绎法更容易理解，为什么这样讲？如果读者必须读完十几页，才能找到演绎推理的第一步和第二步之间的关系，又必须再读十几页才能找到第二步和第三步之间的关系，那么读者就无法快速理解这次演绎推理。</p>
-<p>如果准备在金字塔结构的较低层次上使用演绎推理，需要注意如下两点</p>
-<ul>
-<li>演绎推理的过程不要超过4个步骤</li>
-<li>推导出的结论不要超过两个</li>
-</ul>
-<p>演绎推理需要完成3个步骤</p>
-<ul>
-<li>阐述世界上已存在的某种情况</li>
-<li>阐述世界上同时存在的相关情况。如果第二个表述是针对第一个表述的主语或谓语的，则说明这两个表述相关</li>
-<li>说明这两种情况同时存在时隐含的意义</li>
-</ul>
-<p>演绎推理与归纳推理的区别</p>
-<blockquote>
-<ul>
-<li>演绎推理，第二点是对第一点主语或谓语的论述</li>
-<li>归纳推理，同组中的思想具有类似的主语或谓语</li>
-</ul>
-</blockquote>
-<h3 id="思考的逻辑"><a href="#思考的逻辑" class="headerlink" title="思考的逻辑"></a>思考的逻辑</h3><p>应用逻辑顺序</p>
-<p>所有列入同一组中的思想必须具有某种逻辑顺序，这条规则可以保证你列入同一组中的思想确实属于这一组，还可以防止你遗漏任何相关的思想。常用的顺序主要有三种：时间顺序、结构顺序、程度顺序。</p>
-<p>概括各组思想</p>
-<p>思想的表达方式可以是行动性语句，即告诉读者做什么事；也可以是描述性语句，即告诉读者关于某些事的情况。</p>
-<ul>
-<li>概括行动性思想（介绍采取的行动、行为、步骤、流程）时，应说明采取行动后取得的“结果”（效果、达到的目标）</li>
-<li>概括描述性思想（介绍背景、信息）时，应说明这些思想具有的“共同点的含义”（共同点的意义）</li>
-</ul>
-<h3 id="解决问题的逻辑"><a href="#解决问题的逻辑" class="headerlink" title="解决问题的逻辑"></a>解决问题的逻辑</h3><h4 id="界定问题"><a href="#界定问题" class="headerlink" title="界定问题"></a>界定问题</h4><p>判断问题是否存在，通常要看经过努力得到的结果与希望得到的结果之间是否有差距。由某一特定背景导致的某一特定结果，称为非预期结果（R1，Undesired Result）。“问题”是指你不喜欢某一结果，想得到其他结果，称为期望结果（R2，Desired Result）。解决方案则是指如何从现状R1到目标R2。</p>
-<h4 id="结构化分析问题"><a href="#结构化分析问题" class="headerlink" title="结构化分析问题"></a>结构化分析问题</h4><p>分析问题的标准流程是：收集信息-&gt;描述发现-&gt;得出结论-&gt;提出方案。经过一系列有意识、有条理地去收集事实，得出符合逻辑的发现。但是多数人都是收集该领域一切可以收集到的资料，等所有事实和资料齐备时才正式开始分析。这种做法可行，但是需要付出额外的辛苦，比较好的方法是建立诊断框架和逻辑树指导，来分析和引导思维，不仅能提高解决问题的效率，而且简化了把结果构建成金字塔的工作。</p>
-<p>结构化分析问题的方法主要是</p>
-<ul>
-<li>从信息资料入手</li>
-<li>设计诊断框架</li>
-<li>使用诊断框架</li>
-<li>建立逻辑树</li>
-<li>是非问题分析</li>
-</ul>
-<h3 id="演示的逻辑"><a href="#演示的逻辑" class="headerlink" title="演示的逻辑"></a>演示的逻辑</h3><p>在纸面上或屏幕上展示你的思想时，无论采用何种形式，在视觉上，你都需要确保能加强组成金字塔的思想之间的逻辑性和它们之间的相互关系。读者或观众总是先看到逻辑关系的存在，然后才能理解它。因此你要用读者眼睛所看到的来强化她们的头脑所接收的。</p>
-<h4 id="在书面上呈现金字塔"><a href="#在书面上呈现金字塔" class="headerlink" title="在书面上呈现金字塔"></a>在书面上呈现金字塔</h4><p>一般来说，文章较短，读者很容易明白文中的要点及其相互之间的关系。而对于长文，要突出显示文章的框架结构，在页面上呈现出金字塔层级，常见的方法很多，如下所示：</p>
-<ul>
-<li>多级标题法</li>
-<li>下划线法</li>
-<li>数字编号法</li>
-<li>行首缩进法</li>
-<li>项目符号法</li>
-</ul>
-<p>另一个注意点是文章的上下文之间要有过渡，在写完序言后，进入文章正文，需要一段简短的文字，在每组主要思想观点开始或结束的地方稍作铺垫，让读者知道已经论述的和下一步计划论述的内容，同时保证论点和论点之间的连接流畅且不机械。</p>
-<h4 id="在PPT演示文稿中呈现金字塔"><a href="#在PPT演示文稿中呈现金字塔" class="headerlink" title="在PPT演示文稿中呈现金字塔"></a>在PPT演示文稿中呈现金字塔</h4><p>设计PPT演示文稿的最基本原则</p>
-<blockquote>
-<ul>
-<li>文字幻灯片应只包含最重要的、经过适当分组和总结的思想，叙述时应尽量简洁</li>
-<li>演示文稿应图文并茂，使用各种图表相配合</li>
-<li>演示文稿应呈现经过深思熟虑后的故事梗概和剧本</li>
-<li>演示文稿中，理想的图表比例占90%，文字占10%</li>
-</ul>
-</blockquote>
-<p>制作现场演示用的文字幻灯片时，需要强调的是，只有你，演示者，才是表演的明星。房间里所有听众最感兴趣的不是幻灯片，而是你。幻灯片只不过是视觉上的辅助手段，其作用主要是让演示更加生动。</p>
-<p>决定一张幻灯片的内容，应牢记以下指导性原则</p>
-<ul>
-<li>每次只演示和说明一个论点</li>
-<li>论点应使用完整的陈述句，而不是标题性语言</li>
-<li><strong>文字应尽量简短</strong></li>
-<li>使用简单的词汇和数字</li>
-<li>字号应足够大</li>
-<li>注意幻灯片的趣味性</li>
-<li>用逐级展开呈现，提高趣味性</li>
-</ul>
-<h3 id="在字里行间呈现金字塔"><a href="#在字里行间呈现金字塔" class="headerlink" title="在字里行间呈现金字塔"></a>在字里行间呈现金字塔</h3><p>在理解每个字词的时候，你的头脑中应该逐步描绘出一幅思想图画。当你理解一个又一个的短语和句子时，图画的细节变得更加丰富。你所描绘的图像不是摄影意义上的图像，而是作者所说的“记忆图像”，随着文章的进展而逐渐清晰起来。有关记忆的研究已经证明图像能帮助增加记忆，但同时也表明，忘记和添加哪些细节取决于人们的感情偏好。尽管如此，记忆图像确实能在阅读过程中，帮助你逐字逐句记忆段落和从中提取信息。</p>
-<p>以图像形式存储知识非常重要，因为阅读是一个逐字逐句进行的过程，而且我们的头脑只能容纳有限的词汇。通过从文字恢复图像的方法，读者不仅能大量传递知识，使头脑更加有效地处理，而且能用清晰的图像传递信息，便于回忆。</p>
-<p>引用威廉·明托教授的一段话来阐释作者与读者或者说听众的关系</p>
-<blockquote>
-<p>写作时，你好像一位司令官，指挥着千军万马，排队通过一个每次只能通过一个人的狭隘关口；而你的读者则在另一边迎接，将部队进行重新编排和组织。无论主题多么大或者多么复杂，你只能以这种方式表达。</p>
-<p>最终你会发现，这就是我们在顺序和编排上对读者应尽的义务，以及为什么修辞学者们除了强调修辞得体和别出心裁外，还把顺序和编排当作对那些给予自己厚爱的人的应尽职责。</p>
-</blockquote>
-
           
+读《金字塔原理》
+
+作者简介：芭芭拉•明托，麦肯锡公司第一位女性咨询顾问。明托是哈佛商学院录取的第二批女学员之一，毕业时被国际知名管理咨询公司——麦肯锡聘请为该公司有史以来的第一位女性咨询顾问。她在写作方面的优势很快得到麦肯锡高层的赏识，负责提高麦肯锡公司员工的写作能力，致力于探索条理清晰的文章所
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/30/测试/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1226,24 +878,21 @@ rel=&quot;stylesheet&quot;:外部样式表          margin-left:边距
       
         
           
-            <h2 id="搭建博客网站"><a href="#搭建博客网站" class="headerlink" title="搭建博客网站"></a>搭建博客网站</h2><p><em>（这可能是在只有我自己才能看懂的笔记(●’◡’●)）</em></p>
-<h4 id="安装-Node-和-Git"><a href="#安装-Node-和-Git" class="headerlink" title="安装 Node 和 Git"></a>安装 Node 和 Git</h4><h4 id="注册-GitHub-账号"><a href="#注册-GitHub-账号" class="headerlink" title="注册 GitHub 账号"></a>注册 GitHub 账号</h4><ul>
-<li>获取 SSH Keys，配置到 config.yml 文件中。</li>
-</ul>
-<h4 id="新建网站文件夹"><a href="#新建网站文件夹" class="headerlink" title="新建网站文件夹"></a>新建网站文件夹</h4><h4 id="运行命令（在桌面右击鼠标Git-Bash-Here）"><a href="#运行命令（在桌面右击鼠标Git-Bash-Here）" class="headerlink" title="运行命令（在桌面右击鼠标Git Bash Here）"></a>运行命令（在桌面右击鼠标Git Bash Here）</h4><ul>
-<li>node -v  (检测node是否成功）</li>
-<li>git version （检测git版本）</li>
-<li>npm install -g hexo （安装hexo）</li>
-<li>hexo -v （hexo组件检测）</li>
-</ul>
-<h4 id="文件夹右击-执行命令"><a href="#文件夹右击-执行命令" class="headerlink" title="文件夹右击 执行命令"></a>文件夹右击 执行命令</h4><hr>
-<blockquote>
-<p>hexo init （克隆hexo到⾃⼰博客⽂件夹）<br>hexo s （开启本地调试模式）<br>npm install hexo-deployer-git –save<br>ssh-keygen -t rsa -C “986211552@qq.com”   生成密钥  ，复制到GitHub中</p>
-<p>git config –global user.name “dellcorsair” （换成⾃⼰GitHub账户）<br>git config –global user.email “986211552@qq.com” （自己邮箱）<br>ssh -T git@github.com （和GitHub存储仓库的链接测试）<br>git config –list （再次查看配置是否正确）<br>最后发布：hexo clean &amp;&amp; hexo g -d</p>
-</blockquote>
-<h2 id="7牛-图片生成外链"><a href="#7牛-图片生成外链" class="headerlink" title="7牛 图片生成外链"></a>7牛 图片生成外链</h2><p><img src="http://ovebsbclw.bkt.clouddn.com/u=2558454129,2390992329&amp;fm=21&amp;gp=0%5B1%5D.jpg" alt="GitHub set up"></p>
+          搭建博客网站（这可能是在只有我自己才能看懂的笔记(●’◡’●)）
+安装 Node 和 Git注册 GitHub 账号
+获取 SSH Keys，配置到 config.yml 文件中。
 
-          
+新建网站文件夹运行命令（在桌面右击鼠标Git Bash Here）
+node -v  (检测node是否成功）
+gi
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/30/第一篇博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1361,17 +1010,15 @@ rel=&quot;stylesheet&quot;:外部样式表          margin-left:边距
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/29/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1501,7 +1148,7 @@ rel=&quot;stylesheet&quot;:外部样式表          margin-left:边距
           <div class="links-of-blogroll motion-element links-of-blogroll-inline">
             <div class="links-of-blogroll-title">
               <i class="fa  fa-fw fa-globe"></i>
-              友情链接
+              戳一戳
             </div>
             <ul class="links-of-blogroll-list">
               
@@ -1734,7 +1381,7 @@ rel=&quot;stylesheet&quot;:外部样式表          margin-left:边距
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
