@@ -305,6 +305,167 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/06/中软大前端0306-table/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/06/中软大前端0306-table/" itemprop="url">中软大前端0306-table</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-06T09:02:27+08:00">
+                2018-03-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><ul>
+<li><code>&lt;thead&gt;&lt;/thead&gt;</code> 头部</li>
+<li><code>&lt;tbody&gt;&lt;/tbody&gt;</code> 主体</li>
+<li><p><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> 底部</p>
+</li>
+<li><p><code>&lt;table&gt;&lt;/table&gt;</code> 表格<br>cellspacing：单元格间的间距<br>cellpadding：单元格内的留白<br>width：表格宽度</p>
+</li>
+<li><p><code>&lt;th&gt;&lt;/th&gt;</code> 表头</p>
+</li>
+<li><code>&lt;tr&gt;&lt;/tr&gt;</code> 行</li>
+<li><code>&lt;td&gt;&lt;/td&gt;</code> 列</li>
+<li><code>&lt;caption&gt;&lt;/caption&gt;</code> 表标题</li>
+</ul>
+<h2 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h2><p>rowspan 合并行<br>colspan 合并列</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;table border=&quot;1px&quot; cellspacing=&quot;0px&quot; cellpadding=&quot;5px&quot; width=&quot;400px&quot;&gt; </div><div class="line">			&lt;tr&gt;&lt;th&gt;组别&lt;/th&gt;&lt;th&gt;组名&lt;/th&gt;&lt;th&gt;组长&lt;/th&gt;&lt;th&gt;成员&lt;/th&gt;&lt;th&gt;备注&lt;/th&gt;&lt;/tr&gt;</div><div class="line">			&lt;tr&gt;</div><div class="line">				&lt;td rowspan=&quot;5&quot;&gt;第一组&lt;/td&gt;</div><div class="line">				&lt;td rowspan=&quot;5&quot;&gt;EMM&lt;/td&gt;</div><div class="line">				&lt;td rowspan=&quot;5&quot;&gt;zxx&lt;/td&gt;</div><div class="line">				&lt;td&gt;cy1&lt;/td&gt;&lt;td&gt;备注&lt;/td&gt;</div><div class="line">			&lt;/tr&gt;</div><div class="line">			&lt;tr&gt;&lt;td&gt;cy2&lt;/td&gt;&lt;td&gt;备注&lt;/td&gt;&lt;/tr&gt;</div><div class="line">			&lt;tr&gt;&lt;td&gt;cy3&lt;/td&gt;&lt;td&gt;备注&lt;/td&gt;&lt;/tr&gt;</div><div class="line">			&lt;tr&gt;&lt;td&gt;cy4&lt;/td&gt;&lt;td&gt;备注&lt;/td&gt;&lt;/tr&gt;</div><div class="line">			&lt;tr&gt;&lt;td&gt;cy5&lt;/td&gt;&lt;td&gt;备注&lt;/td&gt;&lt;/tr&gt;</div><div class="line">			&lt;tr&gt;&lt;td&gt;评价&lt;/td&gt;&lt;td colspan=&quot;4&quot;&gt;。。&lt;/td&gt;&lt;/tr&gt;</div><div class="line">		&lt;/table&gt;</div></pre></td></tr></table></figure>
+<p><img src="http://ovebsbclw.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720180306102448.png" alt="GitHUb set up"></p>
+<h2 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h2><p><code>&lt;colgroup&gt;
+    &lt;col id=&quot;col3&quot; span=&quot;2&quot; /&gt;
+    &lt;col id=&quot;other&quot; span=&quot;2&quot; /&gt;
+&lt;/colgroup&gt;</code></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/05/中软大前端体验0105-bootstrap/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -545,7 +706,8 @@
 <li>属性值text：文本类型</li>
 <li>属性值password：密码，输入字符显示为点或*</li>
 <li>属性值button：按钮类型</li>
-<li>属性值radio：单选框，name值要一致
+<li>属性值radio：单选框，name值要一致</li>
+<li>属性值file: 上传文件
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/01/04/中软大前端体验0104-form表单/#more" rel="contents">
@@ -1634,158 +1796,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/27/设置next主题透明度/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/27/设置next主题透明度/" itemprop="url">设置next-Pisces主题透明度</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-27T20:12:17+08:00">
-                2017-10-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Study/" itemprop="url" rel="index">
-                    <span itemprop="name">Study</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="调整Pisces主题内容版块的透明度"><a href="#调整Pisces主题内容版块的透明度" class="headerlink" title="调整Pisces主题内容版块的透明度"></a>调整Pisces主题内容版块的透明度</h2><p>在<code>\themes\next\source\css\_schemes\Pisces\_layout.styl</code>目录下，修改<code>.content-wrap</code>中的内容，添加<code>opacity</code>属性：<br><img src="http://ovebsbclw.bkt.clouddn.com/jt6.PNG" alt="GitHub set up"></p>
-<h2 id="调整Pisces主题侧边栏的透明度"><a href="#调整Pisces主题侧边栏的透明度" class="headerlink" title="调整Pisces主题侧边栏的透明度"></a>调整Pisces主题侧边栏的透明度</h2><p>在<code>\themes\next\source\css\_schemes\Pisces\_layout.styl</code>目录下，修改<code>.sidebar</code>中的内容，添加<code>opacity</code>属性：<br><img src="http://ovebsbclw.bkt.clouddn.com/jt5.PNG" alt="GitHub set up"><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/27/设置next主题透明度/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1833,7 +1848,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
