@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="Javascript  JavaScript 使 HTML 页面具有更强的动态和交互性。  JavaScript 语法： 语句的分隔是分号（;） 有时分号也可不写。 按照编写顺序依次执行; javascript对大小写敏感; javascript会忽略多余的空格;  JavaScript 数据类型 字符串（String） 数字（Number） 布尔（Boolean） 数组（Array） 对象（Ob">
+<meta name="description" content="Javascript  JavaScript 使 HTML 页面具有更强的动态和交互性。  JavaScript 语法： 语句的分隔是分号（;） 有时分号也可不写。 按照编写顺序依次执行; javascript对大小写敏感; javascript会忽略多余的空格;  JavaScript组成 ECMAScript(核心) DOM(文档对象模型) BOM(浏览器对象模型)  JavaScript 数">
 <meta name="keywords" content="Read">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Javascript学习">
 <meta property="og:url" content="http://yoursite.com/2017/09/07/Javascript学习/index.html">
 <meta property="og:site_name" content="Lyz的博客">
-<meta property="og:description" content="Javascript  JavaScript 使 HTML 页面具有更强的动态和交互性。  JavaScript 语法： 语句的分隔是分号（;） 有时分号也可不写。 按照编写顺序依次执行; javascript对大小写敏感; javascript会忽略多余的空格;  JavaScript 数据类型 字符串（String） 数字（Number） 布尔（Boolean） 数组（Array） 对象（Ob">
+<meta property="og:description" content="Javascript  JavaScript 使 HTML 页面具有更强的动态和交互性。  JavaScript 语法： 语句的分隔是分号（;） 有时分号也可不写。 按照编写顺序依次执行; javascript对大小写敏感; javascript会忽略多余的空格;  JavaScript组成 ECMAScript(核心) DOM(文档对象模型) BOM(浏览器对象模型)  JavaScript 数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-04T10:11:35.995Z">
+<meta property="og:updated_time" content="2018-03-09T07:23:51.373Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript学习">
-<meta name="twitter:description" content="Javascript  JavaScript 使 HTML 页面具有更强的动态和交互性。  JavaScript 语法： 语句的分隔是分号（;） 有时分号也可不写。 按照编写顺序依次执行; javascript对大小写敏感; javascript会忽略多余的空格;  JavaScript 数据类型 字符串（String） 数字（Number） 布尔（Boolean） 数组（Array） 对象（Ob">
+<meta name="twitter:description" content="Javascript  JavaScript 使 HTML 页面具有更强的动态和交互性。  JavaScript 语法： 语句的分隔是分号（;） 有时分号也可不写。 按照编写顺序依次执行; javascript对大小写敏感; javascript会忽略多余的空格;  JavaScript组成 ECMAScript(核心) DOM(文档对象模型) BOM(浏览器对象模型)  JavaScript 数">
 
 
 
@@ -408,6 +408,11 @@
 <li>javascript对大小写敏感;</li>
 <li>javascript会忽略多余的空格;</li>
 </ul>
+<h3 id="JavaScript组成"><a href="#JavaScript组成" class="headerlink" title="JavaScript组成"></a>JavaScript组成</h3><ul>
+<li>ECMAScript(核心)</li>
+<li>DOM(文档对象模型)</li>
+<li>BOM(浏览器对象模型)</li>
+</ul>
 <h3 id="JavaScript-数据类型"><a href="#JavaScript-数据类型" class="headerlink" title="JavaScript 数据类型"></a>JavaScript 数据类型</h3><ul>
 <li>字符串（String）</li>
 <li>数字（Number）</li>
@@ -417,6 +422,7 @@
 <li>空（null）<br>可通过赋值为null的方式清除变量<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var string =&quot;hello&quot;;</div><div class="line">var num =10;</div><div class="line">var flag =true;</div><div class="line">var arr=[1,2,3,4];</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<h3 id="变量命名"><a href="#变量命名" class="headerlink" title="变量命名"></a>变量命名</h3><p>驼峰命名法：第一个单词全部小写从第二个单词开始首字母大写</p>
 <h3 id="引用外部js文件"><a href="#引用外部js文件" class="headerlink" title="引用外部js文件"></a>引用外部js文件</h3><p>在<code>script</code>标签中的<code>src</code>属性中引入js文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;zdy.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <h3 id="内部js编码"><a href="#内部js编码" class="headerlink" title="内部js编码"></a>内部js编码</h3><ul>
@@ -435,6 +441,12 @@
 <blockquote>
 <p>如果浏览器压根没法识别 <code>&lt;script&gt;</code> 标签，那么 <code>&lt;script&gt;</code> 标签所包含的内容将以文本方式显示在页面上,可以将脚本隐藏在注释标签当中</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">&lt;!--</div><div class="line">document.write(&quot;Hello World!&quot;)</div><div class="line">//--&gt;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>行内样式：HTML标签中引入JavaScript</p>
+<blockquote>
+<p>onclick=”javascript:alert(‘JS欢迎你’)”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;button&quot; name=&quot;btn&quot; value=&quot;点击一下&quot; onclick=&quot;javascript:alert(&apos;JS欢迎你&apos;)&quot; /&gt;</div></pre></td></tr></table></figure>
 </blockquote>
 </li>
 </ul>
@@ -466,6 +478,11 @@
 <li>history.bank();  退回到上一个页面</li>
 <li>history.forward(); 前进</li>
 <li>history.go();进入历史中某个页面</li>
+</ul>
+<h2 id="弹出文本框"><a href="#弹出文本框" class="headerlink" title="弹出文本框"></a>弹出文本框</h2><ul>
+<li>alert(“你好！”)—弹出信息，只有确定按钮</li>
+<li>prompt(“提示信息”,”输入框的默认信息”)—有输入框</li>
+<li>confirm(“确定要删除此条信息？”)—弹出信息，有确认和取消按钮。该语句会返回boolean类型值</li>
 </ul>
 
       
@@ -683,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Javascript"><span class="nav-number">1.</span> <span class="nav-text">Javascript</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript-语法："><span class="nav-number">1.1.</span> <span class="nav-text">JavaScript 语法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript-数据类型"><span class="nav-number">1.2.</span> <span class="nav-text">JavaScript 数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用外部js文件"><span class="nav-number">1.3.</span> <span class="nav-text">引用外部js文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内部js编码"><span class="nav-number">1.4.</span> <span class="nav-text">内部js编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件"><span class="nav-number">1.5.</span> <span class="nav-text">事件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javaScript-函数"><span class="nav-number">2.</span> <span class="nav-text">javaScript 函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数调用"><span class="nav-number">2.1.</span> <span class="nav-text">函数调用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#history对象"><span class="nav-number">3.</span> <span class="nav-text">history对象</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Javascript"><span class="nav-number">1.</span> <span class="nav-text">Javascript</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript-语法："><span class="nav-number">1.1.</span> <span class="nav-text">JavaScript 语法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript组成"><span class="nav-number">1.2.</span> <span class="nav-text">JavaScript组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript-数据类型"><span class="nav-number">1.3.</span> <span class="nav-text">JavaScript 数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量命名"><span class="nav-number">1.4.</span> <span class="nav-text">变量命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用外部js文件"><span class="nav-number">1.5.</span> <span class="nav-text">引用外部js文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内部js编码"><span class="nav-number">1.6.</span> <span class="nav-text">内部js编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件"><span class="nav-number">1.7.</span> <span class="nav-text">事件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javaScript-函数"><span class="nav-number">2.</span> <span class="nav-text">javaScript 函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数调用"><span class="nav-number">2.1.</span> <span class="nav-text">函数调用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#history对象"><span class="nav-number">3.</span> <span class="nav-text">history对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#弹出文本框"><span class="nav-number">4.</span> <span class="nav-text">弹出文本框</span></a></li></ol></div>
             
 
           </div>
