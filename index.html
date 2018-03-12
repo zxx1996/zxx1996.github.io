@@ -324,7 +324,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/12/中软大前端0312/" itemprop="url">中软大前端0312-JS条件语句</a></h1>
+                <a class="post-title-link" href="/2018/03/12/中软大前端0312/" itemprop="url">中软大前端0312-JS条件语句&循环语句</a></h1>
         
 
         <div class="post-meta">
@@ -397,12 +397,16 @@
 
       
         
-          
-            <h2 id="if-else条件语句"><a href="#if-else条件语句" class="headerlink" title="if-else条件语句"></a>if-else条件语句</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo1&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var score=90;</div><div class="line">	if(score&gt;=90)&#123;</div><div class="line">		out=&quot;该同学成绩优秀&quot;;</div><div class="line">	&#125;else if((score&lt;90)&amp;&amp;(score&gt;=80))&#123;</div><div class="line">		out=&quot;该同学成绩良好&quot;;</div><div class="line">	&#125;else&#123;</div><div class="line">		out=&quot;该同学成绩不达标&quot;</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo1&quot;).innerHTML=out;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h2 id="switch-case条件语句"><a href="#switch-case条件语句" class="headerlink" title="switch-case条件语句"></a>switch-case条件语句</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var a=2;</div><div class="line">	var s;</div><div class="line">	switch(a)&#123;</div><div class="line">		case 1:</div><div class="line">			s=&quot;今天星期一&quot;;</div><div class="line">			break;</div><div class="line">		case 2:</div><div class="line">			s=&quot;今天星期二&quot;;</div><div class="line">			break;</div><div class="line">		default:</div><div class="line">			s=&quot;输入错误！&quot;;</div><div class="line">			</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo&quot;).innerHTML=s;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h3 id="script不执行的问题"><a href="#script不执行的问题" class="headerlink" title="script不执行的问题"></a>script不执行的问题</h3><p>放在<code>&lt;head&gt;&lt;/head&gt;</code>中的script语句不执行，是由于HTML文件执行时是自上而下加载，<code>document.getElementById(&quot;demo&quot;).innerHTML=s;</code> 该语句放在头部中加载时无法获取到”demo”id。</p>
-
-          
+          <h2 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h2><hr>
+<h3 id="if-else条件语句"><a href="#if-else条件语句" class="headerlink" title="if-else条件语句"></a>if-else条件语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo1&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var score=90;</div><div class="line">	if(score&gt;=90)&#123;</div><div class="line">		out=&quot;该同学成绩优秀&quot;;</div><div class="line">	&#125;else if((score&lt;90)&amp;&amp;(score&gt;=80))&#123;</div><div class="line">		out=&quot;该同学成绩良好&quot;;</div><div class="line">	&#125;else&#123;</div><div class="line">		out=&quot;该同学成绩不达标&quot;</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo1&quot;).innerHTML=out;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="switch-case条件语句"><a href="#switch-case条件语句" class="headerlink" title="switch-case条件语句"></a>switch-case条件语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var a=2;</div><div class="line">	var s;</div><div class="line">	switch(a)&#123;</div><div class="line">		case 1:</div><div class="line">			s=&quot;今天星期一&quot;;</div><div class="line">			break;</div><div class="line">		case 2:</div><div class="line">			s=&quot;今天星期二&quot;;</div><div class="line">			break;</div><div class="line">		default:</div><div class="line">			s=&quot;输入错误！&quot;;</div><div class="line">			</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo&quot;).innerHTML=s;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/12/中软大前端0312/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
