@@ -397,17 +397,21 @@
 
       
         
-          <h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><ul>
+          <h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><hr>
+<ul>
 <li>创建画布<br><code>&lt;canvas id=&quot;canvas1&quot; width=&quot;500px&quot; height=&quot;500px&quot;&gt;&lt;/canvas&gt;</code></li>
 <li>创建画布的2D图形<br><code>var context=document.getElementById(&quot;canvas1&quot;).getContext(&quot;2d&quot;);</code></li>
+<li>先添加样式，然后画图</li>
 </ul>
 <h3 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h3><ul>
-<li>context.moveTo(sx,sy);  起始位置</li>
-<li>context.lineTo(ex.ey);终点位置</li>
-<li>context.strokeStyle=  ;样式，颜色（默认黑色）</li>
-<li>context.lineWidth=  ;线的宽度</li>
-<li>context.linCap=”butt/round/square”; 方角/圆角/方角（默认方角）</li>
-<li>context.stroke();开始画图—画直线必须要有
+<li>context.beginPath();–开始一个画图</li>
+<li>context.closePath();–结束一个画图<br><strong>在同一个画布上画多个图形时需要区分,设置不同样式（如：循环输出图形时）</strong></li>
+<li>context.moveTo(sx,sy);  –起始位置</li>
+<li>context.lineTo(ex.ey);–终点位置</li>
+<li>context.strokeStyle=  ;–样式，颜色（默认黑色）</li>
+<li>context.lineWidth=  ;–线的宽度</li>
+<li>context.linCap=”butt/round/square”; –方角/圆角/方角（默认方角）</li>
+<li>context.stroke();–开始画图—画直线必须要有
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/13/中软大前端0313/#more" rel="contents">

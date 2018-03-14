@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="canvas 创建画布&amp;lt;canvas id=&amp;quot;canvas1&amp;quot; width=&amp;quot;500px&amp;quot; height=&amp;quot;500px&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; 创建画布的2D图形var context=document.getElementById(&amp;quot;canvas1&amp;quot;).getContext(&amp;quot;2d&amp;q">
+<meta name="description" content="canvas  创建画布&amp;lt;canvas id=&amp;quot;canvas1&amp;quot; width=&amp;quot;500px&amp;quot; height=&amp;quot;500px&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; 创建画布的2D图形var context=document.getElementById(&amp;quot;canvas1&amp;quot;).getContext(&amp;quot;2d&amp;">
 <meta name="keywords" content="study">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中软大前端0313-canvas画布">
 <meta property="og:url" content="http://yoursite.com/2018/03/13/中软大前端0313/index.html">
 <meta property="og:site_name" content="Lyz的博客">
-<meta property="og:description" content="canvas 创建画布&amp;lt;canvas id=&amp;quot;canvas1&amp;quot; width=&amp;quot;500px&amp;quot; height=&amp;quot;500px&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; 创建画布的2D图形var context=document.getElementById(&amp;quot;canvas1&amp;quot;).getContext(&amp;quot;2d&amp;q">
+<meta property="og:description" content="canvas  创建画布&amp;lt;canvas id=&amp;quot;canvas1&amp;quot; width=&amp;quot;500px&amp;quot; height=&amp;quot;500px&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; 创建画布的2D图形var context=document.getElementById(&amp;quot;canvas1&amp;quot;).getContext(&amp;quot;2d&amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-13T09:16:39.471Z">
+<meta property="og:updated_time" content="2018-03-14T02:53:11.659Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中软大前端0313-canvas画布">
-<meta name="twitter:description" content="canvas 创建画布&amp;lt;canvas id=&amp;quot;canvas1&amp;quot; width=&amp;quot;500px&amp;quot; height=&amp;quot;500px&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; 创建画布的2D图形var context=document.getElementById(&amp;quot;canvas1&amp;quot;).getContext(&amp;quot;2d&amp;q">
+<meta name="twitter:description" content="canvas  创建画布&amp;lt;canvas id=&amp;quot;canvas1&amp;quot; width=&amp;quot;500px&amp;quot; height=&amp;quot;500px&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; 创建画布的2D图形var context=document.getElementById(&amp;quot;canvas1&amp;quot;).getContext(&amp;quot;2d&amp;">
 
 
 
@@ -398,45 +398,75 @@
       
 
       
-        <h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><ul>
+        <h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><hr>
+<ul>
 <li>创建画布<br><code>&lt;canvas id=&quot;canvas1&quot; width=&quot;500px&quot; height=&quot;500px&quot;&gt;&lt;/canvas&gt;</code></li>
 <li>创建画布的2D图形<br><code>var context=document.getElementById(&quot;canvas1&quot;).getContext(&quot;2d&quot;);</code></li>
+<li>先添加样式，然后画图</li>
 </ul>
 <h3 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h3><ul>
-<li>context.moveTo(sx,sy);  起始位置</li>
-<li>context.lineTo(ex.ey);终点位置</li>
-<li>context.strokeStyle=  ;样式，颜色（默认黑色）</li>
-<li>context.lineWidth=  ;线的宽度</li>
-<li>context.linCap=”butt/round/square”; 方角/圆角/方角（默认方角）</li>
-<li>context.stroke();开始画图—画直线必须要有 <a id="more"></a>
+<li>context.beginPath();–开始一个画图</li>
+<li>context.closePath();–结束一个画图<br><strong>在同一个画布上画多个图形时需要区分,设置不同样式（如：循环输出图形时）</strong></li>
+<li>context.moveTo(sx,sy);  –起始位置</li>
+<li>context.lineTo(ex.ey);–终点位置</li>
+<li>context.strokeStyle=  ;–样式，颜色（默认黑色）</li>
+<li>context.lineWidth=  ;–线的宽度</li>
+<li>context.linCap=”butt/round/square”; –方角/圆角/方角（默认方角）</li>
+<li>context.stroke();–开始画图—画直线必须要有 <a id="more"></a>
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var context=document.getElementById(&quot;canvas1&quot;).getContext(&quot;2d&quot;);</div><div class="line">			</div><div class="line">	function star(sx,sy,ex,ey)&#123;</div><div class="line">		context.moveTo(sx,sy);</div><div class="line">		context.lineTo(ex,ey);</div><div class="line">		context.strokeStyle=&quot;#FF0000&quot;</div><div class="line">		context.lineWidth=10;</div><div class="line">		context.lineCap=&quot;round&quot;;</div><div class="line">		context.stroke();</div><div class="line">	&#125;</div><div class="line">	star(50,150,300,150);</div><div class="line">	star(300,150,100,300);</div><div class="line">	star(100,300,175,50);</div><div class="line">	star(175,50,250,300);</div><div class="line">	star(250,300,50,150);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
 <h3 id="矩形–填充"><a href="#矩形–填充" class="headerlink" title="矩形–填充"></a>矩形–填充</h3><ul>
-<li><p>context.fillStyle=”#DEB887”;填充样式</p>
-</li>
-<li><p>context.fillRect(x,y,w,h);矩形（位置，宽，高）;</p>
-</li>
-<li><p>context.clearRect(x,y,w,h);矩形裁剪</p>
-</li>
+<li>context.fillStyle=”#DEB887”;–填充样式</li>
+<li>context.fillRect(x,y,w,h);–矩形（位置，宽，高）;</li>
+<li>context.clearRect(x,y,w,h);–矩形裁剪</li>
 </ul>
 <h3 id="矩形–线"><a href="#矩形–线" class="headerlink" title="矩形–线"></a>矩形–线</h3><ul>
-<li>context.strokeStyle=”#A52A2A”; 线的颜色</li>
-<li>context.lineWidth=5;线的宽度</li>
-<li>context.strokeRect(x,y,w,h);矩形边框</li>
+<li>context.strokeStyle=”#A52A2A”; –线的颜色</li>
+<li>context.lineWidth=5;–线的宽度</li>
+<li>context.strokeRect(x,y,w,h);–矩形边框</li>
 </ul>
 <h3 id="圆形–填充"><a href="#圆形–填充" class="headerlink" title="圆形–填充"></a>圆形–填充</h3><ul>
-<li><p>context.arc(x,y,r,starangle,endangle,)圆心xy,半径,起始角度，结束角度，顺时针/逆时针<br><code>context.arc(100,100,100,0,Math.PI*2,true)</code></p>
-</li>
-<li><p>context.fill();填充圆形</p>
-</li>
-<li>context.shadowColor=””;阴影颜色</li>
-<li>context.shadowOffsetX=5;阴影范围</li>
-<li>context.shadowOffsetY=5;阴影范围</li>
-<li>context.shadowBlur=5;阴影模糊度</li>
+<li>context.arc(x,y,r,starangle,endangle,)圆心xy,半径,起始角度，结束角度，顺时针/逆时针<br><code>context.arc(100,100,100,0,Math.PI*2,true)</code></li>
+<li>context.fill();–填充圆形</li>
+<li>context.shadowColor=””;–阴影颜色</li>
+<li>context.shadowOffsetX=5;–阴影范围</li>
+<li>context.shadowOffsetY=5;–阴影范围</li>
+<li>context.shadowBlur=5;–阴影模糊度</li>
 </ul>
 <p><strong>阴影作用范围，阴影代码之后的图形元素都会有阴影，之前不作用</strong></p>
 <h3 id="圆形–线"><a href="#圆形–线" class="headerlink" title="圆形–线"></a>圆形–线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">context.strokeStyle=&quot;&quot;;</div><div class="line">context.arc(100,100,100,0,Math.PI*2,true);</div><div class="line">context.stroke();</div></pre></td></tr></table></figure>
+<h2 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h2><hr>
+<h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><ul>
+<li><p>var grade=context.createLinearGradient(x0,y0,x1,y1); –起始位置，终点位置</p>
+</li>
+<li><p>grade.addColoorStop(0,颜色);–样式，添加颜色（0~1,颜色）<br>将整个画布划分为1</p>
+</li>
+<li><p>context.fillStyle=grade;–以线性渐变的方式填充</p>
+</li>
+</ul>
+<h3 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var grade1=ctx.createRadialGradient(300,300,50,300,300,100);</div><div class="line">grade1.addColorStop(0,&quot;red&quot;);</div><div class="line">grade1.addColorStop(0.5,&quot;white&quot;);</div><div class="line">grade1.addColorStop(1,&quot;#fff000&quot;);</div><div class="line">			</div><div class="line">context.fillStyle=grade1;</div><div class="line">//ctx.arc(200,200,100,0,Math.PI*2,true);</div><div class="line">context.fillRect(200,200,200,200);</div><div class="line">context.fill();</div></pre></td></tr></table></figure>
+<ul>
+<li><p>var grade1=context.createRadialGradient(x0,y0,r0,x1,y1,r1);–径向渐变（位置，半径，位置，半径）渐变范围是两个圆之间的位置</p>
+</li>
+<li><p>context.fillStyle=grade1;–填充方式：以径向渐变的方式填充</p>
+</li>
+<li><p><code>context.arc(200,200,100,0,Math.PI*2,true);</code>–填充为圆形，填充范围为这个圆的范围（圆形填充 context.fill();）</p>
+</li>
+<li>context.fillRect(200,200,200,200);–填充为矩形，填充范围为这个矩形范围</li>
+</ul>
+<h3 id="实心文字"><a href="#实心文字" class="headerlink" title="实心文字"></a>实心文字</h3><ul>
+<li>context.fillStyle=”#FF7F50”; –填充样式</li>
+<li>context.font=”50px 宋体”;–填充文字字体大小、样式</li>
+<li>context.fillText(“厉害了，我的国”,50,100);–填充文字内容，位置</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">context.shadowColor=&quot;#5F9EA0&quot;;</div><div class="line">context.shadowOffsetX=5;</div><div class="line">context.shadowOffsetY=5;</div><div class="line">context.shadowBlur=5;</div><div class="line">context.fillStyle=&quot;#FF7F50&quot;;</div><div class="line">context.font=&quot;50px 宋体&quot;;</div><div class="line">context.fillText(&quot;厉害了，我的国&quot;,50,100);</div></pre></td></tr></table></figure>
+<h3 id="空心文字"><a href="#空心文字" class="headerlink" title="空心文字"></a>空心文字</h3><ul>
+<li>context.strokeStyle=”颜色”;–文字颜色</li>
+<li>context.font=”100px 隶书”;–字体大小，样式</li>
+<li>context.strokrText(“内容”,x,y);–文字内容，位置</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">context.strokeStyle=&quot;#FF0000&quot;;</div><div class="line">context.font=&quot;50px 宋体&quot;;</div><div class="line">context.strokeText(&quot;厉害了，我的国&quot;,50,200);</div><div class="line">context.stroke();</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -648,7 +678,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#canvas"><span class="nav-number">1.</span> <span class="nav-text">canvas</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#直线"><span class="nav-number">1.1.</span> <span class="nav-text">直线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩形–填充"><span class="nav-number">1.2.</span> <span class="nav-text">矩形–填充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩形–线"><span class="nav-number">1.3.</span> <span class="nav-text">矩形–线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#圆形–填充"><span class="nav-number">1.4.</span> <span class="nav-text">圆形–填充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#圆形–线"><span class="nav-number">1.5.</span> <span class="nav-text">圆形–线</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#canvas"><span class="nav-number">1.</span> <span class="nav-text">canvas</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#直线"><span class="nav-number">1.1.</span> <span class="nav-text">直线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩形–填充"><span class="nav-number">1.2.</span> <span class="nav-text">矩形–填充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩形–线"><span class="nav-number">1.3.</span> <span class="nav-text">矩形–线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#圆形–填充"><span class="nav-number">1.4.</span> <span class="nav-text">圆形–填充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#圆形–线"><span class="nav-number">1.5.</span> <span class="nav-text">圆形–线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#渐变"><span class="nav-number">2.</span> <span class="nav-text">渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性渐变"><span class="nav-number">2.1.</span> <span class="nav-text">线性渐变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#径向渐变"><span class="nav-number">2.2.</span> <span class="nav-text">径向渐变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实心文字"><span class="nav-number">2.3.</span> <span class="nav-text">实心文字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#空心文字"><span class="nav-number">2.4.</span> <span class="nav-text">空心文字</span></a></li></ol></li></ol></div>
             
 
           </div>
