@@ -305,6 +305,158 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/15/中软大前端0315-CSS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/15/中软大前端0315-CSS/" itemprop="url">中软大前端0315-CSS</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-15T10:32:20+08:00">
+                2018-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h3 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h3><hr>
+<ul>
+<li><code>*</code>全部选择器<br><code>*{}</code></li>
+<li>标签选择器<br><code>div{}</code></li>
+<li>ID选择器<br><code>#divId{}</code></li>
+<li>类选择器（class）<br>具有同样样式的使用类，需要重复使用的<br><code>.divClass{}</code></li>
+<li>符合选择器<br>后代选择器：ul li  使用空格（嵌套）<br>交集选择器：直接连接（第一个选择器必须是标签选择器 标签+class 符合这两个条件的）<br>并集选择器：使用逗号
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/15/中软大前端0315-CSS/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/13/中软大前端0313/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -404,10 +556,10 @@
 <li>先添加样式，然后画图</li>
 </ul>
 <h3 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h3><ul>
-<li>context.beginPath();–开始一个画图</li>
-<li>context.closePath();–结束一个画图<br><strong>在同一个画布上画多个图形时需要区分,设置不同样式（如：循环输出图形时）</strong></li>
-<li>context.moveTo(sx,sy);  –起始位置</li>
-<li>context.lineTo(ex.ey);–终点位置</li>
+<li>context.beginPath();–绘制路径，开始一个画图</li>
+<li>context.closePath();–关闭路径，结束一个画图<br><strong>在同一个画布上画多个图形时需要区分,设置不同样式（如：循环输出图形时）</strong></li>
+<li>context.moveTo(sx,sy);  –直线起点</li>
+<li>context.lineTo(ex.ey);–直线终点</li>
 <li>context.strokeStyle=  ;–样式，颜色（默认黑色）</li>
 <li>context.lineWidth=  ;–线的宽度</li>
 <li>context.linCap=”butt/round/square”; –方角/圆角/方角（默认方角）</li>
@@ -716,7 +868,7 @@
 <li>left:从右向左</li>
 <li>up:从下向上</li>
 </ul>
-<h2 id="list列表"><a href="#list列表" class="headerlink" title="list列表"></a>list列表</h2><hr>
+<h4 id="loop-文字滚动次数"><a href="#loop-文字滚动次数" class="headerlink" title="loop:文字滚动次数"></a>loop:文字滚动次数</h4><h4 id="scrolldelay-每次滚动的时间间隔-毫秒"><a href="#scrolldelay-每次滚动的时间间隔-毫秒" class="headerlink" title="scrolldelay:每次滚动的时间间隔(毫秒)"></a>scrolldelay:每次滚动的时间间隔(毫秒)</h4><h4 id="scrollamount-每次滚动之间的间隔像素"><a href="#scrollamount-每次滚动之间的间隔像素" class="headerlink" title="scrollamount:每次滚动之间的间隔像素"></a>scrollamount:每次滚动之间的间隔像素</h4><h2 id="list列表"><a href="#list列表" class="headerlink" title="list列表"></a>list列表</h2><hr>
 <h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;ol type=&quot;1&quot;&gt;</div><div class="line">	&lt;li&gt;&lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure>
 <p>type值：</p>
 <ul>
@@ -1662,148 +1814,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/04/JavaScript函数的4种调用方法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/04/JavaScript函数的4种调用方法/" itemprop="url">JavaScript函数的4种调用方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-04T19:19:23+08:00">
-                2017-11-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Study/" itemprop="url" rel="index">
-                    <span itemprop="name">Study</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>详解：</strong><a href="http://www.jb51.net/article/49230.htm" target="_blank" rel="external">http://www.jb51.net/article/49230.htm</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">	&lt;!-- 1、函数调用模式 this指全局对象，即windows对象  --&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			var func=function()&#123;</div><div class="line">				alert(&quot;Hello&quot;);</div><div class="line">				alert(this);</div><div class="line">			&#125;;</div><div class="line">			func();</div><div class="line"></div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line"></div><div class="line"></div><div class="line">	&lt;!-- 2、方法调用模式 this指当前对象--&gt;</div><div class="line">		&lt;!-- &lt;script&gt;</div><div class="line">			//定义一个函数</div><div class="line">			var func=function()&#123;</div><div class="line">				alert(this);</div><div class="line">			&#125;;</div><div class="line">			//赋值给一个对象</div><div class="line">			var o=&#123;&#125;;</div><div class="line">			o.fn=func;//不要加圆括号</div><div class="line">			alert(o.fn===func);</div><div class="line">			func();</div><div class="line">			o.fn();</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line">	&lt;!-- 3、构造函数调用模式 this指当前对象--&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			//定义一个构造函数</div><div class="line">			var Person=function()&#123;</div><div class="line">				this.name=&quot;程序员&quot;;</div><div class="line">				this.sayHello=function()&#123;</div><div class="line">				//所有需要由对象使用的属性，必须使用this引导</div><div class="line">					alert(&quot;你好，这里是&quot;+this.name);</div><div class="line">				&#125;;</div><div class="line">			&#125;;</div><div class="line">			//调用构造器，创建对象，使用new语法</div><div class="line">			var p=new Person();</div><div class="line">			//使用对象 this是new 创建出的对象p</div><div class="line">			p.sayHello();</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			var ctr=function()&#123;</div><div class="line">				this.name=&quot;Max&quot;;</div><div class="line">				// return &#123;</div><div class="line">				// 	//返回一个对象，页面中返回此值</div><div class="line">				// 	name:&quot;Jasper&quot;</div><div class="line">				// &#125;;</div><div class="line">				// 返回 非对象，字符串数值，页面中返回this对象</div><div class="line">				return &quot;Jasper&quot;;</div><div class="line">			&#125;;</div><div class="line">			//创建对象</div><div class="line">			var p=new ctr();</div><div class="line">			//访问name属性</div><div class="line">			alert(p.name);</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line">	&lt;!-- 4、apply调用模式 可以像函数一样使用，也可以像方法一样使用 --&gt;</div><div class="line">		&lt;!-- 4-1、相当于函数调用 --&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			var func1=function()&#123;</div><div class="line">				this.name=&quot;程序员&quot;;</div><div class="line">			&#125;;</div><div class="line">			func1.apply(null);</div><div class="line">			alert(name);</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line"></div><div class="line">		&lt;!-- 4-2、相当于方法调用 --&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			var func2=function()&#123;</div><div class="line">				this.name=&quot;程序员&quot;;</div><div class="line">			&#125;;</div><div class="line">			//name属性传入到o当中</div><div class="line">			var o=&#123;&#125;;</div><div class="line">			func2.apply(o);</div><div class="line">			alert(o.name);</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line"></div><div class="line">	&lt;body&gt;</div><div class="line">	</div><div class="line"></div><div class="line">	&lt;/body&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1856,7 +1866,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">34</span>
+                <span class="site-state-item-count">35</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
