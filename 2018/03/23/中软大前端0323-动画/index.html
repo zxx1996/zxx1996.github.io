@@ -95,20 +95,18 @@
 
 
 
-<meta name="description" content="canvas  创建画布&amp;lt;canvas id=&amp;quot;canvas1&amp;quot; width=&amp;quot;500px&amp;quot; height=&amp;quot;500px&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; 创建画布的2D图形var context=document.getElementById(&amp;quot;canvas1&amp;quot;).getContext(&amp;quot;2d&amp;">
+<meta name="description" content="2D转换transform 2D转换 translate(px,px) 平移 rotate(deg) 角度旋转 scale(1,1)放大倍数 skew(x-deg,y-deg)旋转 沿坐标轴旋转  transition过度效果 transition:all 2s ease 2s（变化样式，持续时间，速度，延迟） 速度linear 匀速ease 变慢ease-in 加速ease-out 减速cubi">
 <meta name="keywords" content="study">
 <meta property="og:type" content="article">
-<meta property="og:title" content="中软大前端0313-canvas画布">
-<meta property="og:url" content="http://yoursite.com/2018/03/13/中软大前端0313/index.html">
+<meta property="og:title" content="中软大前端0323-动画">
+<meta property="og:url" content="http://yoursite.com/2018/03/23/中软大前端0323-动画/index.html">
 <meta property="og:site_name" content="Lyz的博客">
-<meta property="og:description" content="canvas  创建画布&amp;lt;canvas id=&amp;quot;canvas1&amp;quot; width=&amp;quot;500px&amp;quot; height=&amp;quot;500px&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; 创建画布的2D图形var context=document.getElementById(&amp;quot;canvas1&amp;quot;).getContext(&amp;quot;2d&amp;">
+<meta property="og:description" content="2D转换transform 2D转换 translate(px,px) 平移 rotate(deg) 角度旋转 scale(1,1)放大倍数 skew(x-deg,y-deg)旋转 沿坐标轴旋转  transition过度效果 transition:all 2s ease 2s（变化样式，持续时间，速度，延迟） 速度linear 匀速ease 变慢ease-in 加速ease-out 减速cubi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://oydu872av.bkt.clouddn.com/bzt.png">
-<meta property="og:updated_time" content="2018-03-14T09:04:38.541Z">
+<meta property="og:updated_time" content="2018-03-23T06:04:10.063Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="中软大前端0313-canvas画布">
-<meta name="twitter:description" content="canvas  创建画布&amp;lt;canvas id=&amp;quot;canvas1&amp;quot; width=&amp;quot;500px&amp;quot; height=&amp;quot;500px&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; 创建画布的2D图形var context=document.getElementById(&amp;quot;canvas1&amp;quot;).getContext(&amp;quot;2d&amp;">
-<meta name="twitter:image" content="http://oydu872av.bkt.clouddn.com/bzt.png">
+<meta name="twitter:title" content="中软大前端0323-动画">
+<meta name="twitter:description" content="2D转换transform 2D转换 translate(px,px) 平移 rotate(deg) 角度旋转 scale(1,1)放大倍数 skew(x-deg,y-deg)旋转 沿坐标轴旋转  transition过度效果 transition:all 2s ease 2s（变化样式，持续时间，速度，延迟） 速度linear 匀速ease 变慢ease-in 加速ease-out 减速cubi">
 
 
 
@@ -138,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/13/中软大前端0313/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/23/中软大前端0323-动画/"/>
 
 
 
 
 
-  <title>中软大前端0313-canvas画布 | Lyz的博客</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>中软大前端0323-动画 | Lyz的博客</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -311,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/13/中软大前端0313/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/23/中软大前端0323-动画/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lyz">
@@ -328,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">中软大前端0313-canvas画布</h1>
+          <h1 class="post-title" itemprop="name headline">中软大前端0323-动画</h1>
         
 
         <div class="post-meta">
@@ -340,8 +338,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-13T15:03:55+08:00">
-                2018-03-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-23T08:31:53+08:00">
+                2018-03-23
               </time>
             
 
@@ -400,77 +398,28 @@
       
 
       
-        <h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><hr>
-<ul>
-<li>创建画布<br><code>&lt;canvas id=&quot;canvas1&quot; width=&quot;500px&quot; height=&quot;500px&quot;&gt;&lt;/canvas&gt;</code></li>
-<li>创建画布的2D图形<br><code>var context=document.getElementById(&quot;canvas1&quot;).getContext(&quot;2d&quot;);</code></li>
-<li>先添加样式，然后画图</li>
+        <h2 id="2D转换"><a href="#2D转换" class="headerlink" title="2D转换"></a>2D转换</h2><h3 id="transform-2D转换"><a href="#transform-2D转换" class="headerlink" title="transform 2D转换"></a>transform 2D转换</h3><ul>
+<li>translate(px,px) 平移</li>
+<li>rotate(deg) 角度旋转</li>
+<li>scale(1,1)放大倍数</li>
+<li>skew(x-deg,y-deg)旋转 沿坐标轴旋转</li>
 </ul>
-<h3 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h3><ul>
-<li>context.beginPath();–绘制路径，开始一个画图</li>
-<li>context.closePath();–关闭路径，结束一个画图<br><strong>在同一个画布上画多个图形时需要区分,设置不同样式（如：循环输出图形时）</strong></li>
-<li>context.moveTo(sx,sy);  –直线起点</li>
-<li>context.lineTo(ex.ey);–直线终点</li>
-<li>context.strokeStyle=  ;–样式，颜色（默认黑色）</li>
-<li>context.lineWidth=  ;–线的宽度</li>
-<li>context.linCap=”butt/round/square”; –方角/圆角/方角（默认方角）</li>
-<li>context.stroke();–开始画图—画直线必须要有 <a id="more"></a>
-</li>
+<h3 id="transition过度效果"><a href="#transition过度效果" class="headerlink" title="transition过度效果"></a>transition过度效果</h3><ul>
+<li>transition:all 2s ease 2s<br>（变化样式，持续时间，速度，延迟）</li>
+<li>速度<br>linear 匀速<br>ease 变慢<br>ease-in 加速<br>ease-out 减速<br>cubic-bezier(n,n,n,n) 贝塞尔曲线</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var context=document.getElementById(&quot;canvas1&quot;).getContext(&quot;2d&quot;);</div><div class="line">			</div><div class="line">	function star(sx,sy,ex,ey)&#123;</div><div class="line">		context.moveTo(sx,sy);</div><div class="line">		context.lineTo(ex,ey);</div><div class="line">		context.strokeStyle=&quot;#FF0000&quot;</div><div class="line">		context.lineWidth=10;</div><div class="line">		context.lineCap=&quot;round&quot;;</div><div class="line">		context.stroke();</div><div class="line">	&#125;</div><div class="line">	star(50,150,300,150);</div><div class="line">	star(300,150,100,300);</div><div class="line">	star(100,300,175,50);</div><div class="line">	star(175,50,250,300);</div><div class="line">	star(250,300,50,150);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h3 id="矩形–填充"><a href="#矩形–填充" class="headerlink" title="矩形–填充"></a>矩形–填充</h3><ul>
-<li>context.fillStyle=”#DEB887”;–填充样式</li>
-<li>context.fillRect(x,y,w,h);–矩形（位置，宽，高）;</li>
-<li>context.clearRect(x,y,w,h);–矩形裁剪</li>
+<h2 id="3D转换"><a href="#3D转换" class="headerlink" title="3D转换"></a>3D转换</h2><ul>
+<li>rotateX(90deg);</li>
+<li>rotateY(90deg);</li>
+<li>rotateZ(90deg);</li>
 </ul>
-<h3 id="矩形–线"><a href="#矩形–线" class="headerlink" title="矩形–线"></a>矩形–线</h3><ul>
-<li>context.strokeStyle=”#A52A2A”; –线的颜色</li>
-<li>context.lineWidth=5;–线的宽度</li>
-<li>context.strokeRect(x,y,w,h);–矩形边框</li>
+<h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><h3 id="声明动画"><a href="#声明动画" class="headerlink" title="声明动画"></a>声明动画</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">@keyframes name&#123;</div><div class="line">	from&#123;background:red&#125;;</div><div class="line">	to&#123;background:blue&#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@keyframes name&#123;</div><div class="line">	0%Q&#123;background:red&#125;;</div><div class="line">	50%&#123;background:blue&#125;;</div><div class="line">	100%&#123;background:yellow&#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="使用动画animation"><a href="#使用动画animation" class="headerlink" title="使用动画animation:"></a>使用动画animation:</h3><ul>
+<li>animation: name 2s esae-in infinite alternate<br>(name 持续时间 速度 延迟 次数-无限次 反向)<br>1、页面加载时，自动执行<br>2、执行次数可自定义<br>3、可重复调用</li>
 </ul>
-<h3 id="圆形–填充"><a href="#圆形–填充" class="headerlink" title="圆形–填充"></a>圆形–填充</h3><ul>
-<li>context.arc(x,y,r,starangle,endangle,)圆心xy,半径,起始角度，结束角度，顺时针/逆时针<br><code>context.arc(100,100,100,0,Math.PI*2,true)</code></li>
-<li>context.fill();–填充圆形</li>
-<li>context.shadowColor=””;–阴影颜色</li>
-<li>context.shadowOffsetX=5;–阴影范围</li>
-<li>context.shadowOffsetY=5;–阴影范围</li>
-<li>context.shadowBlur=5;–阴影模糊度<br>1开始创建路径<br>2创建图形路径<br>3关闭路径<br>4设定绘制样式，调用绘制方法，绘制路径</li>
-</ul>
-<p><strong>阴影作用范围，阴影代码之后的图形元素都会有阴影，之前不作用</strong></p>
-<h3 id="圆形–线"><a href="#圆形–线" class="headerlink" title="圆形–线"></a>圆形–线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">context.strokeStyle=&quot;&quot;;</div><div class="line">context.arc(100,100,100,0,Math.PI*2,true);</div><div class="line">context.stroke();</div></pre></td></tr></table></figure>
-<h2 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h2><hr>
-<h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><ul>
-<li><p>var grade=context.createLinearGradient(x0,y0,x1,y1); –起始位置，终点位置</p>
-</li>
-<li><p>grade.addColoorStop(0,颜色);–样式，添加颜色（0~1,颜色）<br>将整个画布划分为1</p>
-</li>
-<li><p>context.fillStyle=grade;–以线性渐变的方式填充</p>
-</li>
-</ul>
-<h3 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var grade1=ctx.createRadialGradient(300,300,50,300,300,100);</div><div class="line">grade1.addColorStop(0,&quot;red&quot;);</div><div class="line">grade1.addColorStop(0.5,&quot;white&quot;);</div><div class="line">grade1.addColorStop(1,&quot;#fff000&quot;);</div><div class="line">			</div><div class="line">context.fillStyle=grade1;</div><div class="line">//ctx.arc(200,200,100,0,Math.PI*2,true);</div><div class="line">context.fillRect(200,200,200,200);</div><div class="line">context.fill();</div></pre></td></tr></table></figure>
-<ul>
-<li><p>var grade1=context.createRadialGradient(x0,y0,r0,x1,y1,r1);–径向渐变（位置，半径，位置，半径）渐变范围是两个圆之间的位置</p>
-</li>
-<li><p>context.fillStyle=grade1;–填充方式：以径向渐变的方式填充</p>
-</li>
-<li><p><code>context.arc(200,200,100,0,Math.PI*2,true);</code>–填充为圆形，填充范围为这个圆的范围（圆形填充 context.fill();）</p>
-</li>
-<li>context.fillRect(200,200,200,200);–填充为矩形，填充范围为这个矩形范围</li>
-</ul>
-<h3 id="实心文字"><a href="#实心文字" class="headerlink" title="实心文字"></a>实心文字</h3><ul>
-<li>context.fillStyle=”#FF7F50”; –填充样式</li>
-<li>context.font=”50px 宋体”;–填充文字字体大小、样式</li>
-<li>context.fillText(“厉害了，我的国”,50,100);–填充文字内容，位置</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">context.shadowColor=&quot;#5F9EA0&quot;;</div><div class="line">context.shadowOffsetX=5;</div><div class="line">context.shadowOffsetY=5;</div><div class="line">context.shadowBlur=5;</div><div class="line">context.fillStyle=&quot;#FF7F50&quot;;</div><div class="line">context.font=&quot;50px 宋体&quot;;</div><div class="line">context.fillText(&quot;厉害了，我的国&quot;,50,100);</div></pre></td></tr></table></figure>
-<h3 id="空心文字"><a href="#空心文字" class="headerlink" title="空心文字"></a>空心文字</h3><ul>
-<li>context.strokeStyle=”颜色”;–文字颜色</li>
-<li>context.font=”100px 隶书”;–字体大小，样式</li>
-<li>context.strokrText(“内容”,x,y);–文字内容，位置</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">context.strokeStyle=&quot;#FF0000&quot;;</div><div class="line">context.font=&quot;50px 宋体&quot;;</div><div class="line">context.strokeText(&quot;厉害了，我的国&quot;,50,200);</div><div class="line">context.stroke();</div></pre></td></tr></table></figure>
-<h3 id="练习–饼状图"><a href="#练习–饼状图" class="headerlink" title="练习–饼状图"></a>练习–饼状图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">context.beginPath();</div><div class="line">context.fillStyle=&quot;#DEB887&quot;;</div><div class="line">context.moveTo(100,100);</div><div class="line">context.arc(100,100,80,Math.PI,Math.PI*3/2,false);</div><div class="line">context.fill();</div><div class="line">		</div><div class="line">context.beginPath();</div><div class="line">context.shadowColor=&quot;grey&quot;;</div><div class="line">context.shadowOffsetX=5;</div><div class="line">context.shadowOffsetY=5;</div><div class="line">context.shadowBlur=5;</div><div class="line"></div><div class="line">context.fillStyle=&quot;#FF7F50&quot;;</div><div class="line">context.moveTo(110,110);</div><div class="line">context.arc(110,110,80,0,Math.PI/2,false);</div><div class="line">context.fill();</div><div class="line">		</div><div class="line">context.beginPath();</div><div class="line">context.fillStyle=&quot;#A52A2A&quot;;</div><div class="line">context.moveTo(100,100);</div><div class="line">context.arc(100,100,80,Math.PI/2,Math.PI,false);</div><div class="line">context.fill();</div><div class="line">		</div><div class="line">context.beginPath();</div><div class="line">context.fillStyle=&quot;chocolate&quot;;</div><div class="line">context.moveTo(100,100);</div><div class="line">context.arc(100,100,80,Math.PI*3/2,Math.PI*2,false);</div><div class="line">context.fill();</div></pre></td></tr></table></figure>
-<p>!<img src="http://oydu872av.bkt.clouddn.com/bzt.png" alt="GitHUb set up"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">.dh&#123;</div><div class="line">	width: 200px;</div><div class="line">	height: 200px;</div><div class="line">	background-color: #FFA500;</div><div class="line">	animation: mydh 3s infinite alternate;</div><div class="line">	position: absolute;</div><div class="line">	top: 0;</div><div class="line">	left: 20px;</div><div class="line">&#125;</div><div class="line">@keyframes mydh&#123;</div><div class="line">	0%&#123;background-color: #CD5C5C;</div><div class="line">		top: 0;</div><div class="line">		left: 120px;&#125;</div><div class="line">		25%&#123;background-image: url(img/gf2.jpg);</div><div class="line">			background-size: 100% 100%;</div><div class="line">			top: 100px;</div><div class="line">			left: 120px;&#125;</div><div class="line">		50%&#123;background-image: url(img/li.png);</div><div class="line">			background-size: 100% 100%;</div><div class="line">			top: 100px;</div><div class="line">			left: 20px;&#125;</div><div class="line">		75%&#123;background-color:#F5DEB3;</div><div class="line">			top: 0;</div><div class="line">			left: 20px;&#125;</div><div class="line">			100%&#123;background-color: chocolate;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="按键动画"><a href="#按键动画" class="headerlink" title="按键动画"></a>按键动画</h2><p>按钮按下弹起效果，通过设置阴影实现<br>按下时让阴影面积缩小，按钮向下移动5px</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">/*按键动画*/</div><div class="line">#btn1&#123;</div><div class="line">	width: 200px;</div><div class="line">	height: 100px;</div><div class="line">	font-size: 30px;</div><div class="line">	background-color: mediumseagreen;</div><div class="line">	border-radius: 10px;</div><div class="line">	border: 0px;</div><div class="line">	box-shadow: 0 9px 2px darkgrey;</div><div class="line">	color: white;</div><div class="line">&#125;</div><div class="line">#btn1:active&#123;</div><div class="line">	border: 0px;</div><div class="line">	box-shadow: 0 3px 2px darkgrey;</div><div class="line">	transform: translateY(5px);			</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -501,8 +450,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/12/中软大前端0312/" rel="next" title="中软大前端0312-JS条件语句&循环语句">
-                <i class="fa fa-chevron-left"></i> 中软大前端0312-JS条件语句&循环语句
+              <a href="/2018/03/22/中软大前端0322-渐变/" rel="next" title="中软大前端0322-渐变">
+                <i class="fa fa-chevron-left"></i> 中软大前端0322-渐变
               </a>
             
           </div>
@@ -511,8 +460,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/15/中软大前端0315-CSS/" rel="prev" title="中软大前端0315-CSS">
-                中软大前端0315-CSS <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/26/中软大前端0326-响应式布局/" rel="prev" title="中软大前端0326-响应式布局">
+                中软大前端0326-响应式布局 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -592,7 +541,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">35</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -687,7 +636,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#canvas"><span class="nav-number">1.</span> <span class="nav-text">canvas</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#直线"><span class="nav-number">1.1.</span> <span class="nav-text">直线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩形–填充"><span class="nav-number">1.2.</span> <span class="nav-text">矩形–填充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩形–线"><span class="nav-number">1.3.</span> <span class="nav-text">矩形–线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#圆形–填充"><span class="nav-number">1.4.</span> <span class="nav-text">圆形–填充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#圆形–线"><span class="nav-number">1.5.</span> <span class="nav-text">圆形–线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#渐变"><span class="nav-number">2.</span> <span class="nav-text">渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性渐变"><span class="nav-number">2.1.</span> <span class="nav-text">线性渐变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#径向渐变"><span class="nav-number">2.2.</span> <span class="nav-text">径向渐变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实心文字"><span class="nav-number">2.3.</span> <span class="nav-text">实心文字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#空心文字"><span class="nav-number">2.4.</span> <span class="nav-text">空心文字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#练习–饼状图"><span class="nav-number">2.5.</span> <span class="nav-text">练习–饼状图</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2D转换"><span class="nav-number">1.</span> <span class="nav-text">2D转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#transform-2D转换"><span class="nav-number">1.1.</span> <span class="nav-text">transform 2D转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#transition过度效果"><span class="nav-number">1.2.</span> <span class="nav-text">transition过度效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3D转换"><span class="nav-number">2.</span> <span class="nav-text">3D转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动画"><span class="nav-number">3.</span> <span class="nav-text">动画</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#声明动画"><span class="nav-number">3.1.</span> <span class="nav-text">声明动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用动画animation"><span class="nav-number">3.2.</span> <span class="nav-text">使用动画animation:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#按键动画"><span class="nav-number">4.</span> <span class="nav-text">按键动画</span></a></li></ol></div>
             
 
           </div>
