@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="Lyz的博客">
 <meta property="og:description" content="条件语句 if-else条件语句123456789101112&amp;lt;p id=&amp;quot;demo1&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;	var score=90;	if(score&amp;gt;=90)&amp;#123;		out=&amp;quot;该同学成绩优秀&amp;quot;;	&amp;#125;else if((sco">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-13T02:43:06.948Z">
+<meta property="og:updated_time" content="2018-04-02T03:16:00.619Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中软大前端0312-JS条件语句&amp;循环语句">
 <meta name="twitter:description" content="条件语句 if-else条件语句123456789101112&amp;lt;p id=&amp;quot;demo1&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;	var score=90;	if(score&amp;gt;=90)&amp;#123;		out=&amp;quot;该同学成绩优秀&amp;quot;;	&amp;#125;else if((sco">
@@ -401,11 +401,17 @@
         <h2 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h2><hr>
 <h3 id="if-else条件语句"><a href="#if-else条件语句" class="headerlink" title="if-else条件语句"></a>if-else条件语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo1&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var score=90;</div><div class="line">	if(score&gt;=90)&#123;</div><div class="line">		out=&quot;该同学成绩优秀&quot;;</div><div class="line">	&#125;else if((score&lt;90)&amp;&amp;(score&gt;=80))&#123;</div><div class="line">		out=&quot;该同学成绩良好&quot;;</div><div class="line">	&#125;else&#123;</div><div class="line">		out=&quot;该同学成绩不达标&quot;</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo1&quot;).innerHTML=out;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
 <h3 id="switch-case条件语句"><a href="#switch-case条件语句" class="headerlink" title="switch-case条件语句"></a>switch-case条件语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var a=2;</div><div class="line">	var s;</div><div class="line">	switch(a)&#123;</div><div class="line">		case 1:</div><div class="line">			s=&quot;今天星期一&quot;;</div><div class="line">			break;</div><div class="line">		case 2:</div><div class="line">			s=&quot;今天星期二&quot;;</div><div class="line">			break;</div><div class="line">		default:</div><div class="line">			s=&quot;输入错误！&quot;;</div><div class="line">			</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo&quot;).innerHTML=s;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<a id="more"></a>
+<ul>
+<li>若没有break，则继续进行下一个代码块(不用进行判断)，直到遇到<br>break或者default</li>
+<li>case判断时  day===”1” ，数据类型，数值都要相同<a id="more"></a>
+</li>
+</ul>
 <h3 id="script不执行的问题"><a href="#script不执行的问题" class="headerlink" title="script不执行的问题"></a>script不执行的问题</h3><p>放在<code>&lt;head&gt;&lt;/head&gt;</code>中的script语句不执行，是由于HTML文件执行时是自上而下加载，<code>document.getElementById(&quot;demo&quot;).innerHTML=s;</code> 该语句放在头部中加载时无法获取到”demo”id。<br>调用类的都是放在head部分，而本页面的JS脚本就直接写在body中</p>
 <h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><hr>
 <h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><p><code>for(;;){
 }</code></p>
+<h3 id="do-while循环"><a href="#do-while循环" class="headerlink" title="do-while循环"></a>do-while循环</h3><p>do{</p>
+<p>}while(i&lt;10);<br>循环结束点：<br>while()条件不满足结束循环；<br>非正常结束：continue   break</p>
 <h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><p><code>while(){
 }</code></p>
 <ul>
@@ -546,7 +552,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">39</span>
+                <span class="site-state-item-count">41</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -641,7 +647,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#条件语句"><span class="nav-number">1.</span> <span class="nav-text">条件语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#if-else条件语句"><span class="nav-number">1.1.</span> <span class="nav-text">if-else条件语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#switch-case条件语句"><span class="nav-number">1.2.</span> <span class="nav-text">switch-case条件语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#script不执行的问题"><span class="nav-number">1.3.</span> <span class="nav-text">script不执行的问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环语句"><span class="nav-number">2.</span> <span class="nav-text">循环语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#for循环"><span class="nav-number">2.1.</span> <span class="nav-text">for循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while循环"><span class="nav-number">2.2.</span> <span class="nav-text">while循环</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Document对象"><span class="nav-number">3.</span> <span class="nav-text">Document对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用方法"><span class="nav-number">3.1.</span> <span class="nav-text">常用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示-隐藏—练习"><span class="nav-number">4.</span> <span class="nav-text">显示/隐藏—练习</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#条件语句"><span class="nav-number">1.</span> <span class="nav-text">条件语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#if-else条件语句"><span class="nav-number">1.1.</span> <span class="nav-text">if-else条件语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#switch-case条件语句"><span class="nav-number">1.2.</span> <span class="nav-text">switch-case条件语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#script不执行的问题"><span class="nav-number">1.3.</span> <span class="nav-text">script不执行的问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环语句"><span class="nav-number">2.</span> <span class="nav-text">循环语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#for循环"><span class="nav-number">2.1.</span> <span class="nav-text">for循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#do-while循环"><span class="nav-number">2.2.</span> <span class="nav-text">do-while循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while循环"><span class="nav-number">2.3.</span> <span class="nav-text">while循环</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Document对象"><span class="nav-number">3.</span> <span class="nav-text">Document对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用方法"><span class="nav-number">3.1.</span> <span class="nav-text">常用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示-隐藏—练习"><span class="nav-number">4.</span> <span class="nav-text">显示/隐藏—练习</span></a></li></ol></div>
             
 
           </div>

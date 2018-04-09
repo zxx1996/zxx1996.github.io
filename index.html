@@ -305,6 +305,320 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/中软大前端0330-JavaScipt/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/30/中软大前端0330-JavaScipt/" itemprop="url">中软大前端0330-JavaScipt</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-30T09:21:51+08:00">
+                2018-03-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="标签常用属性"><a href="#标签常用属性" class="headerlink" title="标签常用属性"></a><script>标签常用属性</h3><ul>
+<li><p>defer:js文件被预加载后等浏览器加载完成后执行（外部js文件）</p>
+</li>
+<li><p>async:异步设置，同时加载js和html</p>
+</li>
+</ul>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><ul>
+<li>window.alert()弹出警告框</li>
+<li>document.write()将内容写到HTML文档中</li>
+<li>innerHTML:输出到HTML元素中</li>
+<li>console.log()：输出到控制台，调试JS代码</li>
+</ul>
+<p>typeOf()：获取变量的数据类型，以字符串形式返回。只能识别5种基础数据类型和对象类型（object）</p>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="基础数据类型"><a href="#基础数据类型" class="headerlink" title="基础数据类型"></a>基础数据类型</h3><ul>
+<li><p>undefined类型<br>未定义的类型，只声明，未赋值。（缺少值）</p>
+</li>
+<li><p>null类型<br>null数值类型，在与number类型数据做运算时，null转换成数值0</p>
+</li>
+<li><p>boolean类型<br>其他数据类型转换成boolean类型<br><code>var boo=Boolean(其他数据类型)</code><br>String =””; ——false<br>number = 0; ——false<br>非null ——true<br>null ——false</p>
+</li>
+<li><p>number类型<br>16位数<br>转换-内置函数<br>parseInt(“字符”,进制数);<br>paserFloat(“字符”,进制数)<br>默认为十进制</p>
+</li>
+</ul>
+<h4 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h4><p><code>var=&quot;字符串类型&quot;</code>或<code>var=&#39;字符串类型&#39;</code></p>
+<p>方法：</p>
+<ul>
+<li>.length 长度</li>
+<li>indexOf() 字符搜索，指定从哪个下标开始，返回被搜索字符的下标值（没有找到时返回-1）<br>转移字符：<br>\n</li>
+</ul>
+<h3 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h3><p>JS中的对象体现在一个类中，定义好的一个类中</p>
+<h4 id="内置对象（例：Array数组-）"><a href="#内置对象（例：Array数组-）" class="headerlink" title="内置对象（例：Array数组[]）"></a>内置对象（例：Array数组[]）</h4><h5 id="数组："><a href="#数组：" class="headerlink" title="数组："></a>数组：</h5><p>var 数组名=new Array(size);<br>数组的容量能自动扩充  </p>
+<h6 id="三种创建方式"><a href="#三种创建方式" class="headerlink" title="三种创建方式"></a>三种创建方式</h6><p>var arr1=new Array();</p>
+<p>var arr2=new Array(5);<br>表示数组容量为5<br>var arr3=new Array(“num1”,”num2”,”num3”);<br>表示数组容量为3，数组值分别为num1,num2,num3</p>
+<p>var fruit=new Array(“apple”,”banana”,”peach”);</p>
+<p>通过下标访问元素，arr3[2];</p>
+<h6 id="属性方法"><a href="#属性方法" class="headerlink" title="属性方法"></a>属性方法</h6><p>属性：.length</p>
+<p>方法：sort()排序，根据ASCII码排序，无法实现数字从大到小排序</p>
+<p>Window对象，加载整个页面head—&gt;body</p>
+<h4 id="自定义对象-object"><a href="#自定义对象-object" class="headerlink" title="自定义对象(object)"></a>自定义对象(object)</h4><p>比较运算符<br><code>==</code> 左右类型不一致时，会先转换成相同类型，再进行比较。</p>
+<p><code>===</code> 左右类型不一致时，直接false</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>.toUpperCase() 小写转大写</p>
+</script></h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/29/中软大前端0329-图片/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/29/中软大前端0329-图片/" itemprop="url">中软大前端0329-响应式图片</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-29T10:39:12+08:00">
+                2018-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="背景图片——响应调整大小"><a href="#背景图片——响应调整大小" class="headerlink" title="背景图片——响应调整大小"></a>背景图片——响应调整大小</h2><ul>
+<li><p>background-size:contain<br>背景图片按比例自适应内容区域，图片保持原比例不变。有时不足以覆盖整个背景区域</p>
+</li>
+<li><p>background-size:100% 100%<br>背景图片延展覆盖整个区域</p>
+</li>
+<li><p>background-size:cover<br>背景图片扩展至足够覆盖背景区域，同时保持图片比例，因此有些部分无法显示</p>
+</li>
+</ul>
+<h2 id="不同设备显示不同图片"><a href="#不同设备显示不同图片" class="headerlink" title="不同设备显示不同图片"></a>不同设备显示不同图片</h2><ul>
+<li>使用媒体查询，监控更换图片（断点）</li>
+</ul>
+<h2 id="HTML5元素"><a href="#HTML5元素" class="headerlink" title="HTML5元素"></a>HTML5<picture>元素</picture></h2><p>第一个设置的资源为首选项，用<code>&lt;picture&gt;</code>元素来提供备用选项<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;picture&gt;</div><div class="line">	&lt;source src=&quot;img_1.jpg&quot; type=&quot;&quot; media=&quot;(max-width:400px)&quot;&gt;</div><div class="line">	&lt;source src=&quot;img_2.jpg&quot; type=&quot;&quot;&gt;</div><div class="line">&lt;/picture&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="srcset属性"><a href="#srcset属性" class="headerlink" title="srcset属性"></a>srcset属性</h2><p>解决分辨率切换问题时，需要使用srcset让浏览器可以选择。浏览器可以根据网络情况或用户行为等元素做决定<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=&quot;cat.jpg&quot; srcset=&quot;cat1.jpg,cat-2X.jpg 2X&quot;/&gt;</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/26/中软大前端0326-响应式布局/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -384,7 +698,7 @@
 <p>@media only screen and (max-width:768px){}<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/26/中软大前端0326-响应式布局/#more" rel="contents">
+            <a class="btn" href="/2018/03/26/中软大前端0326-响应式布局/#далее" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -550,6 +864,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">.dh&#123;</div><div class="line">	width: 200px;</div><div class="line">	height: 200px;</div><div class="line">	background-color: #FFA500;</div><div class="line">	animation: mydh 3s infinite alternate;</div><div class="line">	position: absolute;</div><div class="line">	top: 0;</div><div class="line">	left: 20px;</div><div class="line">&#125;</div><div class="line">@keyframes mydh&#123;</div><div class="line">	0%&#123;background-color: #CD5C5C;</div><div class="line">		top: 0;</div><div class="line">		left: 120px;&#125;</div><div class="line">		25%&#123;background-image: url(img/gf2.jpg);</div><div class="line">			background-size: 100% 100%;</div><div class="line">			top: 100px;</div><div class="line">			left: 120px;&#125;</div><div class="line">		50%&#123;background-image: url(img/li.png);</div><div class="line">			background-size: 100% 100%;</div><div class="line">			top: 100px;</div><div class="line">			left: 20px;&#125;</div><div class="line">		75%&#123;background-color:#F5DEB3;</div><div class="line">			top: 0;</div><div class="line">			left: 20px;&#125;</div><div class="line">			100%&#123;background-color: chocolate;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="按键动画"><a href="#按键动画" class="headerlink" title="按键动画"></a>按键动画</h2><p>按钮按下弹起效果，通过设置阴影实现<br>按下时让阴影面积缩小，按钮向下移动5px</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">/*按键动画*/</div><div class="line">#btn1&#123;</div><div class="line">	width: 200px;</div><div class="line">	height: 100px;</div><div class="line">	font-size: 30px;</div><div class="line">	background-color: mediumseagreen;</div><div class="line">	border-radius: 10px;</div><div class="line">	border: 0px;</div><div class="line">	box-shadow: 0 9px 2px darkgrey;</div><div class="line">	color: white;</div><div class="line">&#125;</div><div class="line">#btn1:active&#123;</div><div class="line">	border: 0px;</div><div class="line">	box-shadow: 0 3px 2px darkgrey;</div><div class="line">	transform: translateY(5px);			</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="照片墙"><a href="#照片墙" class="headerlink" title="照片墙"></a>照片墙</h2><ul>
+<li>transform-origin: right;<br>位置，以哪个边或哪个角旋转</li>
+<li>transform: rotate(-30deg);<br>旋转</li>
+</ul>
 
           
         
@@ -846,6 +1164,10 @@
 <li>p:after{<br>  content:””;<br>}  给段落后面添加内容</li>
 </ul>
 <p>hover要在link和visited之后，active必须在hover之后。<br>visited访问过后的样式，在页面刷新后不会恢复成link样式。删除浏览器历史记录会重新生成</p>
+<ul>
+<li>li:nth-child(1) 选择li的第一个子元素，不论是什么元素</li>
+<li>li:nth-of-type(1)<br>选择li的第一个li元素</li>
+</ul>
 <h3 id="显示小三角"><a href="#显示小三角" class="headerlink" title="显示小三角"></a>显示小三角</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">.info&#123;</div><div class="line">	width: 0;</div><div class="line">	height: 0;</div><div class="line">	border-width: 5px;</div><div class="line">	border-color:  transparent #808080 #808080  transparent; //transparent 透明色，只有一边显示颜色</div><div class="line">	border-style: solid;</div><div class="line">	position: absolute;</div><div class="line">	top: 20px;</div><div class="line">	left: 50px;</div><div class="line">	visibility: hidden;</div><div class="line">	z-index: 1;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
           
         
@@ -998,7 +1320,7 @@
 <li><code>[class$=&quot;-col&quot;]</code><br>选择所有类名中以”-col”结尾的元素
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/15/中软大前端0315-CSS/#more" rel="contents">
+            <a class="btn" href="/2018/03/15/中软大前端0315-CSS/#далее" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1158,7 +1480,7 @@
 <li>context.stroke();–开始画图—画直线必须要有
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/13/中软大前端0313-canvas画布/#more" rel="contents">
+            <a class="btn" href="/2018/03/13/中软大前端0313-canvas画布/#далее" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1304,9 +1626,12 @@
           <h2 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h2><hr>
 <h3 id="if-else条件语句"><a href="#if-else条件语句" class="headerlink" title="if-else条件语句"></a>if-else条件语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo1&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var score=90;</div><div class="line">	if(score&gt;=90)&#123;</div><div class="line">		out=&quot;该同学成绩优秀&quot;;</div><div class="line">	&#125;else if((score&lt;90)&amp;&amp;(score&gt;=80))&#123;</div><div class="line">		out=&quot;该同学成绩良好&quot;;</div><div class="line">	&#125;else&#123;</div><div class="line">		out=&quot;该同学成绩不达标&quot;</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo1&quot;).innerHTML=out;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
 <h3 id="switch-case条件语句"><a href="#switch-case条件语句" class="headerlink" title="switch-case条件语句"></a>switch-case条件语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var a=2;</div><div class="line">	var s;</div><div class="line">	switch(a)&#123;</div><div class="line">		case 1:</div><div class="line">			s=&quot;今天星期一&quot;;</div><div class="line">			break;</div><div class="line">		case 2:</div><div class="line">			s=&quot;今天星期二&quot;;</div><div class="line">			break;</div><div class="line">		default:</div><div class="line">			s=&quot;输入错误！&quot;;</div><div class="line">			</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo&quot;).innerHTML=s;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>若没有break，则继续进行下一个代码块(不用进行判断)，直到遇到<br>break或者default</li>
+<li>case判断时  day===”1” ，数据类型，数值都要相同
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/12/中软大前端0312/#more" rel="contents">
+            <a class="btn" href="/2018/03/12/中软大前端0312/#далее" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1471,303 +1796,7 @@
 <li>I:I II III IV
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/07/中软大前端0307/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/06/中软大前端0306-table/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/06/中软大前端0306-table/" itemprop="url">中软大前端0306-table</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-06T09:02:27+08:00">
-                2018-03-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中软/" itemprop="url" rel="index">
-                    <span itemprop="name">中软</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><ul>
-<li><code>&lt;thead&gt;&lt;/thead&gt;</code> 头部</li>
-<li><code>&lt;tbody&gt;&lt;/tbody&gt;</code> 主体</li>
-<li><p><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> 底部</p>
-</li>
-<li><p><code>&lt;table&gt;&lt;/table&gt;</code> 表格<br>cellspacing：单元格间的间距<br>cellpadding：单元格内的留白<br>width：表格宽度</p>
-</li>
-<li><p><code>&lt;th&gt;&lt;/th&gt;</code> 表头</p>
-</li>
-<li><code>&lt;tr&gt;&lt;/tr&gt;</code> 行</li>
-<li><code>&lt;td&gt;&lt;/td&gt;</code> 列</li>
-<li><code>&lt;caption&gt;&lt;/caption&gt;</code> 表标题</li>
-</ul>
-<h2 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h2><p>rowspan 合并行<br>colspan 合并列<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/06/中软大前端0306-table/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/05/中软大前端体验0105-bootstrap/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/05/中软大前端体验0105-bootstrap/" itemprop="url">中软大前端体验0105-bootstrap</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-05T14:54:22+08:00">
-                2018-01-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="2D转换transform"><a href="#2D转换transform" class="headerlink" title="2D转换transform"></a>2D转换transform</h2><hr>
-<ul>
-<li>属性值scale(2)；放大2倍</li>
-<li>属性值translate(20px,30px)；移动 X轴，Y轴</li>
-<li>属性值rotate(60deg)；旋转 60度</li>
-</ul>
-<h2 id="transition过度"><a href="#transition过度" class="headerlink" title="transition过度"></a>transition过度</h2><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.box&#123;</div><div class="line">	width:200px;</div><div class="line">	height:200px;</div><div class="line">	background-color: green;</div><div class="line">	transition:transfrom 2s;</div><div class="line">&#125;</div><div class="line">.box:hover&#123;</div><div class="line">	transform:rotate(20deg);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>transition属性写在发生变化前</p>
-<ul>
-<li>transition:transfrom 2s; 发生变化的过度时间</li>
-</ul>
-<h2 id="bootstrap栅格系统"><a href="#bootstrap栅格系统" class="headerlink" title="bootstrap栅格系统"></a>bootstrap栅格系统</h2><hr>
-<p>在项目中导入文件<code>bootstrap.min.css</code>,<code>bootstrap.min.js</code>,<code>jquery-3.2.1.min.js</code>，栅格系统能够自动适应屏幕变化<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/05/中软大前端体验0105-bootstrap/#more" rel="contents">
+            <a class="btn" href="/2018/03/07/中软大前端0307/#далее" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1809,7 +1838,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1857,7 +1886,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">39</span>
+                <span class="site-state-item-count">41</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
