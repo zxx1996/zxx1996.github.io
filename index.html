@@ -305,6 +305,432 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/11/JavaScript-backgroundSize/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/11/JavaScript-backgroundSize/" itemprop="url">JavaScript-backgroundSize</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-11T09:37:15+08:00">
+                2018-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="backgroundSize-100-100-与-backgroundSize-100-的区别"><a href="#backgroundSize-100-100-与-backgroundSize-100-的区别" class="headerlink" title="backgroundSize:100% 100% 与 backgroundSize:100% 的区别"></a>backgroundSize:100% 100% 与 backgroundSize:100% 的区别</h3><p>background-size:属性有两个值，第一个值为x轴的缩放比例或px，第二个值为y轴的缩放比例或pz;</p>
+<h4 id="background-size-100-100"><a href="#background-size-100-100" class="headerlink" title="background-size:100% 100%"></a>background-size:100% 100%</h4><p>当两个值都设置100%时，会拉伸填满整个容器；</p>
+<h4 id="background-size-100"><a href="#background-size-100" class="headerlink" title="background-size:100%"></a>background-size:100%</h4><p>当只设置一个100%时，第二个值默认为auto(y轴上会根据图片原有比例，和当前设置的宽度，决定高度)，这个时候宽度是占满容器的宽度的，而高度可能不足容器，也可能超出容器.</p>
+<p><strong>第一种效果你一定会看到完整的背景图片，但是有可能被挤压(失去图片原来的比例)</strong></p>
+<p><strong>第二种效果你不一定能看到完整的图片，但是图片的比例没有发生变化。</strong></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/JavaScript-正则表达式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/JavaScript-正则表达式/" itemprop="url">JavaScript-正则表达式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-10T10:28:40+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><p>使用单个字符串来描述、匹配一系列符合某个句法规则的字符串搜索模式。<br>可用于文本搜索和文本替换的操作</p>
+<p>var patt= /string/i</p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>/pattern/modifieres:/模式/修饰符</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li><p>search() ; 搜索，返回第一个找到的位置。</p>
+</li>
+<li><p>replace();文本替换</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str = &quot;Visit Microsoft!&quot;; </div><div class="line">var res = str.replace(&quot;Microsoft&quot;, &quot;w3cschool&quot;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>test(); 检测一个字符串中是否匹配某个模式,结果返回true或false</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var patt = /a/;</div><div class="line">patt.test(&quot;This is a string!&quot;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>exec();用于检索字符串中的正则表达式的匹配 </p>
+</li>
+</ul>
+<h3 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h3><p>i  : 执行对大小写不敏感的匹配<br>g  : 执行全局匹配<br>m  : 执行多行匹配</p>
+<h3 id="正则表达式模式"><a href="#正则表达式模式" class="headerlink" title="正则表达式模式"></a>正则表达式模式</h3><p>[abc] :查找方括号之间的任何字符<br>[0-9] :查找任何从0至9的数字<br>(x|y) :    查找任何以 | 分隔的选项。</p>
+<p>n+    :匹配任何包含至少一个 n 的字符串。<br>n*    :匹配任何包含零个或多个 n 的字符串。<br>n?    :匹配任何包含零个或一个 n 的字符串。</p>
+<p>\d    :查找数字。<br>\s    :查找空白字符。<br>\b    :匹配单词边界。<br>\uxxxx    :查找以十六进制数 xxxx 规定的 Unicode 字符。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/09/中软大前端0409-JS函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/09/中软大前端0409-JS函数/" itemprop="url">中软大前端0409-JS函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T08:41:24+08:00">
+                2018-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="系统函数"><a href="#系统函数" class="headerlink" title="系统函数"></a>系统函数</h3><p>isNaN(参数)：判断参数是否不是一个数字；</p>
+<h3 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h3><h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><p><code>function name(参数){}</code></p>
+<p>声明函数的关键字:function</p>
+<p>return:函数的返回值，在函数中，执行到return，函数结束执行。return后的代码不执行。</p>
+<h2 id="函数的调用"><a href="#函数的调用" class="headerlink" title="函数的调用"></a>函数的调用</h2><p>函数只有被调用才会执行代码</p>
+<p>函数名(参数组);</p>
+<h2 id="BOM模型"><a href="#BOM模型" class="headerlink" title="BOM模型"></a>BOM模型</h2><p> 浏览器对象模型<br> 包括对象：</p>
+<h3 id="window-整个BOM的核心"><a href="#window-整个BOM的核心" class="headerlink" title="window:整个BOM的核心"></a>window:整个BOM的核心</h3><h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p>prompt();<br>alert();<br>confirm(); 确定—取消，返回值为布尔型数值<br>close();<br>open(“1.html”,”<code>_selt</code>“,”窗口特征”,true);新打开一个页面<br>true:会在浏览器的历史记录中记录当前页和新打开的页面<br>srtInterval(函数,1000);间隔一定时间(毫秒)调用函数;函数会返回一个intervalId<br>clearInterval();清除调用函数</p>
+<h4 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h4><p>onXXXX监听某个事件是否发生<br>onload:页面或图像完成加载<br>onclick:单击某个对象时<br>onmouseover:鼠标移到某个元素上<br>onmouseout:鼠标从某个元素上移开</p>
+<h3 id="history-历史对象"><a href="#history-历史对象" class="headerlink" title="history:历史对象"></a>history:历史对象</h3><p>方法<br>history.back()  后退</p>
+<h3 id="document-文档对象"><a href="#document-文档对象" class="headerlink" title="document:文档对象"></a>document:文档对象</h3><h3 id="location-位置对象-页面访问的地址"><a href="#location-位置对象-页面访问的地址" class="headerlink" title="location:位置对象,页面访问的地址"></a>location:位置对象,页面访问的地址</h3><p>(URL),把浏览器重定向到新的页面</p>
+<p>location.hostname:返回WEB主机的域名<br>location.pathname:当前页面的路径和文件名</p>
+<p>location.port:返回web主机的端口<br>location.protocol:协议</p>
+<p>location.href:返回当前的(URL)可跳转页面</p>
+<p>方法<br>location.reload():重新加载，刷新页面</p>
+<p><link type="image/x-icon" href="" rel="icon">  16px * 16px<br>type   ,引用资源的MIME类型<br>rel ,关系<br>MIME参考手册<br>iconfont   图标库</p>
+<p><a href="" target=""></a><br><code>target=&quot;_self&quot;</code>:跳转链接时，不重新打开一个窗口，覆盖原有页面<br><code>target=&quot;_blank&quot;</code>:跳转链接时，重新打开一个窗口，保留原有页面（默认）</p>
+<h2 id="DOM模型"><a href="#DOM模型" class="headerlink" title="DOM模型"></a>DOM模型</h2><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li>getElementById()：返回带有指定ID的元素</li>
+<li>getElementsByTagName();返回包含有指定标签名的对象集合,访问方式类似数组</li>
+<li>getElementsByName();返回包含指定name属性值的对象集合,访问方式类似数组</li>
+<li>getElementsByClassName();</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/中软大前端0330-JavaScipt/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -416,6 +842,8 @@
 <p>Window对象，加载整个页面head—&gt;body</p>
 <h4 id="自定义对象-object"><a href="#自定义对象-object" class="headerlink" title="自定义对象(object)"></a>自定义对象(object)</h4><p>比较运算符<br><code>==</code> 左右类型不一致时，会先转换成相同类型，再进行比较。</p>
 <p><code>===</code> 左右类型不一致时，直接false</p>
+<h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>onload()页面完成加载时<br>onfocus()获得焦点时<br>onmousedown()按下鼠标时，状态持续到鼠标松开<br>onmouseup()当鼠标松开时</p>
+<p>onclick()单击事件</p>
 <h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>.toUpperCase() 小写转大写</p>
 </script></h3>
           
@@ -698,7 +1126,7 @@
 <p>@media only screen and (max-width:768px){}<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/26/中软大前端0326-响应式布局/#далее" rel="contents">
+            <a class="btn" href="/2018/03/26/中软大前端0326-响应式布局/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1320,483 +1748,7 @@
 <li><code>[class$=&quot;-col&quot;]</code><br>选择所有类名中以”-col”结尾的元素
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/15/中软大前端0315-CSS/#далее" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/13/中软大前端0313-canvas画布/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/13/中软大前端0313-canvas画布/" itemprop="url">中软大前端0313-canvas画布</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-13T15:03:55+08:00">
-                2018-03-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中软/" itemprop="url" rel="index">
-                    <span itemprop="name">中软</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><hr>
-<ul>
-<li>创建画布<br><code>&lt;canvas id=&quot;canvas1&quot; width=&quot;500px&quot; height=&quot;500px&quot;&gt;&lt;/canvas&gt;</code></li>
-<li>创建画布的2D图形<br><code>var context=document.getElementById(&quot;canvas1&quot;).getContext(&quot;2d&quot;);</code></li>
-<li>先添加样式，然后画图</li>
-</ul>
-<h3 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h3><ul>
-<li>context.beginPath();–绘制路径，开始一个画图</li>
-<li>context.closePath();–关闭路径，结束一个画图<br><strong>在同一个画布上画多个图形时需要区分,设置不同样式（如：循环输出图形时）</strong></li>
-<li>context.moveTo(sx,sy);  –直线起点</li>
-<li>context.lineTo(ex.ey);–直线终点</li>
-<li>context.strokeStyle=  ;–样式，颜色（默认黑色）</li>
-<li>context.lineWidth=  ;–线的宽度</li>
-<li>context.linCap=”butt/round/square”; –方角/圆角/方角（默认方角）</li>
-<li>context.stroke();–开始画图—画直线必须要有
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/13/中软大前端0313-canvas画布/#далее" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/12/中软大前端0312/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/12/中软大前端0312/" itemprop="url">中软大前端0312-JS条件语句&循环语句</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-12T09:14:46+08:00">
-                2018-03-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中软/" itemprop="url" rel="index">
-                    <span itemprop="name">中软</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h2><hr>
-<h3 id="if-else条件语句"><a href="#if-else条件语句" class="headerlink" title="if-else条件语句"></a>if-else条件语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo1&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var score=90;</div><div class="line">	if(score&gt;=90)&#123;</div><div class="line">		out=&quot;该同学成绩优秀&quot;;</div><div class="line">	&#125;else if((score&lt;90)&amp;&amp;(score&gt;=80))&#123;</div><div class="line">		out=&quot;该同学成绩良好&quot;;</div><div class="line">	&#125;else&#123;</div><div class="line">		out=&quot;该同学成绩不达标&quot;</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo1&quot;).innerHTML=out;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h3 id="switch-case条件语句"><a href="#switch-case条件语句" class="headerlink" title="switch-case条件语句"></a>switch-case条件语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var a=2;</div><div class="line">	var s;</div><div class="line">	switch(a)&#123;</div><div class="line">		case 1:</div><div class="line">			s=&quot;今天星期一&quot;;</div><div class="line">			break;</div><div class="line">		case 2:</div><div class="line">			s=&quot;今天星期二&quot;;</div><div class="line">			break;</div><div class="line">		default:</div><div class="line">			s=&quot;输入错误！&quot;;</div><div class="line">			</div><div class="line">	&#125;</div><div class="line">	document.getElementById(&quot;demo&quot;).innerHTML=s;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<ul>
-<li>若没有break，则继续进行下一个代码块(不用进行判断)，直到遇到<br>break或者default</li>
-<li>case判断时  day===”1” ，数据类型，数值都要相同
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/12/中软大前端0312/#далее" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/07/中软大前端0307/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/07/中软大前端0307/" itemprop="url">中软大前端0307--文字滚动，列表list</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T11:35:15+08:00">
-                2018-03-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中软/" itemprop="url" rel="index">
-                    <span itemprop="name">中软</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="marquee标签-滚动"><a href="#marquee标签-滚动" class="headerlink" title="marquee标签 :滚动"></a>marquee标签 :滚动</h2><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;&quot;&gt;</div><div class="line">	&lt;marquee behavior=&quot;&quot; direction=&quot;left&quot;&gt;&lt;/marquee&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-<h4 id="behavior：文字滚动样式scroll-slide-alternate"><a href="#behavior：文字滚动样式scroll-slide-alternate" class="headerlink" title="behavior：文字滚动样式scroll,slide,alternate"></a>behavior：文字滚动样式scroll,slide,alternate</h4><ul>
-<li>scroll:滚动</li>
-<li>slide:滑动</li>
-<li>alternate:碰撞滚动</li>
-</ul>
-<h4 id="direction-文字滚动方向-left-right-up-down"><a href="#direction-文字滚动方向-left-right-up-down" class="headerlink" title="direction:文字滚动方向 left,right,up,down"></a>direction:文字滚动方向 left,right,up,down</h4><ul>
-<li>left:从右向左</li>
-<li>up:从下向上</li>
-</ul>
-<h4 id="loop-文字滚动次数"><a href="#loop-文字滚动次数" class="headerlink" title="loop:文字滚动次数"></a>loop:文字滚动次数</h4><h4 id="scrolldelay-每次滚动的时间间隔-毫秒"><a href="#scrolldelay-每次滚动的时间间隔-毫秒" class="headerlink" title="scrolldelay:每次滚动的时间间隔(毫秒)"></a>scrolldelay:每次滚动的时间间隔(毫秒)</h4><h4 id="scrollamount-每次滚动之间的间隔像素"><a href="#scrollamount-每次滚动之间的间隔像素" class="headerlink" title="scrollamount:每次滚动之间的间隔像素"></a>scrollamount:每次滚动之间的间隔像素</h4><h2 id="list列表"><a href="#list列表" class="headerlink" title="list列表"></a>list列表</h2><hr>
-<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;ol type=&quot;1&quot;&gt;</div><div class="line">	&lt;li&gt;&lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure>
-<p>type值：</p>
-<ul>
-<li>1: 1 2 3 4</li>
-<li>A：A B C D E</li>
-<li>a:a b c d e</li>
-<li>i:i ii iii iv</li>
-<li>I:I II III IV
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/07/中软大前端0307/#далее" rel="contents">
+            <a class="btn" href="/2018/03/15/中软大前端0315-CSS/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1886,7 +1838,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-count">44</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
