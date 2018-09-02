@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="Lyz的博客">
 <meta property="og:description" content="函数系统函数isNaN(参数)：判断参数是否不是一个数字； 自定义函数语法function name(参数){} 声明函数的关键字:function return:函数的返回值，在函数中，执行到return，函数结束执行。return后的代码不执行。 函数的调用函数只有被调用才会执行代码 函数名(参数组); BOM模型 浏览器对象模型 包括对象： window:整个BOM的核心常用方法prompt">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-10T08:28:40.886Z">
+<meta property="og:updated_time" content="2018-04-13T09:10:57.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中软大前端0409-JS函数">
 <meta name="twitter:description" content="函数系统函数isNaN(参数)：判断参数是否不是一个数字； 自定义函数语法function name(参数){} 声明函数的关键字:function return:函数的返回值，在函数中，执行到return，函数结束执行。return后的代码不执行。 函数的调用函数只有被调用才会执行代码 函数名(参数组); BOM模型 浏览器对象模型 包括对象： window:整个BOM的核心常用方法prompt">
@@ -416,10 +416,37 @@
 <p><link type="image/x-icon" href="" rel="icon">  16px * 16px<br>type   ,引用资源的MIME类型<br>rel ,关系<br>MIME参考手册<br>iconfont   图标库</p>
 <p><a href="" target=""></a><br><code>target=&quot;_self&quot;</code>:跳转链接时，不重新打开一个窗口，覆盖原有页面<br><code>target=&quot;_blank&quot;</code>:跳转链接时，重新打开一个窗口，保留原有页面（默认）</p>
 <h2 id="DOM模型"><a href="#DOM模型" class="headerlink" title="DOM模型"></a>DOM模型</h2><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
-<li>getElementById()：返回带有指定ID的元素</li>
+<li>getElementById()：返回带有指定ID的元素。</li>
 <li>getElementsByTagName();返回包含有指定标签名的对象集合,访问方式类似数组</li>
 <li>getElementsByName();返回包含指定name属性值的对象集合,访问方式类似数组</li>
 <li>getElementsByClassName();</li>
+</ul>
+<h3 id="addEventListener-方法"><a href="#addEventListener-方法" class="headerlink" title="addEventListener()方法"></a>addEventListener()方法</h3><p>给元素添加事件监听</p>
+<h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><p> element.addEventListener(event, function, useCapture);<br>第一个参数是事件的类型；<br>第二个参数是事件触发后调用的函数；<br>第三个参数是个布尔值用于描述事件是冒泡还会捕获，参数可选</p>
+<ul>
+<li><p>调用外部函数，第二个参数，直接填写<code>函数名</code> ，不需要 <code>函数名()</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;button id=&quot;btn&quot;&gt;按钮&lt;/button&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	document.getElementById(&quot;btn&quot;).addEventListener(&quot;click&quot;,show);</div><div class="line">	function show()&#123;</div><div class="line">		alert(&quot;点击了按钮！&quot;);</div><div class="line">	&#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>直接写函数（匿名函数）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;button id=&quot;btn&quot;&gt;按钮&lt;/button&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	document.getElementById(&quot;btn&quot;).addEventListener(&quot;click&quot;,function ()&#123;</div><div class="line">		alert(&quot;点击了按钮！&quot;);</div><div class="line">	&#125;);</div><div class="line">	</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>removeEventListener()移除事件的监听</p>
+<h4 id="事件的传递方式：冒泡和捕获"><a href="#事件的传递方式：冒泡和捕获" class="headerlink" title="事件的传递方式：冒泡和捕获"></a>事件的传递方式：冒泡和捕获</h4><p>默认值为 false, 即冒泡传递，当值为 true 时, 事件使用捕获传递。</p>
+<ul>
+<li>在冒泡中，内部元素的事件会先被触发，然后再触发外部元素(从最具体的元素开始，然后逐级向上，直至文档)</li>
+<li>在捕获中，外部元素的事件会先被触发，然后才会触发内部元素的事件(从最不具体的元素，到最具体的元素)</li>
+</ul>
+<h3 id="DOM事件"><a href="#DOM事件" class="headerlink" title="DOM事件"></a>DOM事件</h3><h4 id="DOM0级事件"><a href="#DOM0级事件" class="headerlink" title="DOM0级事件"></a>DOM0级事件</h4><p>在JS代码中直接处理事件。同一个对象的同一个事件只能处理一次（会覆盖）<br><code>var btn1=document.getElementById(&quot;btn1&quot;);</code><br><code>btn1.onclick = function (){ alert(&quot;Hello DOM 0级事件处理程序&quot;)}</code></p>
+<h4 id="DOM2级事件处理"><a href="#DOM2级事件处理" class="headerlink" title="DOM2级事件处理"></a>DOM2级事件处理</h4><p>同一个对象的同一个事件可以有多个处理程序<br><code>addEventListener(事件类型, 函数, 布尔值);</code></p>
+<h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><p>元素节点，文本节点，属性节点，父节点，子节点</p>
+<p>换行符 “<br>“ 节点类型为文本节点。(代码中的空行也会被解读成文本节点)</p>
+<p>获取body元素：document.body</p>
+<h4 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h4><p>创建元素节点：createElement()<br>创建文本节点：createTextNode()<br>创建子节点：节点.appendChild()</p>
+<h4 id="删除子节点"><a href="#删除子节点" class="headerlink" title="删除子节点"></a>删除子节点</h4><p>node.removeChild(childNode);<br>只能根据父节点删除子节点，要删除某个节点必须先找到它的父节点<br>childNode.parentNode.removeChild(childNode);</p>
+<h4 id="替换节点"><a href="#替换节点" class="headerlink" title="替换节点"></a>替换节点</h4><p>node.replaceChild(newNode,oldNode);<br>创建新节点，替换旧节点;也必须找到父节点</p>
+<h3 id="DOM查询"><a href="#DOM查询" class="headerlink" title="DOM查询"></a>DOM查询</h3><ul>
+<li>document.querySlectorAll(“选择器”);<br>选择器</li>
 </ul>
 
       
@@ -542,7 +569,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">44</span>
+                <span class="site-state-item-count">52</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -564,7 +591,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -637,7 +664,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">1.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#系统函数"><span class="nav-number">1.1.</span> <span class="nav-text">系统函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义函数"><span class="nav-number">1.2.</span> <span class="nav-text">自定义函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法"><span class="nav-number">1.2.1.</span> <span class="nav-text">语法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的调用"><span class="nav-number">2.</span> <span class="nav-text">函数的调用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BOM模型"><span class="nav-number">3.</span> <span class="nav-text">BOM模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#window-整个BOM的核心"><span class="nav-number">3.1.</span> <span class="nav-text">window:整个BOM的核心</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用方法"><span class="nav-number">3.1.1.</span> <span class="nav-text">常用方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事件"><span class="nav-number">3.1.2.</span> <span class="nav-text">事件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#history-历史对象"><span class="nav-number">3.2.</span> <span class="nav-text">history:历史对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#document-文档对象"><span class="nav-number">3.3.</span> <span class="nav-text">document:文档对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#location-位置对象-页面访问的地址"><span class="nav-number">3.4.</span> <span class="nav-text">location:位置对象,页面访问的地址</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM模型"><span class="nav-number">4.</span> <span class="nav-text">DOM模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">4.1.</span> <span class="nav-text">方法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">1.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#系统函数"><span class="nav-number">1.1.</span> <span class="nav-text">系统函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义函数"><span class="nav-number">1.2.</span> <span class="nav-text">自定义函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法"><span class="nav-number">1.2.1.</span> <span class="nav-text">语法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的调用"><span class="nav-number">2.</span> <span class="nav-text">函数的调用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BOM模型"><span class="nav-number">3.</span> <span class="nav-text">BOM模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#window-整个BOM的核心"><span class="nav-number">3.1.</span> <span class="nav-text">window:整个BOM的核心</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用方法"><span class="nav-number">3.1.1.</span> <span class="nav-text">常用方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事件"><span class="nav-number">3.1.2.</span> <span class="nav-text">事件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#history-历史对象"><span class="nav-number">3.2.</span> <span class="nav-text">history:历史对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#document-文档对象"><span class="nav-number">3.3.</span> <span class="nav-text">document:文档对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#location-位置对象-页面访问的地址"><span class="nav-number">3.4.</span> <span class="nav-text">location:位置对象,页面访问的地址</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM模型"><span class="nav-number">4.</span> <span class="nav-text">DOM模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">4.1.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#addEventListener-方法"><span class="nav-number">4.2.</span> <span class="nav-text">addEventListener()方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法："><span class="nav-number">4.2.1.</span> <span class="nav-text">语法：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事件的传递方式：冒泡和捕获"><span class="nav-number">4.2.2.</span> <span class="nav-text">事件的传递方式：冒泡和捕获</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM事件"><span class="nav-number">4.3.</span> <span class="nav-text">DOM事件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DOM0级事件"><span class="nav-number">4.3.1.</span> <span class="nav-text">DOM0级事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DOM2级事件处理"><span class="nav-number">4.3.2.</span> <span class="nav-text">DOM2级事件处理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#节点"><span class="nav-number">4.4.</span> <span class="nav-text">节点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建节点"><span class="nav-number">4.4.1.</span> <span class="nav-text">创建节点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除子节点"><span class="nav-number">4.4.2.</span> <span class="nav-text">删除子节点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#替换节点"><span class="nav-number">4.4.3.</span> <span class="nav-text">替换节点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM查询"><span class="nav-number">4.5.</span> <span class="nav-text">DOM查询</span></a></li></ol></li></ol></div>
             
 
           </div>

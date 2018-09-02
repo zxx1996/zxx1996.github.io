@@ -305,6 +305,1278 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/09/中软大前端0409-JS函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/09/中软大前端0409-JS函数/" itemprop="url">中软大前端0409-JS函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T08:41:24+08:00">
+                2018-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="系统函数"><a href="#系统函数" class="headerlink" title="系统函数"></a>系统函数</h3><p>isNaN(参数)：判断参数是否不是一个数字；</p>
+<h3 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h3><h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><p><code>function name(参数){}</code></p>
+<p>声明函数的关键字:function</p>
+<p>return:函数的返回值，在函数中，执行到return，函数结束执行。return后的代码不执行。</p>
+<h2 id="函数的调用"><a href="#函数的调用" class="headerlink" title="函数的调用"></a>函数的调用</h2><p>函数只有被调用才会执行代码</p>
+<p>函数名(参数组);</p>
+<h2 id="BOM模型"><a href="#BOM模型" class="headerlink" title="BOM模型"></a>BOM模型</h2><p> 浏览器对象模型<br> 包括对象：</p>
+<h3 id="window-整个BOM的核心"><a href="#window-整个BOM的核心" class="headerlink" title="window:整个BOM的核心"></a>window:整个BOM的核心</h3><h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p>prompt();<br>alert();<br>confirm(); 确定—取消，返回值为布尔型数值<br>close();<br>open(“1.html”,”<code>_selt</code>“,”窗口特征”,true);新打开一个页面<br>true:会在浏览器的历史记录中记录当前页和新打开的页面<br>srtInterval(函数,1000);间隔一定时间(毫秒)调用函数;函数会返回一个intervalId<br>clearInterval();清除调用函数</p>
+<h4 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h4><p>onXXXX监听某个事件是否发生<br>onload:页面或图像完成加载<br>onclick:单击某个对象时<br>onmouseover:鼠标移到某个元素上<br>onmouseout:鼠标从某个元素上移开</p>
+<h3 id="history-历史对象"><a href="#history-历史对象" class="headerlink" title="history:历史对象"></a>history:历史对象</h3><p>方法<br>history.back()  后退</p>
+<h3 id="document-文档对象"><a href="#document-文档对象" class="headerlink" title="document:文档对象"></a>document:文档对象</h3><h3 id="location-位置对象-页面访问的地址"><a href="#location-位置对象-页面访问的地址" class="headerlink" title="location:位置对象,页面访问的地址"></a>location:位置对象,页面访问的地址</h3><p>(URL),把浏览器重定向到新的页面</p>
+<p>location.hostname:返回WEB主机的域名<br>location.pathname:当前页面的路径和文件名</p>
+<p>location.port:返回web主机的端口<br>location.protocol:协议</p>
+<p>location.href:返回当前的(URL)可跳转页面</p>
+<p>方法<br>location.reload():重新加载，刷新页面</p>
+<p><link type="image/x-icon" href="" rel="icon">  16px * 16px<br>type   ,引用资源的MIME类型<br>rel ,关系<br>MIME参考手册<br>iconfont   图标库</p>
+<p><a href="" target=""></a><br><code>target=&quot;_self&quot;</code>:跳转链接时，不重新打开一个窗口，覆盖原有页面<br><code>target=&quot;_blank&quot;</code>:跳转链接时，重新打开一个窗口，保留原有页面（默认）</p>
+<h2 id="DOM模型"><a href="#DOM模型" class="headerlink" title="DOM模型"></a>DOM模型</h2><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li>getElementById()：返回带有指定ID的元素。</li>
+<li>getElementsByTagName();返回包含有指定标签名的对象集合,访问方式类似数组</li>
+<li>getElementsByName();返回包含指定name属性值的对象集合,访问方式类似数组</li>
+<li>getElementsByClassName();</li>
+</ul>
+<h3 id="addEventListener-方法"><a href="#addEventListener-方法" class="headerlink" title="addEventListener()方法"></a>addEventListener()方法</h3><p>给元素添加事件监听</p>
+<h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><p> element.addEventListener(event, function, useCapture);<br>第一个参数是事件的类型；<br>第二个参数是事件触发后调用的函数；<br>第三个参数是个布尔值用于描述事件是冒泡还会捕获，参数可选</p>
+<ul>
+<li><p>调用外部函数，第二个参数，直接填写<code>函数名</code> ，不需要 <code>函数名()</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;button id=&quot;btn&quot;&gt;按钮&lt;/button&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	document.getElementById(&quot;btn&quot;).addEventListener(&quot;click&quot;,show);</div><div class="line">	function show()&#123;</div><div class="line">		alert(&quot;点击了按钮！&quot;);</div><div class="line">	&#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>直接写函数（匿名函数）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;button id=&quot;btn&quot;&gt;按钮&lt;/button&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	document.getElementById(&quot;btn&quot;).addEventListener(&quot;click&quot;,function ()&#123;</div><div class="line">		alert(&quot;点击了按钮！&quot;);</div><div class="line">	&#125;);</div><div class="line">	</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>removeEventListener()移除事件的监听</p>
+<h4 id="事件的传递方式：冒泡和捕获"><a href="#事件的传递方式：冒泡和捕获" class="headerlink" title="事件的传递方式：冒泡和捕获"></a>事件的传递方式：冒泡和捕获</h4><p>默认值为 false, 即冒泡传递，当值为 true 时, 事件使用捕获传递。</p>
+<ul>
+<li>在冒泡中，内部元素的事件会先被触发，然后再触发外部元素(从最具体的元素开始，然后逐级向上，直至文档)</li>
+<li>在捕获中，外部元素的事件会先被触发，然后才会触发内部元素的事件(从最不具体的元素，到最具体的元素)</li>
+</ul>
+<h3 id="DOM事件"><a href="#DOM事件" class="headerlink" title="DOM事件"></a>DOM事件</h3><h4 id="DOM0级事件"><a href="#DOM0级事件" class="headerlink" title="DOM0级事件"></a>DOM0级事件</h4><p>在JS代码中直接处理事件。同一个对象的同一个事件只能处理一次（会覆盖）<br><code>var btn1=document.getElementById(&quot;btn1&quot;);</code><br><code>btn1.onclick = function (){ alert(&quot;Hello DOM 0级事件处理程序&quot;)}</code></p>
+<h4 id="DOM2级事件处理"><a href="#DOM2级事件处理" class="headerlink" title="DOM2级事件处理"></a>DOM2级事件处理</h4><p>同一个对象的同一个事件可以有多个处理程序<br><code>addEventListener(事件类型, 函数, 布尔值);</code></p>
+<h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><p>元素节点，文本节点，属性节点，父节点，子节点</p>
+<p>换行符 “<br>“ 节点类型为文本节点。(代码中的空行也会被解读成文本节点)</p>
+<p>获取body元素：document.body</p>
+<h4 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h4><p>创建元素节点：createElement()<br>创建文本节点：createTextNode()<br>创建子节点：节点.appendChild()</p>
+<h4 id="删除子节点"><a href="#删除子节点" class="headerlink" title="删除子节点"></a>删除子节点</h4><p>node.removeChild(childNode);<br>只能根据父节点删除子节点，要删除某个节点必须先找到它的父节点<br>childNode.parentNode.removeChild(childNode);</p>
+<h4 id="替换节点"><a href="#替换节点" class="headerlink" title="替换节点"></a>替换节点</h4><p>node.replaceChild(newNode,oldNode);<br>创建新节点，替换旧节点;也必须找到父节点</p>
+<h3 id="DOM查询"><a href="#DOM查询" class="headerlink" title="DOM查询"></a>DOM查询</h3><ul>
+<li>document.querySlectorAll(“选择器”);<br>选择器</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/中软大前端0330-JavaScipt/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/30/中软大前端0330-JavaScipt/" itemprop="url">中软大前端0330-JavaScipt</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-30T09:21:51+08:00">
+                2018-03-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="标签常用属性"><a href="#标签常用属性" class="headerlink" title="标签常用属性"></a><script>标签常用属性</h3><ul>
+<li><p>defer:js文件被预加载后等浏览器加载完成后执行（外部js文件）</p>
+</li>
+<li><p>async:异步设置，同时加载js和html</p>
+</li>
+</ul>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><ul>
+<li>window.alert()弹出警告框</li>
+<li>document.write()将内容写到HTML文档中</li>
+<li>innerHTML:输出到HTML元素中</li>
+<li>console.log()：输出到控制台，调试JS代码</li>
+</ul>
+<p>typeOf()：获取变量的数据类型，以字符串形式返回。只能识别5种基础数据类型和对象类型（object）</p>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="基础数据类型"><a href="#基础数据类型" class="headerlink" title="基础数据类型"></a>基础数据类型</h3><ul>
+<li><p>undefined类型<br>未定义的类型，只声明，未赋值。（缺少值）</p>
+</li>
+<li><p>null类型<br>null数值类型，在与number类型数据做运算时，null转换成数值0</p>
+</li>
+<li><p>boolean类型<br>其他数据类型转换成boolean类型<br><code>var boo=Boolean(其他数据类型)</code><br>String =””; ——false<br>number = 0; ——false<br>非null ——true<br>null ——false</p>
+</li>
+<li><p>number类型<br>16位数<br>转换-内置函数<br>parseInt(“字符”,进制数);<br>paserFloat(“字符”,进制数)<br>默认为十进制</p>
+</li>
+</ul>
+<h4 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h4><p><code>var=&quot;字符串类型&quot;</code>或<code>var=&#39;字符串类型&#39;</code></p>
+<p>方法：</p>
+<ul>
+<li>.length 长度</li>
+<li>indexOf() 字符搜索，指定从哪个下标开始，返回被搜索字符的下标值（没有找到时返回-1）<br>转移字符：<br>\n</li>
+</ul>
+<h3 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h3><p>JS中的对象体现在一个类中，定义好的一个类中</p>
+<h4 id="内置对象（例：Array数组-）"><a href="#内置对象（例：Array数组-）" class="headerlink" title="内置对象（例：Array数组[]）"></a>内置对象（例：Array数组[]）</h4><h5 id="数组："><a href="#数组：" class="headerlink" title="数组："></a>数组：</h5><p>var 数组名=new Array(size);<br>数组的容量能自动扩充  </p>
+<h6 id="三种创建方式"><a href="#三种创建方式" class="headerlink" title="三种创建方式"></a>三种创建方式</h6><p>var arr1=new Array();</p>
+<p>var arr2=new Array(5);<br>表示数组容量为5<br>var arr3=new Array(“num1”,”num2”,”num3”);<br>表示数组容量为3，数组值分别为num1,num2,num3</p>
+<p>var fruit=new Array(“apple”,”banana”,”peach”);</p>
+<p>通过下标访问元素，arr3[2];</p>
+<h6 id="属性方法"><a href="#属性方法" class="headerlink" title="属性方法"></a>属性方法</h6><p>属性：.length</p>
+<p>方法：sort()排序，根据ASCII码排序，无法实现数字从大到小排序</p>
+<p>Window对象，加载整个页面head—&gt;body</p>
+<h4 id="自定义对象-object"><a href="#自定义对象-object" class="headerlink" title="自定义对象(object)"></a>自定义对象(object)</h4><p>比较运算符<br><code>==</code> 左右类型不一致时，会先转换成相同类型，再进行比较。</p>
+<p><code>===</code> 左右类型不一致时，直接false</p>
+<h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>onload()页面完成加载时<br>onfocus()获得焦点时<br>onmousedown()按下鼠标时，状态持续到鼠标松开<br>onmouseup()当鼠标松开时</p>
+<p>onclick()单击事件<br>onfocus() 输入框获取焦点<br>onblur() 失去焦点</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>.toUpperCase() 小写转大写</p>
+<h2 id="表单验证"><a href="#表单验证" class="headerlink" title="表单验证"></a>表单验证</h2><p>表单提交的目标对象，提交方式<br>action：<br>method：get/post(get在地址栏显示参数，post不显示参数)<br>onsubmit事件：表单是否提交；return true–&gt;可以提交；return false–&gt;阻止提交</p>
+</script></h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/29/中软大前端0329-图片/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/29/中软大前端0329-图片/" itemprop="url">中软大前端0329-响应式图片</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-29T10:39:12+08:00">
+                2018-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="背景图片——响应调整大小"><a href="#背景图片——响应调整大小" class="headerlink" title="背景图片——响应调整大小"></a>背景图片——响应调整大小</h2><ul>
+<li><p>background-size:contain<br>背景图片按比例自适应内容区域，图片保持原比例不变。有时不足以覆盖整个背景区域</p>
+</li>
+<li><p>background-size:100% 100%<br>背景图片延展覆盖整个区域</p>
+</li>
+<li><p>background-size:cover<br>背景图片扩展至足够覆盖背景区域，同时保持图片比例，因此有些部分无法显示</p>
+</li>
+</ul>
+<h2 id="不同设备显示不同图片"><a href="#不同设备显示不同图片" class="headerlink" title="不同设备显示不同图片"></a>不同设备显示不同图片</h2><ul>
+<li>使用媒体查询，监控更换图片（断点）</li>
+</ul>
+<h2 id="HTML5元素"><a href="#HTML5元素" class="headerlink" title="HTML5元素"></a>HTML5<picture>元素</picture></h2><p>第一个设置的资源为首选项，用<code>&lt;picture&gt;</code>元素来提供备用选项<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;picture&gt;</div><div class="line">	&lt;source src=&quot;img_1.jpg&quot; type=&quot;&quot; media=&quot;(max-width:400px)&quot;&gt;</div><div class="line">	&lt;source src=&quot;img_2.jpg&quot; type=&quot;&quot;&gt;</div><div class="line">&lt;/picture&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="srcset属性"><a href="#srcset属性" class="headerlink" title="srcset属性"></a>srcset属性</h2><p>解决分辨率切换问题时，需要使用srcset让浏览器可以选择。浏览器可以根据网络情况或用户行为等元素做决定<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=&quot;cat.jpg&quot; srcset=&quot;cat1.jpg,cat-2X.jpg 2X&quot;/&gt;</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/26/中软大前端0326-响应式布局/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/26/中软大前端0326-响应式布局/" itemprop="url">中软大前端0326-响应式布局</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-26T08:24:27+08:00">
+                2018-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><h3 id="用媒体查询实现"><a href="#用媒体查询实现" class="headerlink" title="用媒体查询实现"></a>用媒体查询实现</h3><ul>
+<li><p>max-width:768px 当最大宽度为480px时（即屏幕宽度小于768px时）的布局</p>
+</li>
+<li><p>min-width:480px 当最小宽度为768px时（即屏幕宽度大于480px时）的布局</p>
+</li>
+</ul>
+<p>@media only screen and (max-width:768px){}<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/26/中软大前端0326-响应式布局/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/23/中软大前端0323-动画/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/23/中软大前端0323-动画/" itemprop="url">中软大前端0323-动画</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-23T08:31:53+08:00">
+                2018-03-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="2D转换"><a href="#2D转换" class="headerlink" title="2D转换"></a>2D转换</h2><h3 id="transform-2D转换"><a href="#transform-2D转换" class="headerlink" title="transform 2D转换"></a>transform 2D转换</h3><ul>
+<li>translate(px,px) 平移</li>
+<li>rotate(deg) 角度旋转</li>
+<li>scale(1,1)放大倍数</li>
+<li>skew(x-deg,y-deg)旋转 沿坐标轴旋转</li>
+</ul>
+<h3 id="transition过度效果"><a href="#transition过度效果" class="headerlink" title="transition过度效果"></a>transition过度效果</h3><ul>
+<li>transition:all 2s ease 2s<br>（变化样式，持续时间，速度，延迟）</li>
+<li>速度<br>linear 匀速<br>ease 变慢<br>ease-in 加速<br>ease-out 减速<br>cubic-bezier(n,n,n,n) 贝塞尔曲线</li>
+</ul>
+<h2 id="3D转换"><a href="#3D转换" class="headerlink" title="3D转换"></a>3D转换</h2><ul>
+<li>rotateX(90deg);</li>
+<li>rotateY(90deg);</li>
+<li>rotateZ(90deg);</li>
+</ul>
+<h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><h3 id="声明动画"><a href="#声明动画" class="headerlink" title="声明动画"></a>声明动画</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">@keyframes name&#123;</div><div class="line">	from&#123;background:red&#125;;</div><div class="line">	to&#123;background:blue&#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@keyframes name&#123;</div><div class="line">	0%Q&#123;background:red&#125;;</div><div class="line">	50%&#123;background:blue&#125;;</div><div class="line">	100%&#123;background:yellow&#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="使用动画animation"><a href="#使用动画animation" class="headerlink" title="使用动画animation:"></a>使用动画animation:</h3><ul>
+<li>animation: name 2s esae-in infinite alternate<br>(name 持续时间 速度 延迟 次数-无限次 反向)<br>1、页面加载时，自动执行<br>2、执行次数可自定义<br>3、可重复调用</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">.dh&#123;</div><div class="line">	width: 200px;</div><div class="line">	height: 200px;</div><div class="line">	background-color: #FFA500;</div><div class="line">	animation: mydh 3s infinite alternate;</div><div class="line">	position: absolute;</div><div class="line">	top: 0;</div><div class="line">	left: 20px;</div><div class="line">&#125;</div><div class="line">@keyframes mydh&#123;</div><div class="line">	0%&#123;background-color: #CD5C5C;</div><div class="line">		top: 0;</div><div class="line">		left: 120px;&#125;</div><div class="line">		25%&#123;background-image: url(img/gf2.jpg);</div><div class="line">			background-size: 100% 100%;</div><div class="line">			top: 100px;</div><div class="line">			left: 120px;&#125;</div><div class="line">		50%&#123;background-image: url(img/li.png);</div><div class="line">			background-size: 100% 100%;</div><div class="line">			top: 100px;</div><div class="line">			left: 20px;&#125;</div><div class="line">		75%&#123;background-color:#F5DEB3;</div><div class="line">			top: 0;</div><div class="line">			left: 20px;&#125;</div><div class="line">			100%&#123;background-color: chocolate;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="按键动画"><a href="#按键动画" class="headerlink" title="按键动画"></a>按键动画</h2><p>按钮按下弹起效果，通过设置阴影实现<br>按下时让阴影面积缩小，按钮向下移动5px</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">/*按键动画*/</div><div class="line">#btn1&#123;</div><div class="line">	width: 200px;</div><div class="line">	height: 100px;</div><div class="line">	font-size: 30px;</div><div class="line">	background-color: mediumseagreen;</div><div class="line">	border-radius: 10px;</div><div class="line">	border: 0px;</div><div class="line">	box-shadow: 0 9px 2px darkgrey;</div><div class="line">	color: white;</div><div class="line">&#125;</div><div class="line">#btn1:active&#123;</div><div class="line">	border: 0px;</div><div class="line">	box-shadow: 0 3px 2px darkgrey;</div><div class="line">	transform: translateY(5px);			</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="照片墙"><a href="#照片墙" class="headerlink" title="照片墙"></a>照片墙</h2><ul>
+<li>transform-origin: right;<br>位置，以哪个边或哪个角旋转</li>
+<li>transform: rotate(-30deg);<br>旋转</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/中软大前端0322-渐变/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/22/中软大前端0322-渐变/" itemprop="url">中软大前端0322-渐变</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T10:50:04+08:00">
+                2018-03-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="背景渐变"><a href="#背景渐变" class="headerlink" title="背景渐变"></a>背景渐变</h2><h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><p>background:line-grsdient()<br>background: linear-gradient(white,red,white);<br>（颜色,颜色,颜色）<br>background: linear-gradient(to right top,blue,red);<br>（渐变方向,颜色,颜色）<br>background: linear-gradient(90deg,blue,red);<br>(角度,颜色)<br>background: linear-gradient(90deg,blue 20%,white 0, white 30%,yellow 0,yellow 10%);</p>
+<h3 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h3><p>background:radial-gradient(circle,red,blue);</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/20/中软大前端0320-伪类/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/20/中软大前端0320-伪类/" itemprop="url">中软大前端0320-伪类</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-20T09:54:24+08:00">
+                2018-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h2><h3 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h3><p>选择器 : 伪类名{<br>    属性:属性值<br>}</p>
+<h3 id="常用伪类"><a href="#常用伪类" class="headerlink" title="常用伪类"></a>常用伪类</h3><ul>
+<li>a:hover 鼠标滑过时的样式</li>
+<li>a:link  链接没有未访问时样式</li>
+<li>a:visited  链接访问过后的样式</li>
+<li><p>a:active 鼠标点击时的样式</p>
+</li>
+<li><p>p:before 给段落前面添加内容</p>
+</li>
+<li>p:after{<br>  content:””;<br>}  给段落后面添加内容</li>
+</ul>
+<p>hover要在link和visited之后，active必须在hover之后。<br>visited访问过后的样式，在页面刷新后不会恢复成link样式。删除浏览器历史记录会重新生成</p>
+<ul>
+<li>li:nth-child(1) 选择li的第一个子元素，不论是什么元素</li>
+<li>li:nth-of-type(1)<br>选择li的第一个li元素</li>
+</ul>
+<h3 id="显示小三角"><a href="#显示小三角" class="headerlink" title="显示小三角"></a>显示小三角</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">.info&#123;</div><div class="line">	width: 0;</div><div class="line">	height: 0;</div><div class="line">	border-width: 5px;</div><div class="line">	border-color:  transparent #808080 #808080  transparent; //transparent 透明色，只有一边显示颜色</div><div class="line">	border-style: solid;</div><div class="line">	position: absolute;</div><div class="line">	top: 20px;</div><div class="line">	left: 50px;</div><div class="line">	visibility: hidden;</div><div class="line">	z-index: 1;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/15/中软大前端0315-CSS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/15/中软大前端0315-CSS/" itemprop="url">中软大前端0315-CSS</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-15T10:32:20+08:00">
+                2018-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h3 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h3><hr>
+<ul>
+<li><p><code>*</code>全部选择器<br><code>*{}</code></p>
+</li>
+<li><p>标签选择器<br><code>div{}</code></p>
+</li>
+<li><p>ID选择器<br><code>#divId{}</code></p>
+</li>
+<li><p>类选择器（class）<br>具有同样样式的使用类，需要重复使用的<br><code>.divClass{}</code></p>
+</li>
+<li><p>符合选择器<br>后代选择器：ul li  使用空格（嵌套）</p>
+</li>
+</ul>
+<p>交集选择器：直接连接（第一个选择器必须是标签选择器 标签+class 符合这两个条件的）,且的关系（JQuery的交集选择器中第一个选择器没有要求）</p>
+<p>并集选择器：使用逗号</p>
+<ul>
+<li>伪类选择器<br>p:first</li>
+</ul>
+<ul>
+<li><code>[class*=&quot;col-&quot;]</code><br>选择所有类名中含有”col-“的元素</li>
+<li><code>[class^=&quot;col-&quot;]</code><br>选择所有类名中以”col-“开头的元素</li>
+<li><code>[class$=&quot;-col&quot;]</code><br>选择所有类名中以”-col”结尾的元素
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/15/中软大前端0315-CSS/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/13/中软大前端0313-canvas画布/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -603,1215 +1875,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/07/中软大前端0307/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/07/中软大前端0307/" itemprop="url">中软大前端0307--文字滚动，列表list</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T11:35:15+08:00">
-                2018-03-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中软/" itemprop="url" rel="index">
-                    <span itemprop="name">中软</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="marquee标签-滚动"><a href="#marquee标签-滚动" class="headerlink" title="marquee标签 :滚动"></a>marquee标签 :滚动</h2><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;&quot;&gt;</div><div class="line">	&lt;marquee behavior=&quot;&quot; direction=&quot;left&quot;&gt;&lt;/marquee&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-<h4 id="behavior：文字滚动样式scroll-slide-alternate"><a href="#behavior：文字滚动样式scroll-slide-alternate" class="headerlink" title="behavior：文字滚动样式scroll,slide,alternate"></a>behavior：文字滚动样式scroll,slide,alternate</h4><ul>
-<li>scroll:滚动</li>
-<li>slide:滑动</li>
-<li>alternate:碰撞滚动</li>
-</ul>
-<h4 id="direction-文字滚动方向-left-right-up-down"><a href="#direction-文字滚动方向-left-right-up-down" class="headerlink" title="direction:文字滚动方向 left,right,up,down"></a>direction:文字滚动方向 left,right,up,down</h4><ul>
-<li>left:从右向左</li>
-<li>up:从下向上</li>
-</ul>
-<h4 id="loop-文字滚动次数"><a href="#loop-文字滚动次数" class="headerlink" title="loop:文字滚动次数"></a>loop:文字滚动次数</h4><h4 id="scrolldelay-每次滚动的时间间隔-毫秒"><a href="#scrolldelay-每次滚动的时间间隔-毫秒" class="headerlink" title="scrolldelay:每次滚动的时间间隔(毫秒)"></a>scrolldelay:每次滚动的时间间隔(毫秒)</h4><h4 id="scrollamount-每次滚动之间的间隔像素"><a href="#scrollamount-每次滚动之间的间隔像素" class="headerlink" title="scrollamount:每次滚动之间的间隔像素"></a>scrollamount:每次滚动之间的间隔像素</h4><h2 id="list列表"><a href="#list列表" class="headerlink" title="list列表"></a>list列表</h2><hr>
-<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;ol type=&quot;1&quot;&gt;</div><div class="line">	&lt;li&gt;&lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure>
-<p>type值：</p>
-<ul>
-<li>1: 1 2 3 4</li>
-<li>A：A B C D E</li>
-<li>a:a b c d e</li>
-<li>i:i ii iii iv</li>
-<li>I:I II III IV
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/07/中软大前端0307/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/06/中软大前端0306-table/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/06/中软大前端0306-table/" itemprop="url">中软大前端0306-table</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-06T09:02:27+08:00">
-                2018-03-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中软/" itemprop="url" rel="index">
-                    <span itemprop="name">中软</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><ul>
-<li><code>&lt;thead&gt;&lt;/thead&gt;</code> 头部</li>
-<li><code>&lt;tbody&gt;&lt;/tbody&gt;</code> 主体</li>
-<li><p><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> 底部</p>
-</li>
-<li><p><code>&lt;table&gt;&lt;/table&gt;</code> 表格<br>cellspacing：单元格间的间距<br>cellpadding：单元格内的留白<br>width：表格宽度</p>
-</li>
-<li><p><code>&lt;th&gt;&lt;/th&gt;</code> 表头</p>
-</li>
-<li><code>&lt;tr&gt;&lt;/tr&gt;</code> 行</li>
-<li><code>&lt;td&gt;&lt;/td&gt;</code> 列</li>
-<li><code>&lt;caption&gt;&lt;/caption&gt;</code> 表标题</li>
-</ul>
-<h2 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h2><p>rowspan 合并行<br>colspan 合并列<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/06/中软大前端0306-table/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/05/中软大前端体验0105-bootstrap/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/05/中软大前端体验0105-bootstrap/" itemprop="url">中软大前端体验0105-bootstrap</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-05T14:54:22+08:00">
-                2018-01-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="2D转换transform"><a href="#2D转换transform" class="headerlink" title="2D转换transform"></a>2D转换transform</h2><hr>
-<ul>
-<li>属性值scale(2)；放大2倍</li>
-<li>属性值translate(20px,30px)；移动 X轴，Y轴</li>
-<li>属性值rotate(60deg)；旋转 60度</li>
-</ul>
-<h2 id="transition过度"><a href="#transition过度" class="headerlink" title="transition过度"></a>transition过度</h2><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.box&#123;</div><div class="line">	width:200px;</div><div class="line">	height:200px;</div><div class="line">	background-color: green;</div><div class="line">	transition:transfrom 2s;</div><div class="line">&#125;</div><div class="line">.box:hover&#123;</div><div class="line">	transform:rotate(20deg);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>transition属性写在发生变化前</p>
-<ul>
-<li>transition:transfrom 2s; 发生变化的过度时间</li>
-</ul>
-<h2 id="bootstrap栅格系统"><a href="#bootstrap栅格系统" class="headerlink" title="bootstrap栅格系统"></a>bootstrap栅格系统</h2><hr>
-<p>在项目中导入文件<code>bootstrap.min.css</code>,<code>bootstrap.min.js</code>,<code>jquery-3.2.1.min.js</code>，栅格系统能够自动适应屏幕变化<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/05/中软大前端体验0105-bootstrap/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/04/中软大前端体验0104-form表单/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/04/中软大前端体验0104-form表单/" itemprop="url">中软大前端体验0104-form表单</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-04T09:58:11+08:00">
-                2018-01-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中软/" itemprop="url" rel="index">
-                    <span itemprop="name">中软</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="form-表单"><a href="#form-表单" class="headerlink" title="form 表单"></a>form 表单</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;</div><div class="line"></div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure>
-<h4 id="action：表单的提交位置"><a href="#action：表单的提交位置" class="headerlink" title="action：表单的提交位置"></a>action：表单的提交位置</h4><h4 id="method：方法"><a href="#method：方法" class="headerlink" title="method：方法"></a>method：方法</h4><ul>
-<li>属性值post：不显示参数,安全性高</li>
-<li>属性值get：会显示参数，速度比post快</li>
-</ul>
-<hr>
-<h2 id="input标签"><a href="#input标签" class="headerlink" title="input标签"></a>input标签</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; /&gt;</div></pre></td></tr></table></figure>
-<h4 id="type属性：input类型"><a href="#type属性：input类型" class="headerlink" title="type属性：input类型"></a>type属性：input类型</h4><ul>
-<li>属性值text：文本类型</li>
-<li>属性值password：密码，输入字符显示为点或*</li>
-<li>属性值button：按钮类型</li>
-<li>属性值radio：单选框，name值要一致</li>
-<li>属性值file: 上传文件
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/04/中软大前端体验0104-form表单/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/03/中软大前端体验0103-position定位/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/03/中软大前端体验0103-position定位/" itemprop="url">中软大前端体验0103-position定位-导航</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-03T09:34:17+08:00">
-                2018-01-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中软/" itemprop="url" rel="index">
-                    <span itemprop="name">中软</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Position定位"><a href="#Position定位" class="headerlink" title="Position定位"></a>Position定位</h2><h4 id="属性值"><a href="#属性值" class="headerlink" title="属性值"></a>属性值</h4><ul>
-<li>absolute：绝对定位</li>
-<li>relative：相对定位</li>
-<li>fixed：固定定位</li>
-<li>static：默认值。没有定位，元素出现在正常的流中</li>
-</ul>
-<h3 id="absolute：绝对定位"><a href="#absolute：绝对定位" class="headerlink" title="absolute：绝对定位"></a>absolute：绝对定位</h3><p>漂浮于上层，脱离下层文档流。绝对定位的元素的位置相对于最近的已定位祖先元素，如果元素没有已定位的祖先元素，那么它的位置相对于最初的包含块(即body).一般情况下会在页面最大容器设置position:relative</p>
-<hr>
-<h3 id="relative：相对定位"><a href="#relative：相对定位" class="headerlink" title="relative：相对定位"></a>relative：相对定位</h3><p>占据标准文档流位置，相对于元素原来位置的定位。会与其他元素重叠</p>
-<hr>
-<h3 id="fixed：固定定位"><a href="#fixed：固定定位" class="headerlink" title="fixed：固定定位"></a>fixed：固定定位</h3><p>相对于body层的定位，固定在屏幕某一位置。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/03/中软大前端体验0103-position定位/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/23/Java-内部接口/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/23/Java-内部接口/" itemprop="url">Java 内部接口</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-23T14:20:26+08:00">
-                2017-12-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在类AppearTime 中创建接口IClear，并创建接口内部类MyClear，在main主方法中初始化MyClear</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">public class AppearTime &#123;</div><div class="line"></div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		MyClear clear=new AppearTime().new MyClear();</div><div class="line">		clear.clear();</div><div class="line">	&#125;</div><div class="line">	//内部接口</div><div class="line">	interface IClear&#123;</div><div class="line">		public void clear();</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	//接口实现类</div><div class="line">	class MyClear implements IClear&#123;</div><div class="line"></div><div class="line">		@Override</div><div class="line">		public void clear() &#123;</div><div class="line">			// TODO Auto-generated method stub</div><div class="line">			System.out.println(&quot;do clear...&quot;);</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>内部接口类在调用时不能直接调用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">MyClear clear=new MyClear;  // 会报错</div></pre></td></tr></table></figure></p>
-<p>应该写成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">MyClear clear=new AppearTime().new MyClear();</div></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/09/CSS汇总/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/09/CSS汇总/" itemprop="url">CSS汇总</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-09T19:53:53+08:00">
-                2017-11-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Study/" itemprop="url" rel="index">
-                    <span itemprop="name">Study</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>CSS属性：<a href="http://www.w3school.com.cn/cssref/index.asp" target="_blank" rel="external">http://www.w3school.com.cn/cssref/index.asp</a><br>CSS选择器：<a href="http://www.w3school.com.cn/cssref/css_selectors.asp" target="_blank" rel="external">http://www.w3school.com.cn/cssref/css_selectors.asp</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/04/JavaScript函数的4种调用方法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/04/JavaScript函数的4种调用方法/" itemprop="url">JavaScript函数的4种调用方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-04T19:19:23+08:00">
-                2017-11-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Study/" itemprop="url" rel="index">
-                    <span itemprop="name">Study</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>详解：</strong><a href="http://www.jb51.net/article/49230.htm" target="_blank" rel="external">http://www.jb51.net/article/49230.htm</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">	&lt;!-- 1、函数调用模式 this指全局对象，即windows对象  --&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			var func=function()&#123;</div><div class="line">				alert(&quot;Hello&quot;);</div><div class="line">				alert(this);</div><div class="line">			&#125;;</div><div class="line">			func();</div><div class="line"></div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line"></div><div class="line"></div><div class="line">	&lt;!-- 2、方法调用模式 this指当前对象--&gt;</div><div class="line">		&lt;!-- &lt;script&gt;</div><div class="line">			//定义一个函数</div><div class="line">			var func=function()&#123;</div><div class="line">				alert(this);</div><div class="line">			&#125;;</div><div class="line">			//赋值给一个对象</div><div class="line">			var o=&#123;&#125;;</div><div class="line">			o.fn=func;//不要加圆括号</div><div class="line">			alert(o.fn===func);</div><div class="line">			func();</div><div class="line">			o.fn();</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line">	&lt;!-- 3、构造函数调用模式 this指当前对象--&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			//定义一个构造函数</div><div class="line">			var Person=function()&#123;</div><div class="line">				this.name=&quot;程序员&quot;;</div><div class="line">				this.sayHello=function()&#123;</div><div class="line">				//所有需要由对象使用的属性，必须使用this引导</div><div class="line">					alert(&quot;你好，这里是&quot;+this.name);</div><div class="line">				&#125;;</div><div class="line">			&#125;;</div><div class="line">			//调用构造器，创建对象，使用new语法</div><div class="line">			var p=new Person();</div><div class="line">			//使用对象 this是new 创建出的对象p</div><div class="line">			p.sayHello();</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			var ctr=function()&#123;</div><div class="line">				this.name=&quot;Max&quot;;</div><div class="line">				// return &#123;</div><div class="line">				// 	//返回一个对象，页面中返回此值</div><div class="line">				// 	name:&quot;Jasper&quot;</div><div class="line">				// &#125;;</div><div class="line">				// 返回 非对象，字符串数值，页面中返回this对象</div><div class="line">				return &quot;Jasper&quot;;</div><div class="line">			&#125;;</div><div class="line">			//创建对象</div><div class="line">			var p=new ctr();</div><div class="line">			//访问name属性</div><div class="line">			alert(p.name);</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line">	&lt;!-- 4、apply调用模式 可以像函数一样使用，也可以像方法一样使用 --&gt;</div><div class="line">		&lt;!-- 4-1、相当于函数调用 --&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			var func1=function()&#123;</div><div class="line">				this.name=&quot;程序员&quot;;</div><div class="line">			&#125;;</div><div class="line">			func1.apply(null);</div><div class="line">			alert(name);</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line"></div><div class="line">		&lt;!-- 4-2、相当于方法调用 --&gt;</div><div class="line">		&lt;!-- &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			var func2=function()&#123;</div><div class="line">				this.name=&quot;程序员&quot;;</div><div class="line">			&#125;;</div><div class="line">			//name属性传入到o当中</div><div class="line">			var o=&#123;&#125;;</div><div class="line">			func2.apply(o);</div><div class="line">			alert(o.name);</div><div class="line">		&lt;/script&gt; --&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line"></div><div class="line">	&lt;body&gt;</div><div class="line">	</div><div class="line"></div><div class="line">	&lt;/body&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1859,7 +1927,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">44</span>
+                <span class="site-state-item-count">52</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1881,7 +1949,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
