@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="study," />
+  <meta name="keywords" content="JQuery," />
 
 
 
@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="JQuery封装 链样式 语法$(&amp;quot;selector&amp;quot;).action(); 做什么 访问和操作DOM元素  控制页面样式 对页面事件进行处理 JQuery插件，（分页、表格）   JQuery的使用在html中引用 用JQuery $() –&amp;gt;工厂函数；将H5,Css,javaScript元素转换成JQuery元素 页面加载完成后执行的函数等同于JavaScript的o">
-<meta name="keywords" content="study">
+<meta name="description" content="JQuery封装 链样式 语法$(&amp;quot;selector&amp;quot;).action(); 做什么 访问和操作DOM元素  控制页面样式 对页面事件进行处理 JQuery插件，（分页、表格）">
+<meta name="keywords" content="JQuery">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中软大前端0416-JQuery">
 <meta property="og:url" content="http://yoursite.com/2018/04/18/中软大前端0416-JQuery/index.html">
 <meta property="og:site_name" content="Lyz的博客">
-<meta property="og:description" content="JQuery封装 链样式 语法$(&amp;quot;selector&amp;quot;).action(); 做什么 访问和操作DOM元素  控制页面样式 对页面事件进行处理 JQuery插件，（分页、表格）   JQuery的使用在html中引用 用JQuery $() –&amp;gt;工厂函数；将H5,Css,javaScript元素转换成JQuery元素 页面加载完成后执行的函数等同于JavaScript的o">
+<meta property="og:description" content="JQuery封装 链样式 语法$(&amp;quot;selector&amp;quot;).action(); 做什么 访问和操作DOM元素  控制页面样式 对页面事件进行处理 JQuery插件，（分页、表格）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-13T12:48:51.045Z">
+<meta property="og:updated_time" content="2018-11-12T07:13:18.273Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中软大前端0416-JQuery">
-<meta name="twitter:description" content="JQuery封装 链样式 语法$(&amp;quot;selector&amp;quot;).action(); 做什么 访问和操作DOM元素  控制页面样式 对页面事件进行处理 JQuery插件，（分页、表格）   JQuery的使用在html中引用 用JQuery $() –&amp;gt;工厂函数；将H5,Css,javaScript元素转换成JQuery元素 页面加载完成后执行的函数等同于JavaScript的o">
+<meta name="twitter:description" content="JQuery封装 链样式 语法$(&amp;quot;selector&amp;quot;).action(); 做什么 访问和操作DOM元素  控制页面样式 对页面事件进行处理 JQuery插件，（分页、表格）">
 
 
 
@@ -405,7 +405,8 @@
 <li>访问和操作DOM元素 </li>
 <li>控制页面样式</li>
 <li>对页面事件进行处理</li>
-<li>JQuery插件，（分页、表格）</li>
+<li>JQuery插件，（分页、表格）<a id="more"></a>
+</li>
 </ul>
 <hr>
 <h2 id="JQuery的使用"><a href="#JQuery的使用" class="headerlink" title="JQuery的使用"></a>JQuery的使用</h2><p>在html中引用 用JQuery</p>
@@ -467,14 +468,15 @@
     left:&#39;100px&#39;，
     top:&#39;100px&#39;
 });</code></p>
-<h2 id="添加元素内容"><a href="#添加元素内容" class="headerlink" title="添加元素内容"></a>添加元素内容</h2><p>append();   在当前内容后边追加内容<br>prepend();在当前内容前添加内容</p>
+<h2 id="添加元素内容"><a href="#添加元素内容" class="headerlink" title="添加元素内容"></a>添加元素内容</h2><p>append();在当前内容后边追加内容<br>prepend();在当前内容前添加内容</p>
 <p>添加多个元素内容<br>append(str1,str2,str3);</p>
 <h2 id="删除元素"><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h2><p>remove();删除某个对象中的某个元素</p>
 <p>empty():清空所有子元素</p>
 <h2 id="查找元素"><a href="#查找元素" class="headerlink" title="查找元素"></a>查找元素</h2><h3 id="查找父元素"><a href="#查找父元素" class="headerlink" title="查找父元素"></a>查找父元素</h3><ul>
 <li>parent();直接父元素</li>
 <li>parents();被选元素的所有祖先元素（使用可选参数来过滤）</li>
-<li>parentsUntil();两个给定元素之间的所有祖先元素</li>
+<li>parentsUntil();两个给定元素之间的所有祖先元素<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;a&quot;).parentsUntil(&quot;#div1&quot;) //区间- 选择从a元素 到#div1之间的元素</div></pre></td></tr></table></figure>
+</li>
 </ul>
 <h3 id="子元素"><a href="#子元素" class="headerlink" title="子元素"></a>子元素</h3><ul>
 <li><p>children();查询子元素(直接子元素)，可设参数（选择器），指定查找某个子元素</p>
@@ -483,6 +485,7 @@
 </li>
 </ul>
 <h3 id="同胞元素-向下查找"><a href="#同胞元素-向下查找" class="headerlink" title="同胞元素-向下查找"></a>同胞元素-向下查找</h3><ul>
+<li>sibings();同级所有元素（包括上下所有元素）</li>
 <li>next();查找下一个元素</li>
 <li>nextAll(); 向下查找所有元素</li>
 <li>nextUntil();向下查找 直到某个元素</li>
@@ -499,7 +502,7 @@
 <ul>
 <li>last();<br><code>$(&quot;p&quot;).last();</code></li>
 </ul>
-<h3 id="筛选查找元素"><a href="#筛选查找元素" class="headerlink" title="筛选查找元素"></a>筛选查找元素</h3><ul>
+<h3 id="筛选查找元素（过滤）"><a href="#筛选查找元素（过滤）" class="headerlink" title="筛选查找元素（过滤）"></a>筛选查找元素（过滤）</h3><ul>
 <li><p>eq(index);参数为下标<br>查询到一个集合，根据下标选择元素</p>
 </li>
 <li><p>filter(选择器);满足某个条件的元素<br><code>$(&quot;p&quot;).filter(&quot;#p4&quot;);</code> 查找id为p4的p标签</p>
@@ -529,7 +532,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/study/" rel="tag"># study</a>
+            <a href="/tags/JQuery/" rel="tag"># JQuery</a>
           
         </div>
       
@@ -542,8 +545,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/16/中软大前端0416-JS面向对象/" rel="next" title="中软大前端0416-JS面向对象">
-                <i class="fa fa-chevron-left"></i> 中软大前端0416-JS面向对象
+              <a href="/2018/04/16/中软大前端0416-JS面向对象/" rel="next" title="JS面向对象">
+                <i class="fa fa-chevron-left"></i> JS面向对象
               </a>
             
           </div>
@@ -633,7 +636,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">51</span>
+                <span class="site-state-item-count">52</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -644,7 +647,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -655,7 +658,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -728,7 +731,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JQuery"><span class="nav-number">1.</span> <span class="nav-text">JQuery</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">1.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#做什么"><span class="nav-number">2.</span> <span class="nav-text">做什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JQuery的使用"><span class="nav-number">3.</span> <span class="nav-text">JQuery的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jquery事件绑定"><span class="nav-number">3.1.</span> <span class="nav-text">Jquery事件绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#事件绑定，可同时给一个对象绑定多个事件（on-与-bind-效果相同，同为事件绑定）"><span class="nav-number">3.1.1.</span> <span class="nav-text">事件绑定，可同时给一个对象绑定多个事件（on 与 bind 效果相同，同为事件绑定）.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解除事件绑定"><span class="nav-number">3.1.2.</span> <span class="nav-text">解除事件绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事件绑定一次"><span class="nav-number">3.1.3.</span> <span class="nav-text">事件绑定一次</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jquery访问标签的内容-–html-“”"><span class="nav-number">3.2.</span> <span class="nav-text">jquery访问标签的内容  –html(“”);</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jquery元素隐藏-–hide-“”"><span class="nav-number">3.3.</span> <span class="nav-text">jquery元素隐藏 –hide(“”);</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jquery修改样式–-css"><span class="nav-number">3.4.</span> <span class="nav-text">jquery修改样式– css()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除原本的样式–removeClass-“”"><span class="nav-number">3.4.1.</span> <span class="nav-text">删除原本的样式–removeClass(“”);</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加样式–addCllass-“”"><span class="nav-number">3.4.2.</span> <span class="nav-text">添加样式–addCllass(“”);</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#样式切换–toggleClass"><span class="nav-number">3.4.3.</span> <span class="nav-text">样式切换–toggleClass()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JQuery更改元素属性值–attr"><span class="nav-number">3.5.</span> <span class="nav-text">JQuery更改元素属性值–attr();</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jquery的事件"><span class="nav-number">4.</span> <span class="nav-text">jquery的事件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#阻止事件冒泡"><span class="nav-number">4.1.</span> <span class="nav-text">阻止事件冒泡</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义事件"><span class="nav-number">5.</span> <span class="nav-text">自定义事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择器"><span class="nav-number">6.</span> <span class="nav-text">选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示-隐藏"><span class="nav-number">7.</span> <span class="nav-text">显示/隐藏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#淡入淡出"><span class="nav-number">8.</span> <span class="nav-text">淡入淡出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#滑动"><span class="nav-number">9.</span> <span class="nav-text">滑动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JQ-动画"><span class="nav-number">10.</span> <span class="nav-text">JQ-动画</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法-1"><span class="nav-number">10.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加元素内容"><span class="nav-number">11.</span> <span class="nav-text">添加元素内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除元素"><span class="nav-number">12.</span> <span class="nav-text">删除元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找元素"><span class="nav-number">13.</span> <span class="nav-text">查找元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#查找父元素"><span class="nav-number">13.1.</span> <span class="nav-text">查找父元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子元素"><span class="nav-number">13.2.</span> <span class="nav-text">子元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同胞元素-向下查找"><span class="nav-number">13.3.</span> <span class="nav-text">同胞元素-向下查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同胞元素-向上查找"><span class="nav-number">13.4.</span> <span class="nav-text">同胞元素-向上查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找第一个元素，最后一个元素"><span class="nav-number">13.5.</span> <span class="nav-text">查找第一个元素，最后一个元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#筛选查找元素"><span class="nav-number">13.6.</span> <span class="nav-text">筛选查找元素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-number">14.</span> <span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#检测滚动条高度"><span class="nav-number">14.1.</span> <span class="nav-text">检测滚动条高度</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JQuery"><span class="nav-number">1.</span> <span class="nav-text">JQuery</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">1.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#做什么"><span class="nav-number">2.</span> <span class="nav-text">做什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JQuery的使用"><span class="nav-number">3.</span> <span class="nav-text">JQuery的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jquery事件绑定"><span class="nav-number">3.1.</span> <span class="nav-text">Jquery事件绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#事件绑定，可同时给一个对象绑定多个事件（on-与-bind-效果相同，同为事件绑定）"><span class="nav-number">3.1.1.</span> <span class="nav-text">事件绑定，可同时给一个对象绑定多个事件（on 与 bind 效果相同，同为事件绑定）.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解除事件绑定"><span class="nav-number">3.1.2.</span> <span class="nav-text">解除事件绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事件绑定一次"><span class="nav-number">3.1.3.</span> <span class="nav-text">事件绑定一次</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jquery访问标签的内容-–html-“”"><span class="nav-number">3.2.</span> <span class="nav-text">jquery访问标签的内容  –html(“”);</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jquery元素隐藏-–hide-“”"><span class="nav-number">3.3.</span> <span class="nav-text">jquery元素隐藏 –hide(“”);</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jquery修改样式–-css"><span class="nav-number">3.4.</span> <span class="nav-text">jquery修改样式– css()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除原本的样式–removeClass-“”"><span class="nav-number">3.4.1.</span> <span class="nav-text">删除原本的样式–removeClass(“”);</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加样式–addCllass-“”"><span class="nav-number">3.4.2.</span> <span class="nav-text">添加样式–addCllass(“”);</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#样式切换–toggleClass"><span class="nav-number">3.4.3.</span> <span class="nav-text">样式切换–toggleClass()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JQuery更改元素属性值–attr"><span class="nav-number">3.5.</span> <span class="nav-text">JQuery更改元素属性值–attr();</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jquery的事件"><span class="nav-number">4.</span> <span class="nav-text">jquery的事件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#阻止事件冒泡"><span class="nav-number">4.1.</span> <span class="nav-text">阻止事件冒泡</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义事件"><span class="nav-number">5.</span> <span class="nav-text">自定义事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择器"><span class="nav-number">6.</span> <span class="nav-text">选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示-隐藏"><span class="nav-number">7.</span> <span class="nav-text">显示/隐藏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#淡入淡出"><span class="nav-number">8.</span> <span class="nav-text">淡入淡出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#滑动"><span class="nav-number">9.</span> <span class="nav-text">滑动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JQ-动画"><span class="nav-number">10.</span> <span class="nav-text">JQ-动画</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法-1"><span class="nav-number">10.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加元素内容"><span class="nav-number">11.</span> <span class="nav-text">添加元素内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除元素"><span class="nav-number">12.</span> <span class="nav-text">删除元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找元素"><span class="nav-number">13.</span> <span class="nav-text">查找元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#查找父元素"><span class="nav-number">13.1.</span> <span class="nav-text">查找父元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子元素"><span class="nav-number">13.2.</span> <span class="nav-text">子元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同胞元素-向下查找"><span class="nav-number">13.3.</span> <span class="nav-text">同胞元素-向下查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同胞元素-向上查找"><span class="nav-number">13.4.</span> <span class="nav-text">同胞元素-向上查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找第一个元素，最后一个元素"><span class="nav-number">13.5.</span> <span class="nav-text">查找第一个元素，最后一个元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#筛选查找元素（过滤）"><span class="nav-number">13.6.</span> <span class="nav-text">筛选查找元素（过滤）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-number">14.</span> <span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#检测滚动条高度"><span class="nav-number">14.1.</span> <span class="nav-text">检测滚动条高度</span></a></li></ol></li></ol></div>
             
 
           </div>

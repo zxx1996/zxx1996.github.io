@@ -305,6 +305,197 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/09/中软大前端0409-JS函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lyz的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/09/中软大前端0409-JS函数/" itemprop="url">中软大前端0409-JS函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T08:41:24+08:00">
+                2018-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="系统函数"><a href="#系统函数" class="headerlink" title="系统函数"></a>系统函数</h3><p>isNaN(参数)：判断参数是否不是一个数字；</p>
+<h3 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h3><h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><p><code>function name(参数){}</code></p>
+<p>声明函数的关键字:function</p>
+<p>return:函数的返回值，在函数中，执行到return，函数结束执行。return后的代码不执行。</p>
+<h2 id="函数的调用"><a href="#函数的调用" class="headerlink" title="函数的调用"></a>函数的调用</h2><p>函数只有被调用才会执行代码</p>
+<p>函数名(参数组);</p>
+<h2 id="BOM模型"><a href="#BOM模型" class="headerlink" title="BOM模型"></a>BOM模型</h2><p> 浏览器对象模型<br> 包括对象：</p>
+<h3 id="window-整个BOM的核心"><a href="#window-整个BOM的核心" class="headerlink" title="window:整个BOM的核心"></a>window:整个BOM的核心</h3><h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p>prompt();<br>alert();<br>confirm(); 确定—取消，返回值为布尔型数值<br>close();<br>open(“1.html”,”<code>_selt</code>“,”窗口特征”,true);新打开一个页面<br>true:会在浏览器的历史记录中记录当前页和新打开的页面<br>srtInterval(函数,1000);间隔一定时间(毫秒)调用函数;函数会返回一个intervalId<br>clearInterval();清除调用函数</p>
+<h4 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h4><p>onXXXX监听某个事件是否发生<br>onload:页面或图像完成加载<br>onclick:单击某个对象时<br>onmouseover:鼠标移到某个元素上<br>onmouseout:鼠标从某个元素上移开</p>
+<h3 id="history-历史对象"><a href="#history-历史对象" class="headerlink" title="history:历史对象"></a>history:历史对象</h3><p>方法<br>history.back()  后退</p>
+<h3 id="document-文档对象"><a href="#document-文档对象" class="headerlink" title="document:文档对象"></a>document:文档对象</h3><h3 id="location-位置对象-页面访问的地址"><a href="#location-位置对象-页面访问的地址" class="headerlink" title="location:位置对象,页面访问的地址"></a>location:位置对象,页面访问的地址</h3><p>(URL),把浏览器重定向到新的页面</p>
+<p>location.hostname:返回WEB主机的域名<br>location.pathname:当前页面的路径和文件名</p>
+<p>location.port:返回web主机的端口<br>location.protocol:协议</p>
+<p>location.href:返回当前的(URL)可跳转页面</p>
+<p>方法<br>location.reload():重新加载，刷新页面</p>
+<p><link type="image/x-icon" href="" rel="icon">  16px * 16px<br>type   ,引用资源的MIME类型<br>rel ,关系<br>MIME参考手册<br>iconfont   图标库</p>
+<p><a href="" target=""></a><br><code>target=&quot;_self&quot;</code>:跳转链接时，不重新打开一个窗口，覆盖原有页面<br><code>target=&quot;_blank&quot;</code>:跳转链接时，重新打开一个窗口，保留原有页面（默认）</p>
+<h2 id="DOM模型"><a href="#DOM模型" class="headerlink" title="DOM模型"></a>DOM模型</h2><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li>getElementById()：返回带有指定ID的元素。</li>
+<li>getElementsByTagName();返回包含有指定标签名的对象集合,访问方式类似数组</li>
+<li>getElementsByName();返回包含指定name属性值的对象集合,访问方式类似数组</li>
+<li>getElementsByClassName();</li>
+</ul>
+<h3 id="addEventListener-方法"><a href="#addEventListener-方法" class="headerlink" title="addEventListener()方法"></a>addEventListener()方法</h3><p>给元素添加事件监听</p>
+<h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><p> element.addEventListener(event, function, useCapture);<br>第一个参数是事件的类型；<br>第二个参数是事件触发后调用的函数；<br>第三个参数是个布尔值用于描述事件是冒泡还会捕获，参数可选</p>
+<ul>
+<li><p>调用外部函数，第二个参数，直接填写<code>函数名</code> ，不需要 <code>函数名()</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;button id=&quot;btn&quot;&gt;按钮&lt;/button&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	document.getElementById(&quot;btn&quot;).addEventListener(&quot;click&quot;,show);</div><div class="line">	function show()&#123;</div><div class="line">		alert(&quot;点击了按钮！&quot;);</div><div class="line">	&#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>直接写函数（匿名函数）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;button id=&quot;btn&quot;&gt;按钮&lt;/button&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	document.getElementById(&quot;btn&quot;).addEventListener(&quot;click&quot;,function ()&#123;</div><div class="line">		alert(&quot;点击了按钮！&quot;);</div><div class="line">	&#125;);</div><div class="line">	</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>removeEventListener()移除事件的监听</p>
+<h4 id="事件的传递方式：冒泡和捕获"><a href="#事件的传递方式：冒泡和捕获" class="headerlink" title="事件的传递方式：冒泡和捕获"></a>事件的传递方式：冒泡和捕获</h4><p>默认值为 false, 即冒泡传递，当值为 true 时, 事件使用捕获传递。</p>
+<ul>
+<li>在冒泡中，内部元素的事件会先被触发，然后再触发外部元素(从最具体的元素开始，然后逐级向上，直至文档)</li>
+<li>在捕获中，外部元素的事件会先被触发，然后才会触发内部元素的事件(从最不具体的元素，到最具体的元素)</li>
+</ul>
+<h3 id="DOM事件"><a href="#DOM事件" class="headerlink" title="DOM事件"></a>DOM事件</h3><h4 id="DOM0级事件"><a href="#DOM0级事件" class="headerlink" title="DOM0级事件"></a>DOM0级事件</h4><p>在JS代码中直接处理事件。同一个对象的同一个事件只能处理一次（会覆盖）<br><code>var btn1=document.getElementById(&quot;btn1&quot;);</code><br><code>btn1.onclick = function (){ alert(&quot;Hello DOM 0级事件处理程序&quot;)}</code></p>
+<h4 id="DOM2级事件处理"><a href="#DOM2级事件处理" class="headerlink" title="DOM2级事件处理"></a>DOM2级事件处理</h4><p>同一个对象的同一个事件可以有多个处理程序<br><code>addEventListener(事件类型, 函数, 布尔值);</code></p>
+<h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><p>元素节点，文本节点，属性节点，父节点，子节点</p>
+<p>换行符 “<br>“ 节点类型为文本节点。(代码中的空行也会被解读成文本节点)</p>
+<p>获取body元素：document.body</p>
+<h4 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h4><p>创建元素节点：createElement()<br>创建文本节点：createTextNode()<br>创建子节点：节点.appendChild()</p>
+<h4 id="删除子节点"><a href="#删除子节点" class="headerlink" title="删除子节点"></a>删除子节点</h4><p>node.removeChild(childNode);<br>只能根据父节点删除子节点，要删除某个节点必须先找到它的父节点<br>childNode.parentNode.removeChild(childNode);</p>
+<h4 id="替换节点"><a href="#替换节点" class="headerlink" title="替换节点"></a>替换节点</h4><p>node.replaceChild(newNode,oldNode);<br>创建新节点，替换旧节点;也必须找到父节点</p>
+<h3 id="DOM查询"><a href="#DOM查询" class="headerlink" title="DOM查询"></a>DOM查询</h3><ul>
+<li>document.querySlectorAll(“选择器”);<br>选择器</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/中软大前端0330-JavaScipt/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -346,6 +537,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -663,6 +876,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中软/" itemprop="url" rel="index">
+                    <span itemprop="name">中软</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1684,171 +1919,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/07/中软大前端0307/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lyz的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/07/中软大前端0307/" itemprop="url">中软大前端0307--文字滚动，列表list</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T11:35:15+08:00">
-                2018-03-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中软/" itemprop="url" rel="index">
-                    <span itemprop="name">中软</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="marquee标签-滚动"><a href="#marquee标签-滚动" class="headerlink" title="marquee标签 :滚动"></a>marquee标签 :滚动</h2><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;&quot;&gt;</div><div class="line">	&lt;marquee behavior=&quot;&quot; direction=&quot;left&quot;&gt;&lt;/marquee&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-<h4 id="behavior：文字滚动样式scroll-slide-alternate"><a href="#behavior：文字滚动样式scroll-slide-alternate" class="headerlink" title="behavior：文字滚动样式scroll,slide,alternate"></a>behavior：文字滚动样式scroll,slide,alternate</h4><ul>
-<li>scroll:滚动</li>
-<li>slide:滑动</li>
-<li>alternate:碰撞滚动</li>
-</ul>
-<h4 id="direction-文字滚动方向-left-right-up-down"><a href="#direction-文字滚动方向-left-right-up-down" class="headerlink" title="direction:文字滚动方向 left,right,up,down"></a>direction:文字滚动方向 left,right,up,down</h4><ul>
-<li>left:从右向左</li>
-<li>up:从下向上</li>
-</ul>
-<h4 id="loop-文字滚动次数"><a href="#loop-文字滚动次数" class="headerlink" title="loop:文字滚动次数"></a>loop:文字滚动次数</h4><h4 id="scrolldelay-每次滚动的时间间隔-毫秒"><a href="#scrolldelay-每次滚动的时间间隔-毫秒" class="headerlink" title="scrolldelay:每次滚动的时间间隔(毫秒)"></a>scrolldelay:每次滚动的时间间隔(毫秒)</h4><h4 id="scrollamount-每次滚动之间的间隔像素"><a href="#scrollamount-每次滚动之间的间隔像素" class="headerlink" title="scrollamount:每次滚动之间的间隔像素"></a>scrollamount:每次滚动之间的间隔像素</h4><h2 id="list列表"><a href="#list列表" class="headerlink" title="list列表"></a>list列表</h2><hr>
-<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;ol type=&quot;1&quot;&gt;</div><div class="line">	&lt;li&gt;&lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure>
-<p>type值：</p>
-<ul>
-<li>1: 1 2 3 4</li>
-<li>A：A B C D E</li>
-<li>a:a b c d e</li>
-<li>i:i ii iii iv</li>
-<li>I:I II III IV
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/07/中软大前端0307/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1901,7 +1971,7 @@
             
               <a href="/archives/ || archive">
             
-                <span class="site-state-item-count">51</span>
+                <span class="site-state-item-count">52</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1912,7 +1982,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1923,7 +1993,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
